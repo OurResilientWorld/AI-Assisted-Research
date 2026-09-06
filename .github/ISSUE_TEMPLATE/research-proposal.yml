@@ -1,0 +1,49 @@
+name: Research proposal
+description: Propose a testable method for an accepted evidence gap
+title: "Research proposal: "
+labels: ["research-proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not include confidential, sensitive or personal information."
+  - type: input
+    id: gap
+    attributes:
+      label: Claim or evidence gap
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Testable question
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Population, comparison, period and method
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes and distribution
+      description: Include income, survival, protections, skills and distribution where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: adverse
+    attributes:
+      label: Null or adverse result
+      description: What result would weaken the proposition or leave it unresolved?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not included confidential, sensitive or personal information.
+          required: true
+        - label: I understand submission does not imply endorsement, funding or acceptance.
+          required: true

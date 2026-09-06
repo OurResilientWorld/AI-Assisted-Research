@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "title": "Australia Bushfire Resilience Simulator MVP",
+    "scope": "Bushfire-only directional model for Australia",
+    "currency": "AUD",
+    "units": "billions"
+  },
+  "historical": [
+    {
+      "year": 2016,
+      "broadCost": 18.0,
+      "insuredLoss": 1.22,
+      "federalPublicSpend": 1.44,
+      "stateLocalPublicSpend": 2.16,
+      "confidence": "Medium",
+      "evidenceType": "Derived",
+      "method": "Working baseline anchor using broad-cost calibration and share-based public split."
+    },
+    {
+      "year": 2017,
+      "broadCost": 20.2,
+      "insuredLoss": 2.54,
+      "federalPublicSpend": 1.62,
+      "stateLocalPublicSpend": 2.42,
+      "confidence": "Medium",
+      "evidenceType": "Derived",
+      "method": "Interpolated national bushfire-related burden using workbook calibration spine."
+    },
+    {
+      "year": 2018,
+      "broadCost": 22.4,
+      "insuredLoss": 1.68,
+      "federalPublicSpend": 1.79,
+      "stateLocalPublicSpend": 2.69,
+      "confidence": "Medium",
+      "evidenceType": "Derived",
+      "method": "Interpolated working estimate with modeled public burden shares."
+    },
+    {
+      "year": 2019,
+      "broadCost": 27.0,
+      "insuredLoss": 4.14,
+      "federalPublicSpend": 2.16,
+      "stateLocalPublicSpend": 3.24,
+      "confidence": "Medium",
+      "evidenceType": "Derived",
+      "method": "Spike year reflecting elevated bushfire burden and modeled public split."
+    },
+    {
+      "year": 2020,
+      "broadCost": 31.5,
+      "insuredLoss": 4.21,
+      "federalPublicSpend": 2.52,
+      "stateLocalPublicSpend": 3.78,
+      "confidence": "Medium",
+      "evidenceType": "Derived",
+      "method": "High-burden year informed by Black Summer era calibration anchor."
+    },
+    {
+      "year": 2021,
+      "broadCost": 32.8,
+      "insuredLoss": 2.43,
+      "federalPublicSpend": 2.62,
+      "stateLocalPublicSpend": 3.94,
+      "confidence": "Low",
+      "evidenceType": "Modeled",
+      "method": "Modeled continuation of national burden trend; year-level total remains provisional."
+    },
+    {
+      "year": 2022,
+      "broadCost": 34.1,
+      "insuredLoss": 8.16,
+      "federalPublicSpend": 2.73,
+      "stateLocalPublicSpend": 4.09,
+      "confidence": "Low",
+      "evidenceType": "Modeled",
+      "method": "Modeled total public burden with observed Commonwealth response lower-bound evidence available separately."
+    },
+    {
+      "year": 2023,
+      "broadCost": 35.4,
+      "insuredLoss": 2.04,
+      "federalPublicSpend": 2.83,
+      "stateLocalPublicSpend": 4.25,
+      "confidence": "Low",
+      "evidenceType": "Modeled",
+      "method": "Modeled total public burden with DRF-era prevention baseline and observed federal lower-bound evidence."
+    },
+    {
+      "year": 2024,
+      "broadCost": 36.7,
+      "insuredLoss": 0.58,
+      "federalPublicSpend": 2.94,
+      "stateLocalPublicSpend": 4.40,
+      "confidence": "Low",
+      "evidenceType": "Modeled",
+      "method": "Modeled total public burden; workbook evidence records observed Commonwealth prevention and grant lines."
+    },
+    {
+      "year": 2025,
+      "broadCost": 38.0,
+      "insuredLoss": 3.5,
+      "federalPublicSpend": 3.04,
+      "stateLocalPublicSpend": 4.56,
+      "confidence": "Low",
+      "evidenceType": "Modeled",
+      "method": "2025 baseline anchor for BAU projection; public totals remain share-based for consistency."
+    }
+  ],
+  "assumptions": {
+    "baseline2025": 38.0,
+    "hazardGrowthRate": 0.03,
+    "federalShare": 0.08,
+    "stateLocalShare": 0.12,
+    "federalPreventionBase": 0.2,
+    "stateLocalPreventionShare": 0.2,
+    "selectedYear": 2050,
+    "detectionAnnualCostFull": 0.45,
+    "responseAnnualCostFull": 0.85,
+    "buildingAnnualCostFull": 1.25,
+    "fuelAnnualCostFull": 0.95
+  },
+  "presets": {
+    "bau": { "detection": 0, "response": 0, "building": 0, "fuel": 0, "detectionStart": 2026, "responseStart": 2026, "buildingStart": 2026, "fuelStart": 2026, "detectionEnd": 2032, "responseEnd": 2034, "buildingEnd": 2038, "fuelEnd": 2036 },
+    "balanced": { "detection": 40, "response": 40, "building": 40, "fuel": 40, "detectionStart": 2026, "responseStart": 2026, "buildingStart": 2027, "fuelStart": 2027, "detectionEnd": 2032, "responseEnd": 2034, "buildingEnd": 2038, "fuelEnd": 2036 },
+    "detection-led": { "detection": 70, "response": 25, "building": 25, "fuel": 20, "detectionStart": 2026, "responseStart": 2028, "buildingStart": 2029, "fuelStart": 2029, "detectionEnd": 2031, "responseEnd": 2035, "buildingEnd": 2038, "fuelEnd": 2037 },
+    "response-led": { "detection": 20, "response": 70, "building": 20, "fuel": 15, "detectionStart": 2027, "responseStart": 2026, "buildingStart": 2029, "fuelStart": 2029, "detectionEnd": 2033, "responseEnd": 2033, "buildingEnd": 2038, "fuelEnd": 2036 },
+    "building-led": { "detection": 20, "response": 20, "building": 70, "fuel": 20, "detectionStart": 2027, "responseStart": 2028, "buildingStart": 2026, "fuelStart": 2028, "detectionEnd": 2034, "responseEnd": 2035, "buildingEnd": 2040, "fuelEnd": 2038 },
+    "fuel-led": { "detection": 15, "response": 20, "building": 20, "fuel": 70, "detectionStart": 2028, "responseStart": 2028, "buildingStart": 2029, "fuelStart": 2026, "detectionEnd": 2034, "responseEnd": 2035, "buildingEnd": 2038, "fuelEnd": 2037 }
+  }
+}

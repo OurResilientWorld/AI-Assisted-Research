@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Australia Bushfire Resilience Simulator</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#simulator">Skip to simulator</a>
+
+    <header class="page-header">
+      <div class="header-inner">
+        <p class="eyebrow">AI Resilience · public concept artefact · version 0.2 · 13 August 2026</p>
+        <h1>Australia Bushfire Resilience Simulator</h1>
+        <p class="header-lede">
+          Explore how the timing and strength of four resilience actions could change annual
+          bushfire losses and intervention spending over time.
+        </p>
+        <div class="header-tags" aria-label="Artefact characteristics">
+          <span class="tag">2035 or 2050 horizon</span>
+          <span class="tag">Live cost comparison</span>
+          <span class="tag">Transparent assumptions</span>
+          <span class="tag">Directional—not a forecast</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell" data-app>
+      <section class="guide-panel" aria-labelledby="how-to-use-title">
+        <div class="guide-intro">
+          <p class="eyebrow">Start here</p>
+          <h2 id="how-to-use-title">How to use this simulator</h2>
+          <p>
+            This tool compares a fixed business-as-usual (BAU) path with the scenario you create.
+            It is designed to help you examine trade-offs, not predict exact future costs.
+          </p>
+        </div>
+        <ol class="guide-steps">
+          <li><strong>Choose the end year.</strong> Use 2035 for a nearer-term view or keep the 2050 default to see longer-term effects.</li>
+          <li><strong>Test an action mix.</strong> Select a preset or move the four sliders. Higher effort generally increases spending sooner and reduces losses later.</li>
+          <li><strong>Compare the lines.</strong> Look at the fixed BAU path, loss remaining after action, added intervention spending, and their combined scenario cost.</li>
+        </ol>
+        <p class="model-boundary"><strong>Important:</strong> Values are evidence-informed model outputs in A$ billions. They are not budgets, promises or precise forecasts.</p>
+      </section>
+
+      <section class="dashboard" id="simulator" aria-label="Interactive bushfire resilience simulator">
+        <aside class="panel controls-panel" data-controls aria-labelledby="levers-title">
+          <div class="panel-header">
+            <h2 id="levers-title">Actions to test</h2>
+            <p>Use a preset as a starting point or adjust each action. All changes update the graph immediately.</p>
+            <p class="timing-explanation"><strong>Timing:</strong> the start year is when spending begins. “Implementation complete by” is when delivery reaches its planned level. The model then allows extra time for the action to reduce losses, so the graph may show benefits several years later.</p>
+          </div>
+          <div class="preset-row" aria-label="Scenario presets">
+            <button type="button" data-reset>Reset to default</button>
+            <button type="button" data-preset="bau" aria-pressed="false">BAU</button>
+            <button type="button" data-preset="balanced" aria-pressed="false">Balanced</button>
+            <button type="button" data-preset="detection-led" aria-pressed="false">Detection-led</button>
+            <button type="button" data-preset="response-led" aria-pressed="false">Response-led</button>
+            <button type="button" data-preset="building-led" aria-pressed="false">Building-led</button>
+            <button type="button" data-preset="fuel-led" aria-pressed="false">Fuel-led</button>
+          </div>
+
+          <fieldset class="slider-block">
+            <legend>Early Detection <span><strong data-slider-value="detection">20</strong>/100</span></legend>
+            <p id="detection-hint">Warning lead time, monitoring visibility and detection speed.</p>
+            <label class="visually-hidden" for="detection-level">Early Detection effort</label>
+            <input id="detection-level" type="range" min="0" max="100" step="5" name="detection" aria-describedby="detection-hint detection-limits">
+            <div class="range-limits" id="detection-limits"><span>0 · no added action</span><span>100 · maximum effort</span></div>
+            <div class="timing-row">
+              <label>Start year <input type="number" min="2025" max="2050" step="1" name="detectionStart"></label>
+              <label>Implementation complete by <input type="number" min="2025" max="2050" step="1" name="detectionEnd"></label>
+            </div>
+          </fieldset>
+          <fieldset class="slider-block">
+            <legend>Response Capacity <span><strong data-slider-value="response">20</strong>/100</span></legend>
+            <p id="response-hint">Crews, aerial support, logistics and surge readiness.</p>
+            <label class="visually-hidden" for="response-level">Response Capacity effort</label>
+            <input id="response-level" type="range" min="0" max="100" step="5" name="response" aria-describedby="response-hint response-limits">
+            <div class="range-limits" id="response-limits"><span>0 · no added action</span><span>100 · maximum effort</span></div>
+            <div class="timing-row">
+              <label>Start year <input type="number" min="2025" max="2050" step="1" name="responseStart"></label>
+              <label>Implementation complete by <input type="number" min="2025" max="2050" step="1" name="responseEnd"></label>
+            </div>
+          </fieldset>
+          <fieldset class="slider-block">
+            <legend>Building Resilience <span><strong data-slider-value="building">20</strong>/100</span></legend>
+            <p id="building-hint">Hardening, retrofits and continuity of critical infrastructure.</p>
+            <label class="visually-hidden" for="building-level">Building Resilience effort</label>
+            <input id="building-level" type="range" min="0" max="100" step="5" name="building" aria-describedby="building-hint building-limits">
+            <div class="range-limits" id="building-limits"><span>0 · no added action</span><span>100 · maximum effort</span></div>
+            <div class="timing-row">
+              <label>Start year <input type="number" min="2025" max="2050" step="1" name="buildingStart"></label>
+              <label>Implementation complete by <input type="number" min="2025" max="2050" step="1" name="buildingEnd"></label>
+            </div>
+          </fieldset>
+          <fieldset class="slider-block">
+            <legend>Fuel / Landscape Management <span><strong data-slider-value="fuel">20</strong>/100</span></legend>
+            <p id="fuel-hint">Prescribed burns, buffers and land-management capability.</p>
+            <label class="visually-hidden" for="fuel-level">Fuel and Landscape Management effort</label>
+            <input id="fuel-level" type="range" min="0" max="100" step="5" name="fuel" aria-describedby="fuel-hint fuel-limits">
+            <div class="range-limits" id="fuel-limits"><span>0 · no added action</span><span>100 · maximum effort</span></div>
+            <div class="timing-row">
+              <label>Start year <input type="number" min="2025" max="2050" step="1" name="fuelStart"></label>
+              <label>Implementation complete by <input type="number" min="2025" max="2050" step="1" name="fuelEnd"></label>
+            </div>
+          </fieldset>
+
+          <details class="assumptions">
+            <summary>Model assumptions</summary>
+            <div class="assumption-grid">
+              <label><span>2025 baseline cost ($B)</span><input type="number" step="0.1" name="baseline2025"></label>
+              <label><span>Annual hazard growth</span><input type="number" step="0.01" name="hazardGrowthRate"></label>
+              <label><span>Federal public share</span><input type="number" step="0.01" name="federalShare"></label>
+              <label><span>State / local public share</span><input type="number" step="0.01" name="stateLocalShare"></label>
+              <label><span>Federal prevention base ($B)</span><input type="number" step="0.01" name="federalPreventionBase"></label>
+              <label><span>State / local prevention share</span><input type="number" step="0.01" name="stateLocalPreventionShare"></label>
+              <label><span>Detection annual cost at 100% ($B)</span><input type="number" step="0.01" name="detectionAnnualCostFull"></label>
+              <label><span>Response annual cost at 100% ($B)</span><input type="number" step="0.01" name="responseAnnualCostFull"></label>
+              <label><span>Building annual cost at 100% ($B)</span><input type="number" step="0.01" name="buildingAnnualCostFull"></label>
+              <label><span>Fuel annual cost at 100% ($B)</span><input type="number" step="0.01" name="fuelAnnualCostFull"></label>
+            </div>
+          </details>
+        </aside>
+
+        <section class="panel chart-panel" aria-labelledby="chart-title">
+          <div class="chart-heading">
+            <div>
+              <p class="eyebrow">Cost versus time</p>
+              <h2 id="chart-title" data-chart-title>Annual Bushfire Cost to 2050</h2>
+              <p class="chart-guide">
+                <strong>How to read this graph:</strong> the dashed BAU line is the estimated cost without new action.
+                The dotted residual-loss line shows damage remaining after your actions. The shaded band is the
+                added intervention spend, and the solid total line combines that spend with residual loss.
+              </p>
+            </div>
+            <label class="horizon-control" for="projection-end-year">
+              <span>Projection end year</span>
+              <select id="projection-end-year" name="projectionEndYear" aria-describedby="horizon-hint">
+                <option value="2035">2035 · nearer term</option>
+                <option value="2050" selected>2050 · default</option>
+              </select>
+              <small id="horizon-hint">Changing this shortens or extends the graph and cumulative totals.</small>
+            </label>
+          </div>
+          <p class="snapshot-summary" data-selected-year-summary aria-live="polite"></p>
+          <div class="chart-shell">
+            <div data-chart></div>
+            <div class="chart-legend" aria-label="Graph series">
+              <span><i class="legend-line bau"></i> BAU—no new action</span>
+              <span><i class="legend-line residual"></i> Residual loss after action</span>
+              <span><i class="legend-swatch investment"></i> Added intervention spend</span>
+              <span><i class="legend-line scenario-total"></i> Total scenario cost</span>
+            </div>
+          </div>
+          <div class="cost-explanation">
+            <h3>Why the two orange lines differ</h3>
+            <p><strong>Residual loss after action</strong> is the bushfire damage that still occurs after the selected actions reduce the business-as-usual loss. <strong>Total scenario cost</strong> adds the annual cost of those actions to the remaining damage: residual loss + intervention spending. The shaded gap between the orange lines is that intervention spending.</p>
+            <p>Compare the solid total-scenario line with the dashed BAU line to judge the complete cost trade-off. In early years, action can cost more than the losses it prevents; later, the scenario costs less than BAU when avoided damage exceeds intervention spending.</p>
+          </div>
+          <details class="chart-data-details">
+            <summary>View the annual values shown in this graph</summary>
+            <p>The table provides the same information as the graph for reading, comparison or assistive technology.</p>
+            <div class="table-wrap" data-chart-table></div>
+          </details>
+        </section>
+
+        <aside class="panel metrics-panel">
+          <div class="panel-header">
+            <h2>Key Outputs</h2>
+            <p data-output-period>2050 snapshot and cumulative 2025–2050 decision signals.</p>
+          </div>
+          <div class="metric-grid" data-metrics></div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <section class="panel table-panel">
+          <div class="panel-header">
+            <h2>Historical Baseline 2016-2025</h2>
+            <p>Visible assumptions, visible uncertainty, editable later via JSON.</p>
+          </div>
+          <div class="table-wrap" data-historical-table></div>
+        </section>
+
+        <section class="panel explainer-panel">
+          <div class="panel-header">
+            <h2>Model Notes</h2>
+            <p>Short, plain-English guidance for non-technical users.</p>
+          </div>
+          <div class="tab-row">
+            <button type="button" data-tab="historical" aria-pressed="true">Historical baseline</button>
+            <button type="button" data-tab="sources" aria-pressed="false">Sources &amp; confidence</button>
+            <button type="button" data-tab="model" aria-pressed="false">How the model works</button>
+            <button type="button" data-tab="limitations" aria-pressed="false">Limitations</button>
+          </div>
+          <div class="tab-panel" data-tab-panel></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-logo-link" href="https://www.ourresilient.world/" target="_blank" rel="noopener noreferrer" aria-label="Visit Our Resilient World">
+        <img class="footer-logo" src="assets/orw-logo-transparent-800px.png" alt="Our Resilient World">
+      </a>
+      <p class="footer-brand"><strong>AI Resilience · <a href="https://www.ourresilient.world/" target="_blank" rel="noopener noreferrer">Our Resilient World</a></strong></p>
+      <p><strong>Australia Bushfire Resilience Simulator v0.2</strong> · AI Product Flow Step 3-inspired concept artefact.</p>
+      <p>Research by <a href="mailto:rick.molony@ourresilient.world">Rick Molony</a>, developed with AI assistance. See the public <a href="../../index.html" target="_blank" rel="noopener noreferrer">AI-Assisted Research collection</a>.</p>
+      <p>No information is transmitted by this page. No council or parliamentary representative has been contacted.</p>
+      <p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>.</p>
+    </footer>
+
+    <script src="model.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

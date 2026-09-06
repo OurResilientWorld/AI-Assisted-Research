@@ -1,0 +1,56 @@
+name: Correction
+description: Report a precise factual, source, methodological or typographic problem
+title: "Correction: "
+labels: ["correction", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not include confidential, sensitive or personal information."
+  - type: input
+    id: location
+    attributes:
+      label: Exact page or file location
+      description: Give the URL and heading or quoted passage.
+    validations:
+      required: true
+  - type: dropdown
+    id: correction_type
+    attributes:
+      label: Correction type
+      options:
+        - Typographic
+        - Source identity
+        - Factual
+        - Methodological
+        - Substantive
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Explain the defect and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Supporting public source
+      description: Provide a stable URL and exact locator.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not included confidential, sensitive or personal information.
+          required: true
+        - label: I understand this submission does not automatically change a finding.
+          required: true
