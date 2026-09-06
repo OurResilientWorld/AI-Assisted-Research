@@ -1,0 +1,55 @@
+name: New evidence
+description: Submit public evidence that may strengthen, weaken or qualify a finding
+title: "Evidence: "
+labels: ["new-evidence", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Submit public sources only and state their limitations."
+  - type: input
+    id: finding
+    attributes:
+      label: Finding or evidence gap addressed
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+    validations:
+      required: true
+  - type: textarea
+    id: locator
+    attributes:
+      label: Exact locator and relevant result
+      description: Give the page, table, section or dataset field and publication date.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Population, place, period and method
+    validations:
+      required: true
+  - type: textarea
+    id: effect
+    attributes:
+      label: How could this affect the finding?
+      description: State whether it may strengthen, weaken or qualify the result.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Important limitations
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: The source is public and I have not included confidential or personal information.
+          required: true
+        - label: I understand triage does not mean the evidence is accepted.
+          required: true

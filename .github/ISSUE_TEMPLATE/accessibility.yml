@@ -1,0 +1,45 @@
+name: Accessibility
+description: Report a barrier in the website or publication material
+title: "Accessibility: "
+labels: ["accessibility", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not include confidential, sensitive or personal information."
+  - type: input
+    id: location
+    attributes:
+      label: Page or content location
+    validations:
+      required: true
+  - type: dropdown
+    id: barrier
+    attributes:
+      label: Barrier type
+      options:
+        - Keyboard navigation
+        - Screen reader or reading order
+        - Contrast or colour
+        - Alternative text
+        - Zoom or responsive layout
+        - Language or comprehension
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Browser, device or assistive technology (optional)
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included confidential, sensitive or personal information.
+          required: true

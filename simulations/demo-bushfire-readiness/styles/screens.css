@@ -1,0 +1,272 @@
+.brand-mark {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.screen {
+  display: grid;
+  gap: 24px;
+}
+
+.screen-simulator {
+  gap: 0;
+}
+
+.simulator-app-frame {
+  display: grid;
+  grid-template-columns: 182px minmax(0, 1fr);
+  background: transparent;
+}
+
+.simulator-rail {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  min-height: calc(100vh - 138px);
+  padding: 18px 14px 16px;
+  background: rgba(26, 27, 31, 0.96);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.rail-profile {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+  padding: 6px 8px 14px;
+}
+
+.rail-profile strong {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+}
+
+.rail-profile span {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.rail-avatar {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #23647e, #1b4252);
+  color: #cfe9f4;
+  font-size: 0.8rem;
+}
+
+.rail-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.rail-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  color: #9ea4ab;
+  border-left: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.rail-nav a.is-active,
+.rail-nav a:hover {
+  color: #dbe7ed;
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: var(--accent-strong);
+}
+
+.rail-cta {
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  min-height: 54px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #205e77, #1c4b5f);
+  color: #d9eef9;
+  font-weight: 600;
+}
+
+.rail-meta {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.simulator-stage {
+  padding: 24px 22px 0;
+}
+
+.simulator-heading {
+  margin-bottom: 20px;
+}
+
+.simulator-heading h1 {
+  margin-bottom: 12px;
+  font-size: clamp(3.2rem, 4.8vw, 4.9rem);
+  line-height: 0.94;
+}
+
+.simulator-purpose {
+  max-width: 82ch;
+  margin: 0 0 16px;
+  font-size: 1rem;
+}
+
+.condition-explanation {
+  max-width: 88ch;
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-left: 3px solid #cb6662;
+  background: rgba(120, 41, 44, 0.13);
+  font-size: 0.86rem;
+}
+
+.condition-explanation a {
+  color: #c5e8f7;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.simulator-heading-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.controls-panel {
+  position: sticky;
+  top: 24px;
+  border-radius: 10px;
+}
+
+.metrics-column {
+  position: sticky;
+  top: 24px;
+}
+
+.metrics-introduction {
+  margin-bottom: 14px;
+  padding: 2px 4px;
+}
+
+.metrics-introduction h2 {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.metrics-introduction p {
+  margin-bottom: 0;
+  font-size: 0.84rem;
+}
+
+.geography-priority-grid .geography-card {
+  min-height: 0;
+}
+
+.geography-main-grid {
+  align-items: start;
+}
+
+.simulator-controls-panel,
+.simulator-results-panel {
+  min-height: 0;
+}
+
+.simulator-controls-panel h2,
+.projection-heading h2 {
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.projection-heading p {
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}
+
+.simulator-notes {
+  margin-top: 16px;
+}
+
+.simulator-footer-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer-action-primary {
+  background: linear-gradient(180deg, #e0aa52, #d39844);
+  color: #241b0b;
+}
+
+.footer-note {
+  margin-left: auto;
+  max-width: 520px;
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: right;
+}
+
+.geography-summary,
+.screen-sources > .section-heading,
+.screen-about > .section-heading {
+  padding-top: 8px;
+}
+
+.geography-card,
+.evidence-class {
+  min-height: 220px;
+}
+
+@media (max-width: 1100px) {
+  .simulator-app-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .simulator-rail {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .simulator-stage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .simulator-footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-note {
+    margin-left: 0;
+    text-align: left;
+  }
+}
