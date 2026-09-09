@@ -1,0 +1,33 @@
+id,kind,eligible_people,active_share,redeemed_fraction_among_active,annual_ceiling_aud_2026,formula,result,unit,limit
+B-C600-U0.25-R0.50,base-service cash cost,1000000,0.25,0.50,600,N * u * r * C,75000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U0.25-R1.00,base-service cash cost,1000000,0.25,1.00,600,N * u * r * C,150000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U0.50-R0.50,base-service cash cost,1000000,0.50,0.50,600,N * u * r * C,150000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U0.50-R1.00,base-service cash cost,1000000,0.50,1.00,600,N * u * r * C,300000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U0.75-R0.50,base-service cash cost,1000000,0.75,0.50,600,N * u * r * C,225000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U0.75-R1.00,base-service cash cost,1000000,0.75,1.00,600,N * u * r * C,450000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U1.00-R0.50,base-service cash cost,1000000,1.00,0.50,600,N * u * r * C,300000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C600-U1.00-R1.00,base-service cash cost,1000000,1.00,1.00,600,N * u * r * C,600000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-MAX-600,maximum base entitlement exposure,1000000,,,600,N * C,600000000,AUD_2026_per_year,Full redemption by every eligible person; same exclusions
+B-C1200-U0.25-R0.50,base-service cash cost,1000000,0.25,0.50,1200,N * u * r * C,150000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U0.25-R1.00,base-service cash cost,1000000,0.25,1.00,1200,N * u * r * C,300000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U0.50-R0.50,base-service cash cost,1000000,0.50,0.50,1200,N * u * r * C,300000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U0.50-R1.00,base-service cash cost,1000000,0.50,1.00,1200,N * u * r * C,600000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U0.75-R0.50,base-service cash cost,1000000,0.75,0.50,1200,N * u * r * C,450000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U0.75-R1.00,base-service cash cost,1000000,0.75,1.00,1200,N * u * r * C,900000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U1.00-R0.50,base-service cash cost,1000000,1.00,0.50,1200,N * u * r * C,600000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C1200-U1.00-R1.00,base-service cash cost,1000000,1.00,1.00,1200,N * u * r * C,1200000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-MAX-1200,maximum base entitlement exposure,1000000,,,1200,N * C,1200000000,AUD_2026_per_year,Full redemption by every eligible person; same exclusions
+B-C2400-U0.25-R0.50,base-service cash cost,1000000,0.25,0.50,2400,N * u * r * C,300000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U0.25-R1.00,base-service cash cost,1000000,0.25,1.00,2400,N * u * r * C,600000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U0.50-R0.50,base-service cash cost,1000000,0.50,0.50,2400,N * u * r * C,600000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U0.50-R1.00,base-service cash cost,1000000,0.50,1.00,2400,N * u * r * C,1200000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U0.75-R0.50,base-service cash cost,1000000,0.75,0.50,2400,N * u * r * C,900000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U0.75-R1.00,base-service cash cost,1000000,0.75,1.00,2400,N * u * r * C,1800000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U1.00-R0.50,base-service cash cost,1000000,1.00,0.50,2400,N * u * r * C,1200000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-C2400-U1.00-R1.00,base-service cash cost,1000000,1.00,1.00,2400,N * u * r * C,2400000000.0000,AUD_2026_per_year,Normalised denominator; excludes support/admin/infrastructure/evaluation/venture; not Australia population
+B-MAX-2400,maximum base entitlement exposure,1000000,,,2400,N * C,2400000000,AUD_2026_per_year,Full redemption by every eligible person; same exclusions
+A-HOURS,38-hour baseline at 80 percent,,,,,38 * 0.8,30.4,hours_per_week,Illustrative constant-output/coverage arithmetic; not measured sector productivity or costs
+A-32H,32-hour reduction from 38,,,,,(38 - 32) / 38 * 100,15.78947368421052631578947368,percent,Illustrative constant-output/coverage arithmetic; not measured sector productivity or costs
+A-OUTPUT,output per hour increase required,,,,,(1 / (1 - 0.2) - 1) * 100,25.00,percent,Illustrative constant-output/coverage arithmetic; not measured sector productivity or costs
+A-STAFF,staff increase for fixed coverage,,,,,(1 / (1 - 0.2) - 1) * 100,25.00,percent,Illustrative constant-output/coverage arithmetic; not measured sector productivity or costs
+A-COST,total cost increase when labour share is 60 percent,,,,,0.6 * 0.25 * 100,15.000,percent,Illustrative constant-output/coverage arithmetic; not measured sector productivity or costs

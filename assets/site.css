@@ -230,3 +230,32 @@ footer p { margin: 0; }
 .directory-list { padding-top: 2rem; }
 @media (max-width: 800px) { .landing-hero { grid-template-columns: 1fr; } .landing-support { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .map-branches { gap: .4rem; } .map-branch { font-size: .76rem; padding: .8rem .3rem; overflow-wrap: anywhere; } }
+
+/* What If candidate: narrowly scoped four-type and long-report layouts. */
+.landing .map-branches { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.landing .map-branches::before { left: calc((100% - 2.25rem) / 8); right: calc((100% - 2.25rem) / 8); }
+.landing .card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.what-if-page .article-header h1 { font-size: clamp(2.35rem, 4.5vw, 4.6rem); }
+.what-if-page .article-copy { max-width: 860px; min-width: 0; }
+.what-if-page .article-copy h2 { scroll-margin-top: 1rem; }
+.what-if-page .premise-box, .what-if-page .status-box { background: var(--mist); border-left: 5px solid var(--teal); margin: 1.5rem 0; padding: 1.2rem 1.4rem; }
+.what-if-page .status-box { border-left-color: var(--ochre); }
+.what-if-page .table-scroll { max-width: 100%; overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--line); }
+.what-if-page table { border-collapse: collapse; min-width: 680px; width: 100%; }
+.what-if-page caption { color: var(--navy); font-weight: 800; padding: .8rem; text-align: left; }
+.what-if-page th, .what-if-page td { border: 1px solid var(--line); padding: .65rem; text-align: left; vertical-align: top; }
+.what-if-page th { background: var(--mist); color: var(--navy); }
+.what-if-page .report-directory { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.what-if-page .report-strand { border-top: 5px solid var(--teal); background: var(--white); padding: 1.4rem; }
+.what-if-page .report-nav { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; margin-top: 3rem; padding-top: 1.5rem; }
+.what-if-page .download-list { columns: 2; padding-left: 1.2rem; }
+.what-if-page code { overflow-wrap: anywhere; }
+@media (max-width: 800px) {
+  .landing .map-branches, .landing .card-grid, .what-if-page .report-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .landing .map-branches::before, .landing .map-branch::before, .landing .map-hub::after { display: none; }
+  .what-if-page .download-list { columns: 1; }
+}
+@media (max-width: 480px) {
+  .landing .map-branches, .landing .card-grid, .what-if-page .report-directory { grid-template-columns: 1fr; }
+  .landing .map-branches::before, .landing .map-branch::before { display: none; }
+}

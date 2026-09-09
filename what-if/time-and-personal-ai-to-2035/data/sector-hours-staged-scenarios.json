@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-09",
+  "assumptions": [
+    "Same ordinary remuneration per worker; unchanged required output",
+    "Zero effective output-per-hour gain in both scenarios",
+    "Costs prorate with months; whole-person staffing constraints excluded",
+    "Additional stage-transition and extended evaluation costs excluded",
+    "National AI inputs and original D0/D1/D2 model files unchanged"
+  ],
+  "initial_no_gain_payroll_factor": "0.111111111111111111111111111",
+  "further_factor_relative_to_intermediate_payroll": "0.125",
+  "scenarios": [
+    {
+      "scenario": "original-full-year-20-percent",
+      "baseline_annual_payroll_aud": "100000000",
+      "other_d2_costs_aud": "10150000",
+      "extra_payroll_aud": "25000000.00",
+      "total_with_20_percent_contingency_aud": "42180000.000",
+      "average_ordinary_hours_reduction_percent": "20.0",
+      "status": "retained-original"
+    },
+    {
+      "scenario": "alternative-six-months-10-then-six-months-20",
+      "baseline_annual_payroll_aud": "100000000",
+      "other_d2_costs_aud": "10150000",
+      "extra_payroll_aud": "18055555.55555555555555555555",
+      "total_with_20_percent_contingency_aud": "33846666.66666666666666666666",
+      "average_ordinary_hours_reduction_percent": "15.00",
+      "status": "unselected-alternative"
+    }
+  ]
+}
