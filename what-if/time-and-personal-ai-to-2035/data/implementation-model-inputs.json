@@ -1,0 +1,121 @@
+{
+  "version": "0.1.0",
+  "date": "2026-09-09",
+  "currency": "2026 AUD unless marked USD",
+  "population_source": {
+    "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2025/3101059.xlsx",
+    "sha256": "7bb703d04bc08c7eb488f617c863e3c536ef8f95980aa048b5d52c360d1942c3",
+    "reference_date": "2025-06-30",
+    "note": "Annual series Excel period marker is June 1; source defines population at June 30. Resident age totals include people ineligible under citizenship/permanent-resident rule."
+  },
+  "population_scenarios": [
+    18000000,
+    20000000,
+    22467512
+  ],
+  "ceilings": [
+    600,
+    1200,
+    2400
+  ],
+  "uptake": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "redemption": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "admin_share_of_service_spend": 0.05,
+  "help_share_of_active": 0.1,
+  "help_cost": 200,
+  "fixed_annual": {
+    "infrastructure_availability": 500000000,
+    "devices_connectivity_pool": 100000000,
+    "evaluation": 100000000,
+    "project_backing_commitments": 250000000
+  },
+  "one_off_platform_transition": 100000000,
+  "wf2_scenario": {
+    "selected_people": 1000000,
+    "ceiling": 600,
+    "uptake": 0.5,
+    "redemption": 0.75,
+    "fixed_annual": {
+      "infrastructure_availability": 100000000,
+      "devices_connectivity_pool": 10000000,
+      "evaluation": 25000000,
+      "project_backing_commitments": 50000000
+    },
+    "one_off": 25000000,
+    "additional_training_annual": 500000000
+  },
+  "project_stages": [
+    {
+      "name": "validation_grant",
+      "awards": 10000,
+      "ceiling": 5000
+    },
+    {
+      "name": "development_grant",
+      "awards": 2000,
+      "ceiling": 50000
+    },
+    {
+      "name": "investment",
+      "awards": 500,
+      "ceiling": 200000
+    }
+  ],
+  "model_prices_usd_per_million": {
+    "gemini-2.5-flash-lite": {
+      "input": 0.1,
+      "output": 0.4,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    "claude-sonnet-4-6": {
+      "input": 3,
+      "output": 15,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    }
+  },
+  "fx_aud_per_usd_scenarios": [
+    1.3,
+    1.5,
+    1.8
+  ],
+  "gross_tax_factor_scenario": 1.1,
+  "token_workloads_million": {
+    "starter": [
+      2,
+      0.5
+    ],
+    "builder": [
+      10,
+      2
+    ],
+    "heavy_agent": [
+      50,
+      10
+    ]
+  },
+  "labour_baseline_payroll": 100000000,
+  "hours_reduction": [
+    0.1,
+    0.15789473684210525,
+    0.2
+  ],
+  "effective_output_per_hour_gain": [
+    0,
+    0.1,
+    0.25
+  ],
+  "limits": [
+    "All inputs except the sourced age counts and listed model tariffs are policy/modelling assumptions, not estimates or approved budgets.",
+    "Infrastructure is availability/continuity capacity: do not charge redeemed inference twice.",
+    "No national labour-cost total, inferred citizenship count, programme effectiveness, investment return or eliminated baseline budget is assumed.",
+    "API prices exclude tool/search/hosting/support; tax factor and FX are sensitivities, not tax advice or a spot exchange-rate quote."
+  ]
+}

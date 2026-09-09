@@ -1,0 +1,10 @@
+baseline_ordinary_hours,offer,target_ordinary_hours,reduction_percent,four_equal_days_hours_each,no_gain_additional_payroll_percent,status
+35,initial-10-percent,31.5,10.0,7.875,11.11111111111111111111111110,illustration-not-agreed-roster
+35,final-20-percent,28.0,20.0,7.0,25.00,illustration-not-agreed-roster
+35,fixed-32-hours-comparator,32,8.571428571428571428571428570,8,9.37500,illustration-not-agreed-roster
+37.5,initial-10-percent,33.75,10.0,8.4375,11.11111111111111111111111110,illustration-not-agreed-roster
+37.5,final-20-percent,30.00,20.0,7.50,25.00,illustration-not-agreed-roster
+37.5,fixed-32-hours-comparator,32,14.66666666666666666666666667,8,17.187500,illustration-not-agreed-roster
+38,initial-10-percent,34.2,10.0,8.55,11.11111111111111111111111110,illustration-not-agreed-roster
+38,final-20-percent,30.4,20.0,7.6,25.00,illustration-not-agreed-roster
+38,fixed-32-hours-comparator,32,15.78947368421052631578947368,8,18.7500,illustration-not-agreed-roster

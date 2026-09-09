@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-09",
+  "status": "illustrative design assumptions; no quotes or spending authority",
+  "currency": "AUD constant September 2026 planning dollars; gross resource envelopes, tax treatment to reconcile",
+  "contingency_share": "0.20",
+  "stages": {
+    "D0": {
+      "period": "3 months preparation",
+      "items": {
+        "legal_eligibility_procurement": 150000,
+        "synthetic_prototype": 100000,
+        "independent_evaluation_design": 100000
+      }
+    },
+    "D1": {
+      "period": "6 months service; analysis included",
+      "people": 1000,
+      "months": 6,
+      "annual_ceiling": 1200,
+      "redemption_expected": "0.75",
+      "items": {
+        "administration": 100000,
+        "optional_help": 100000,
+        "device_connectivity_pool": 100000,
+        "infrastructure": 150000,
+        "evaluation": 250000,
+        "management": 150000,
+        "project_commitments": 100000
+      }
+    },
+    "D2": {
+      "period": "12 months service plus follow-up analysis allowance",
+      "people": 4000,
+      "months": 12,
+      "annual_ceiling": 1200,
+      "redemption_expected": "0.75",
+      "items": {
+        "administration": 400000,
+        "optional_help": 400000,
+        "device_connectivity_pool": 400000,
+        "infrastructure": 500000,
+        "evaluation": 1000000,
+        "management": 500000,
+        "project_commitments": 1150000,
+        "time_redesign": 1000000
+      },
+      "time_workplaces": 40,
+      "employees_per_workplace": 25,
+      "baseline_annual_payroll": 100000000,
+      "hours_reduction": "0.20",
+      "effective_gain_scenarios": [
+        "0",
+        "0.10",
+        "0.25"
+      ]
+    },
+    "C": {
+      "period": "up to 12 months broad public campaign",
+      "items": {
+        "content": 100000,
+        "accessibility_translation": 75000,
+        "three_survey_waves": 225000,
+        "public_forums": 100000,
+        "staff": 200000,
+        "legal_accounts": 100000,
+        "broad_distribution": 200000
+      }
+    }
+  },
+  "precision": {
+    "survey_completes": [
+      1000,
+      2000,
+      4000
+    ],
+    "design_effects": [
+      "1",
+      "1.5",
+      "2"
+    ],
+    "z": "1.96",
+    "p": "0.5",
+    "cluster_people": 1000,
+    "cluster_size": 25,
+    "icc": [
+      "0.01",
+      "0.05",
+      "0.10"
+    ],
+    "followup_response_share": "0.8"
+  }
+}

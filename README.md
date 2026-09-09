@@ -69,3 +69,7 @@ International licence](LICENSE). Cite the author, title, repository and licence,
 ## Publication continuity
 
 This collection continues the published material from [AI-Policy](https://github.com/OurResilientWorld/AI-Policy). Existing paths, report wording, original citations and licences are retained. Collection branding and navigation have changed; research findings and simulation calculations have not. The original repository remains available for earlier links. New feedback belongs in this repository's issue forms.
+
+## What If Research
+
+[Browse What If Research](https://research.ourresilient.world/what-if/index.html). The first programme, [Time and Personal AI to 2035](https://research.ourresilient.world/what-if/time-and-personal-ai-to-2035/index.html), contains six full reports, a [reusable method](https://research.ourresilient.world/what-if/method/index.html) and inspectable evidence/calculation downloads. What If begins from labelled design premises and investigates responsible implementation; designed success is not observed proof or a forecast.

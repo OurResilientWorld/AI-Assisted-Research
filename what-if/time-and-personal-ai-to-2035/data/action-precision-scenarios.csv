@@ -1,0 +1,13 @@
+kind,nominal_n,responding_n,design_effect,effective_n,half_width_percentage_points,icc,note
+probability_survey_illustration,1000,1000,1,1000,3.099032106965011745358915673,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,1000,1000,1.5,666.6666666666666666666666667,3.795523679283268547475680092,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,1000,1000,2,500,4.382693235899587804961980391,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,2000,2000,1,2000,2.191346617949793902480990195,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,2000,2000,1.5,1333.333333333333333333333333,2.683840531775313955939151936,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,2000,2000,2,1000,3.099032106965011745358915673,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,4000,4000,1,4000,1.549516053482505872679457837,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,4000,4000,1.5,2666.666666666666666666666667,1.897761839641634273737840046,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+probability_survey_illustration,4000,4000,2,2000,2.191346617949793902480990195,,95% normal approximation at p=.5; excludes coverage nonresponse measurement bias; not opt-in poll MOE
+clustered_descriptive_illustration,1000,800.0,1.24,645.1612903225806451612903226,3.858263858265787399645666880,0.01,One descriptive proportion only; no causal power or national inference; equal clusters and conservative original m
+clustered_descriptive_illustration,1000,800.0,2.20,363.6363636363636363636363636,5.139163356033742580258122217,0.05,One descriptive proportion only; no causal power or national inference; equal clusters and conservative original m
+clustered_descriptive_illustration,1000,800.0,3.40,235.2941176470588235294117647,6.388818357098595740291312127,0.10,One descriptive proportion only; no causal power or national inference; equal clusters and conservative original m

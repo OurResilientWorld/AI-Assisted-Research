@@ -1,0 +1,10 @@
+hours_reduction,effective_output_gain,required_fte_multiplier,funded_additional_payroll_share,reference_payroll,additional_payroll,note
+0.1,0,1.111111111111111111111111111,0.111111111111111111111111111,100000000,11111111.11111111111111111110,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.1,0.1,1.010101010101010101010101010,0.010101010101010101010101010,100000000,1010101.010101010101010101000,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.1,0.25,0.8888888888888888888888888889,0,100000000,0,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.15789473684210525,0,1.187499999999999981445312500,0.187499999999999981445312500,100000000,18749999.99999999814453125000,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.15789473684210525,0.1,1.079545454545454528586647727,0.079545454545454528586647727,100000000,7954545.454545452858664772700,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.15789473684210525,0.25,0.9499999999999999851562500000,0,100000000,0,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.2,0,1.25,0.25,100000000,25000000.00,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.2,0.1,1.136363636363636363636363636,0.136363636363636363636363636,100000000,13636363.63636363636363636360,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
+0.2,0.25,1,0,100000000,0,"Constant required output and remuneration; staffing indivisibility, skill mix, capital and redesign extra"
