@@ -1,0 +1,412 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Australia population explorer — user guide</title><style>
+:root{color-scheme:light;font-family:system-ui,sans-serif;color:#17333f;background:#f4f3ee}
+*{box-sizing:border-box}body{margin:0;line-height:1.65}main{max-width:1080px;margin:32px auto;padding:40px;background:white;border-top:7px solid #176d64}
+h1,h2,h3{line-height:1.25}h1{font-size:2.3rem}h2{margin-top:2.5rem;border-top:1px solid #ccd9d5;padding-top:1.4rem}h3{margin-top:2rem}
+a{color:#12665c}p,li,td{overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:.95rem}th,td{padding:10px;border:1px solid #cbd8d4;text-align:left;vertical-align:top}th{background:#edf4f1}
+pre{overflow:auto;padding:16px;background:#f4f6f5}code{font-size:.9em}details{border:1px solid #cbd8d4;padding:14px 18px;background:#f3f7f5;margin:16px 0}summary{cursor:pointer;font-weight:650}summary:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #bb6422;outline-offset:3px}
+.tools{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}button{font:inherit;padding:9px 16px;border:1px solid #8aa39c;border-radius:6px;background:white;cursor:pointer}.status{color:#516771;font-size:.9rem}nav{background:#f3f7f5;padding:20px}nav ul{columns:2;padding-left:22px}nav li{break-inside:avoid}
+@media(max-width:700px){main{margin:0;padding:20px}h1{font-size:1.9rem}nav ul{columns:1}}
+@media print{body{background:white}main{padding:0;margin:0;max-width:none;border:0}.tools,nav{display:none}h2,h3{break-after:avoid}details,table,tr{break-inside:avoid}a{color:inherit}}
+</style><meta name="description" content="A practical guide to the Australia population explorer: history, migration experiments, policy comparisons and saved results."><link rel="stylesheet" href="explorer.css"></head><body class="explorer-guide"><a class="orw-skip" href="#main">Skip to main content</a>
+<header class="orw-site-header">
+<a class="orw-brand" href="../../index.html" aria-label="AI-Assisted Research home"><span class="orw-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="orw-brand-text"><strong>AI-Assisted Research</strong><small>Our Resilient World</small></span></a>
+<nav class="orw-site-nav" aria-label="Primary"><a href="../../research/index.html">Hypotheses Research</a><a href="../../resilience-research/index.html">Resilience Research</a><a href="../index.html">Resilience Simulations</a><a href="../../what-if/index.html">What If Research</a></nav>
+</header>
+<div class="orw-context"><nav class="orw-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">AI-Assisted Research</a></li><li><a href="../index.html">Resilience Simulations</a></li><li aria-current="page">Australia population explorer — user guide</li></ol></nav>
+<p class="orw-byline">By Rick Molony, Our Resilient World · Developed with AI assistance.</p><p class="orw-switch"><a href="index.html">Open the simulator</a><a href="guide.html">Read the user guide</a></p></div><main id="main" tabindex="-1"><p class="status">Updated 24 September 2026 · Matches the human-tested simulator</p><div class="tools"><button onclick="window.print()">Print this guide</button></div>
+<header id="title-block-header">
+<h1 class="title">Australia population explorer — user guide</h1>
+<p class="date">2026-09-24</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#start-here-a-five-minute-experiment"
+id="toc-start-here-a-five-minute-experiment">Start here: a five-minute
+experiment</a></li>
+<li><a href="#what-the-numbers-mean" id="toc-what-the-numbers-mean">What
+the numbers mean</a></li>
+<li><a href="#understand-the-past" id="toc-understand-the-past">1 ·
+Understand the past</a></li>
+<li><a href="#try-changes" id="toc-try-changes">2 · Try changes</a></li>
+<li><a href="#compare-policies" id="toc-compare-policies">3 · Compare
+policies</a></li>
+<li><a href="#save-export-and-print"
+id="toc-save-export-and-print">Save, export and print</a></li>
+<li><a href="#data-and-limits-to-keep-in-mind"
+id="toc-data-and-limits-to-keep-in-mind">Data and limits to keep in
+mind</a></li>
+</ul>
+</nav>
+<p>Use the simulator to understand past population changes, try your own
+assumptions and compare possible policy pathways to 2045. Its future
+numbers are <strong>conditional scenarios</strong>, not predictions.</p>
+<p><a href="index.html">Open the simulator</a></p>
+<p>This guide describes the application that passed human usability
+testing on 24 September 2026, including the revised graph lines and
+download retry link.</p>
+<h2 id="start-here-a-five-minute-experiment">Start here: a five-minute
+experiment</h2>
+<ol type="1">
+<li>Open <strong>2 · Try changes</strong> and click <strong>Reset
+all</strong>.</li>
+<li>Leave the starting point as <strong>Migration categories · recent
+annual figures</strong>. Choose <strong>2027</strong> through
+<strong>2045</strong>.</li>
+<li>Select <strong>Family — permanent</strong>. Change
+<strong>arrive</strong> from <strong>24,390</strong> to
+<strong>34,390</strong>, using the number box.</li>
+<li>Read <strong>Difference from starting scenario</strong> with
+<strong>Compare year</strong> set to <strong>2045</strong>. It should
+show <strong>+226,395</strong> people physically here, rounded to a
+whole person. The extra arrivals also affect later births and
+deaths.</li>
+<li>The <strong>solid grey line</strong> is Starting settings. The
+<strong>dashed green line</strong> is Your scenario. Their separation
+shows your change. Click <strong>Reset all</strong> before trying a
+different example in isolation.</li>
+</ol>
+<h2 id="what-the-numbers-mean">What the numbers mean</h2>
+<p><strong>People physically here = residents + non-resident visitors
+here − residents temporarily overseas.</strong></p>
+<p>Residents are people counted in Australia’s resident population. They
+can include people temporarily overseas. “Physically here” instead
+counts people present in Australia at the June date shown, including
+visiting travellers.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Measure</th>
+<th>How to read it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Population or visitors at June</td>
+<td>A count at one date. Do not add yearly population snapshots
+together.</td>
+</tr>
+<tr>
+<td>Arrive, leave, births and deaths</td>
+<td>Numbers during a financial year, from July to June.</td>
+</tr>
+<tr>
+<td>Net migration / balance</td>
+<td>Arrivals minus departures. A negative result means more people left
+than arrived.</td>
+</tr>
+<tr>
+<td>Visa grants</td>
+<td>Permissions granted. A grant does not necessarily mean a new
+arrival.</td>
+</tr>
+<tr>
+<td>Residents aged 65+</td>
+<td>The share of residents aged 65 or older; visitors are not included
+in this percentage.</td>
+</tr>
+</tbody>
+</table>
+<p>A control for the <strong>year ending June 2036</strong> applies to
+July 2035–June 2036. Future settings cover 19 financial years ending
+June 2027–2045. The June 2026 starting population is modelled, not an
+observed count.</p>
+<p>Population charts use <strong>millions</strong>. The
+refugee/humanitarian chart uses <strong>thousands of visa
+grants</strong>. Tables and exported population counts use people or
+grants as labelled. Chart axes can start above zero; read their labels
+before judging the size of a gap.</p>
+<h2 id="understand-the-past">1 · Understand the past</h2>
+<h3 id="choose-a-year-or-a-government-period">Choose a year or a
+government period</h3>
+<p>The population chart covers 25 June dates,
+<strong>2000–2024</strong>. Drag its circle, move the slider, or focus
+the chart and use the arrow keys. Home and End select the first and last
+years.</p>
+<p>Selecting a year makes the migration, change and grant panels
+describe that financial year. A government button instead selects a
+period and changes the linked totals and table rows. The population
+cards still describe the individual June date shown by the slider. Read
+each panel’s date label to distinguish a snapshot from a period
+total.</p>
+<p><strong>All periods</strong> restores the full historical selection
+and June 2024 inspection date. Government periods include whole
+financial years that overlap a government’s term. Transition years can
+appear under two government buttons, so <strong>do not add the
+government-period totals together</strong>. A government’s timing does
+not by itself establish what caused a change.</p>
+<h3 id="read-the-historical-panels">Read the historical panels</h3>
+<ul>
+<li><strong>Orange, 2000–2006:</strong> resident population.
+<strong>Green, from 2007:</strong> people physically here. Early
+physical-presence data is unavailable. The gap between the series marks
+a different counting method, not a sudden population jump.</li>
+<li><strong>Look inside migration:</strong> arrivals, departures and
+their balance for the selected dates. Category data starts in
+<strong>2004–05</strong>, so All periods totals cover 20 available
+financial years through June 2024, not all 25 snapshots. Missing early
+years are excluded and explained above the table.</li>
+<li><strong>Balance / arrivals (%):</strong> balance divided by
+arrivals. It is not the percentage of the same migrants who stayed:
+arrivals and departures are not matched individuals.</li>
+<li><strong>What changed the number …?:</strong> births, deaths, net
+migration and, where available, temporary travel changes. <strong>Total
+change</strong> adds the contributions. If the selection includes years
+without the necessary physical-presence data, the heading switches to
+<strong>resident population</strong> and explains the change in
+coverage. June 2000 is a starting snapshot; its preceding annual
+components are unavailable here. Adjustments account for source rounding
+and revisions.</li>
+<li><strong>Annual net migration change:</strong> the percentage change
+from the preceding year’s net migration. A positive net migration count
+can accompany a negative percentage: migration is still adding people,
+but fewer than before. The COVID reversal in 2021 and the return to
+positive migration in 2022 are explained in words. Changes greater than
+100% in either direction are bold.</li>
+<li><strong>Refugee and humanitarian visas:</strong> the solid green
+line shows offshore refugee grants; the dashed purple line shows all
+humanitarian program grants. The grant chart retains the full 2000–2024
+span; the summary and table totals follow your selected dates. Its
+vertical scale is thousands of grants. Protection granted to people
+already in Australia is shown separately in the table.</li>
+</ul>
+<p>The history and grant export buttons save the selected table
+coverage, not necessarily every year available in the underlying
+sources.</p>
+<h2 id="try-changes">2 · Try changes</h2>
+<h3 id="choose-the-starting-point-then-the-dates">Choose the starting
+point, then the dates</h3>
+<p><strong>Migration categories · recent annual figures</strong> repeats
+the pinned 2024–25 arrivals and departures as a starting assumption. It
+is different from <strong>P1 · Historical business as usual</strong>,
+which continues the historical net migration rate. P2 and P3 start from
+the fixed policy comparisons described in Screen 3.</p>
+<p>Choose your starting point before making edits. Switching starting
+points begins a fresh experiment and replaces your existing edits. Save
+a record first if you want to retain them.</p>
+<p>Choose <strong>From year ending June</strong> and
+<strong>Through</strong> before changing a slider or number. Each
+ordinary control edit applies to every year in that inclusive range.
+Changing the date selectors alone does not alter any settings. Controls
+display the first selected year’s value, so a range can contain
+different values left by earlier edits. <strong>What you
+changed</strong> lists affected years.</p>
+<p>The P2 and P3 headline net-migration assumption boxes apply to the
+periods named beside them: P2’s later years or P3’s first three years.
+The date selectors do not narrow those particular fields.</p>
+<p>Choose a category to focus on its controls. <strong>Show
+all</strong>, or clicking the selected category again, restores every
+available control. This only changes what is displayed. <strong>Reset
+all</strong> restores the original migration-category starting point,
+all categories, 2027–2045 editing dates and the 2045 comparison.</p>
+<h3 id="know-which-changes-accumulate">Know which changes
+accumulate</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Control</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category arrive / leave</td>
+<td>Changes annual resident migration in the selected years. People
+added to the resident population can affect later population, births and
+deaths.</td>
+</tr>
+<tr>
+<td>Non-resident visitors physically here</td>
+<td>Changes how many visitors are present at each selected June date. It
+does not add residents or change net migration.</td>
+</tr>
+<tr>
+<td>Residents temporarily overseas</td>
+<td>Changes how many residents are absent at each selected June date.
+More away means fewer physically here, while the resident count stays
+the same.</td>
+</tr>
+<tr>
+<td>Protection granted to people already in Australia</td>
+<td>Records grants to people already here. Changing it does not add
+people to the population; possible effects on later departures are not
+estimated.</td>
+</tr>
+<tr>
+<td>Children per woman</td>
+<td>Changes the fertility assumption applied to the age pattern of
+births. It is an experiment, not a promised policy outcome.</td>
+</tr>
+<tr>
+<td>Annual reduction in age-specific mortality</td>
+<td>Lowers death probabilities from each selected year, with the
+reduction carried forward. A later zero means no further improvement; it
+does not undo previous gains.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Visitor example:</strong> reset, choose 2036–2045, and
+increase visitors from <strong>502,700 to 602,700</strong>. There are
+<strong>100,000 more people physically here in each June from 2036 to
+2045</strong>. Earlier years, residents and net migration are unchanged.
+This is an ongoing difference at each snapshot, not one million extra
+residents accumulated over ten years. The visitors need not be the same
+individuals each year.</p>
+<h3 id="read-the-result">Read the result</h3>
+<p>The solid baseline and dashed scenario remain conditional
+projections. When settings match, the lines overlap. <strong>Compare
+year</strong> switches the headline results between 2035 and 2045; it
+does not change your edit dates or shorten the annual table.</p>
+<p>Open <strong>Annual results and population balance</strong> for each
+June count, births, deaths and net migration. Use <strong>Look inside
+your scenario’s migration</strong> to inspect category flows in a chosen
+year. Policy-total experiments have no invented category breakdown
+because their starting assumptions specify only net migration.</p>
+<p>If an input is invalid, the error message explains the problem. The
+chart and exports keep the last valid scenario until you correct it.</p>
+<h2 id="compare-policies">3 · Compare policies</h2>
+<p>Screen 3 compares reviewed policy statements and explicitly stated
+modelling assumptions against historical business as usual. The
+comparison’s sources were checked on <strong>21 September 2026</strong>;
+it is not a live policy feed.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Pathway</th>
+<th>What the displayed comparison assumes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1 · Historical business as usual</strong> — solid
+green</td>
+<td>Continues the historical net migration rate, about 0.928% of
+population per year.</td>
+</tr>
+<tr>
+<td><strong>P2 · Labor + stated assumptions</strong> — purple
+dashed</td>
+<td>Net migration of 245,000 in 2026–27 and 225,000 in 2027–28, then an
+assumed 225,000 annually. The continuation is a modelling choice.</td>
+</tr>
+<tr>
+<td><strong>P3 · One Nation + stated assumptions</strong> — orange
+dotted</td>
+<td>An illustrative −100,000 net migration per year in the first three
+years, then 130,000 annually. The initial number and timing are
+assumptions, not a party-announced schedule.</td>
+</tr>
+<tr>
+<td><strong>P4 · Coalition · awaiting policy</strong></td>
+<td>No numerical line is supplied. Blank means unavailable, not zero
+migration.</td>
+</tr>
+</tbody>
+</table>
+<p>Read <strong>What would change for each group?</strong> for category
+descriptions and sources, and <strong>Read the annual
+assumptions</strong> for yearly net migration. The same migration
+category names are used across the simulator.</p>
+<p>Buttons to try another assumption or group take you to Screen 2. Your
+experiments change Screen 2 only; Screen 3’s comparison remains fixed.
+Policy-total experiments expose the relevant total and birth/travel
+assumptions rather than guessing party allocations to individual visa
+groups.</p>
+<p><strong>Fewer visas do not automatically mean the same number of
+people leave.</strong> Someone already here can change from a temporary
+to a permanent visa without leaving Australia. Use arrivals and
+departures for your own population experiment; do not enter a
+visa-holder reduction as an equivalent departure count without an
+additional assumption.</p>
+<h2 id="save-export-and-print">Save, export and print</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Button</th>
+<th>What you receive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Save scenario</strong></td>
+<td><code>australia-scenario.json</code>: a record of your name,
+starting mode and annual settings. The current interface does not have a
+Load scenario button.</td>
+</tr>
+<tr>
+<td><strong>Export results CSV</strong></td>
+<td><code>australia-results.csv</code>: scenario metadata and all 20
+June results, 2026–2045. The first year is the modelled starting point;
+its annual flow cells are blank.</td>
+</tr>
+<tr>
+<td><strong>Export policy comparison CSV</strong></td>
+<td><code>australia-policy-categories.csv</code>: the category
+comparison and source links.</td>
+</tr>
+<tr>
+<td><strong>Export history CSV</strong> / <strong>Export grant history
+CSV</strong></td>
+<td><code>australia-history.csv</code> /
+<code>australia-humanitarian-grants.csv</code>: the selected historical
+coverage.</td>
+</tr>
+<tr>
+<td><strong>Print views</strong></td>
+<td>Opens the browser’s print dialogue. Expand any details you want
+first, and check print preview. You can choose a PDF destination if your
+browser provides one.</td>
+</tr>
+</tbody>
+</table>
+<p>Give your scenario a useful name before saving. Editing alone does
+not save a file; keep a record before closing or reloading the page.
+JSON stores settings, while CSV is a table of results you can open in a
+spreadsheet. A CSV being identified as a text file is normal.</p>
+<p>After saving or exporting, <strong>Download requested</strong> means
+the browser has been asked to save the file; it is not confirmation that
+saving finished. Check your browser’s Downloads list. The latest
+<strong>Save … again</strong> link remains available while the page is
+open. If needed, right-click it and choose <strong>Save link as</strong>
+to select a filename and a writable destination. Look for the final
+<code>.json</code> or <code>.csv</code> file, rather than a temporary
+Chromium filename.</p>
+<p>On a narrow screen, tables can scroll sideways. Keyboard users can
+Tab between controls and links, use arrow keys on sliders, and enter an
+exact number in the paired number box.</p>
+<h2 id="data-and-limits-to-keep-in-mind">Data and limits to keep in
+mind</h2>
+<p>Historical population display ends in June 2024. The migration
+starting settings use a later, pinned 2024–25 source period. This
+difference is deliberate. Data does not automatically refresh when you
+open the application.</p>
+<p>All migration categories use the observed overall migrant age pattern
+because separate visa-specific age patterns are unavailable here. The
+simulator does not model individual visa journeys, housing prices,
+service capacity or wider economic and environmental consequences.
+Passing usability and arithmetic checks does not establish that a
+scenario will happen.</p>
+<p>Read the public sources below for the definitions and data behind the simulator. Source links are optional navigation; calculations work locally without accounts or an online data connection.</p>
+<section aria-labelledby="sources-and-method"><h2 id="sources-and-method">Sources and method</h2><p>The simulator retains pinned source data. Its history ends in June 2024; migration-category starting settings use 2024–25. Policy statements were checked on 21 September 2026. These pages can subsequently publish newer releases; opening this explorer does not refresh its inputs.</p><ul>
+<li><a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population">ABS National, state and territory population</a> — residents, births, deaths and population change.</li>
+<li><a href="https://www.abs.gov.au/articles/population-physically-present-australia">ABS Population physically present in Australia</a> — visitors and residents temporarily overseas.</li>
+<li><a href="https://www.abs.gov.au/statistics/people/population/overseas-migration">ABS Overseas Migration</a> — arrivals, departures, visa groups and migrant age patterns.</li>
+<li><a href="https://www.abs.gov.au/statistics/people/population/births-australia">ABS Births, Australia</a> and <a href="https://www.abs.gov.au/statistics/people/population/life-tables">ABS Life Tables</a> — fertility and survival inputs.</li>
+<li><a href="https://www.homeaffairs.gov.au/research-and-statistics/statistics/visa-statistics/live/historical-migration">Home Affairs Historical Migration Statistics</a> — refugee and humanitarian visa grants, Table 4.1 of the 2024–25 workbook.</li>
+</ul><p>Screen 3 links each policy comparison to its reviewed government, party or reporting source. Announced statements and added numerical assumptions are distinguished there. The model ages residents and applies births, deaths and net migration each year, then adjusts physical presence for visitor and overseas-travel snapshots. Detailed limitations and worked examples appear above. This is an exploratory model, not a forecast.</p></section>
+</main><footer class="orw-footer"><nav class="orw-utility" aria-label="Supporting pages"><a href="../../policy-responses/index.html">Policy Responses</a><a href="../../index.html#method">Method</a><a href="../../index.html#contribute">Contribute</a><a href="../index.html">All simulations</a></nav><p><strong>AI-Assisted Research · <a href="https://www.ourresilient.world/">Our Resilient World</a></strong><br>Research by <a href="mailto:rick.molony@ourresilient.world">Rick Molony</a>, developed with AI assistance.</p><p>Except where otherwise noted, original content is licensed <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en">CC BY 4.0</a>. Linked third-party sources and datasets retain their own attribution and terms.</p></footer></body></html>
