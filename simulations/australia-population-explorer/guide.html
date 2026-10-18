@@ -1,24 +1,260 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Australia population explorer · User guide</title><style>body{max-width:980px;margin:30px auto;padding:24px;font:17px/1.65 system-ui;color:#193645}h1{font-size:36px;line-height:1.2}h2{margin-top:2em}a{color:#006f70}table{display:block;overflow:auto;border-collapse:collapse}th,td{padding:10px;border:1px solid #cad7d7;text-align:left}img{max-width:100%}@media print{body{margin:0;padding:0}}</style></head><body><h1 id="australia-population-explorer">Australia population
-explorer</h1>
-<p><strong>AI-Assisted Research · Our Resilient World</strong><br> By
-Rick Molony · Developed with AI assistance.</p>
-<p><a href="index.html">Open the explorer</a></p>
-<p>Explore how Australia’s population could change under different
-migration, birth, mortality and travel assumptions. The dashboard places
-historical evidence, conditional futures and editable assumptions
-together. It does not predict a single future or recommend a political
-party.</p>
-<h2 id="start-with-the-chart">Start with the chart</h2>
-<p>The default measure is <strong>People physically here</strong>:
-residents plus visitors temporarily in Australia, minus residents
-temporarily overseas. Resident population and the share aged 65 or older
-are alternative measures.</p>
-<p>History occupies the left panel. Conditional futures occupy the
-slightly wider right panel. Both use the same vertical scale; the
-vertical axis does not start at zero. Years have different horizontal
-spacing between panels, so compare their values rather than their
-apparent slopes. The narrow shaded gap separates the last observation
-from the 2026 model anchor. No missing observations are filled in.</p>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2026-10-19" />
+  <title>Australia population explorer — V4.2 user guide</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<meta name="source-sha256" content="f6417085c2d4be98dc15eca3957ec959937ff966a71fd9568b573add38b02279"><style>body{max-width:1040px;margin:0 auto;padding:28px;color:#223547;background:#f5f7f8;font:17px/1.65 system-ui,sans-serif}h1{font-size:38px;line-height:1.2}h2{margin-top:2.2em;border-top:1px solid #dbe3e8;padding-top:20px}h3{margin-top:1.8em}a{color:#006e79;text-underline-offset:3px}a:focus-visible{outline:3px solid #bf711f;outline-offset:3px}nav{padding:18px;background:#e7f2ef;border-radius:9px}table{width:100%;border-collapse:collapse;font-size:15px;background:white}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #dbe3e8}th{background:#e7f2ef}blockquote{border-left:4px solid #007c78;padding:18px;background:#e7f2ef;margin:20px 0}code{overflow-wrap:anywhere;font-size:.9em}.skip{position:absolute;top:-100px}.skip:focus{top:10px;background:white;padding:12px}li{margin:8px 0}@media(max-width:600px){body{padding:18px;font-size:16px}h1{font-size:29px}table{font-size:13px}th,td{padding:7px;overflow-wrap:anywhere}}@media print{body{background:white;font-size:11pt;padding:0}nav,.skip{display:none}h1{font-size:25pt}h2{break-after:avoid}tr{break-inside:avoid}table{font-size:10pt}a{color:inherit}}</style></head>
+<body><a class="skip" href="#main">Skip to guide</a><main id="main">
+
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#australia-population-explorer-user-guide"
+id="toc-australia-population-explorer-user-guide">Australia population
+explorer — user guide</a>
+<ul>
+<li><a href="#try-an-experiment-in-two-minutes"
+id="toc-try-an-experiment-in-two-minutes">Try an experiment in two
+minutes</a></li>
+<li><a href="#compare-four-futures"
+id="toc-compare-four-futures">Compare four futures</a></li>
+<li><a href="#read-the-charts-and-numbers"
+id="toc-read-the-charts-and-numbers">Read the charts and
+numbers</a></li>
+<li><a href="#use-the-migration-levers"
+id="toc-use-the-migration-levers">Use the migration levers</a></li>
+<li><a href="#set-timing-and-secondary-assumptions"
+id="toc-set-timing-and-secondary-assumptions">Set timing and secondary
+assumptions</a></li>
+<li><a href="#explore-history" id="toc-explore-history">Explore
+History</a></li>
+<li><a href="#save-load-export-and-recover"
+id="toc-save-load-export-and-recover">Save, load, export and recover</a>
+<ul>
+<li><a href="#earlier-saved-files" id="toc-earlier-saved-files">Earlier
+saved files</a></li>
+</ul></li>
+<li><a href="#keyboard-access-and-limitations"
+id="toc-keyboard-access-and-limitations">Keyboard access and
+limitations</a></li>
+<li><a href="#sources-and-terms" id="toc-sources-and-terms">Sources and
+terms</a></li>
+</ul></li>
+</ul>
+</nav>
+<section id="australia-population-explorer-user-guide" class="level1">
+<h1>Australia population explorer — user guide</h1>
+<p><strong>Version 4.2 · Updated 19 October 2026</strong><br />
+AI-Assisted Research · Our Resilient World<br />
+By Rick Molony · Developed with AI assistance.</p>
+<p><a href="index.html">Open the explorer</a> · <a
+href="https://research.ourresilient.world/simulations/index.html">All
+simulations</a></p>
+<p>Compare four possible futures, change migration assumptions and
+inspect the historical evidence. The explorer shows conditional
+experiments, not forecasts, party endorsements or estimates of what a
+policy is certain to achieve.</p>
+<p>The first tab is <strong>Projections</strong>.
+<strong>History</strong> follows it. Switching between them preserves
+your projection settings for the current visit.</p>
+<section id="try-an-experiment-in-two-minutes" class="level2">
+<h2>Try an experiment in two minutes</h2>
+<ol type="1">
+<li>Open <strong>Projections</strong>. BAU is the initial starting
+future, with no edits. Your teal line overlaps BAU. Both charts
+initially inspect 2045; the population measure is <strong>Resident
+population</strong>.</li>
+<li>Under <strong>Students</strong>, move <strong>Arrivals</strong> to
+<strong>+5%</strong>. This adds about <strong>7,836 arrivals per
+year</strong> at full effect, using observed 2024–25 student arrivals as
+the scale. The population and annual net-migration charts respond.</li>
+<li>Use <strong>Undo</strong>, then <strong>Redo</strong>, to compare
+the change. The four fixed reference futures do not move.</li>
+<li>Open the Students <strong>Policy &amp; controls</strong> button.
+Read the party statements beside the related sliders. A family-arrivals
+reduction is your assumed effect; it is not a measured party
+allocation.</li>
+<li>Open <strong>Numbers &amp; changes</strong> below the charts to
+inspect the annual accounting and your settings. Use <strong>Save
+scenario ↓</strong> to keep a file that reproduces your experiment.</li>
+<li>Open <strong>History</strong>, choose a year and a migration
+category, then return to <strong>Projections</strong>. Your edits remain
+in place.</li>
+</ol>
+</section>
+<section id="compare-four-futures" class="level2">
+<h2>Compare four futures</h2>
+<p>The cards show resident population in the inspected year. Select
+<strong>Use Labor</strong>, <strong>Use Coalition</strong>, <strong>Use
+One Nation</strong> or <strong>Use BAU</strong> to choose your starting
+future. Choosing another base retains your category and other edits; it
+does not reset the experiment. <strong>Reset</strong> restores the
+initial BAU settings, resident-population chart and 2045 inspection
+year. Reset takes effect immediately and can be undone.</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -26,204 +262,382 @@ from the 2026 model anchor. No missing observations are filled in.</p>
 </colgroup>
 <thead>
 <tr>
-<th>Line</th>
-<th>Meaning</th>
+<th>Fixed future</th>
+<th>What it represents</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Black history</td>
-<td>Observed resident population, or observed physical presence from
-2007.</td>
+<td><strong>BAU</strong> — slate</td>
+<td>A continuation of the pinned historical net-migration rate. Your
+unedited scenario reproduces its annual schedule.</td>
 </tr>
 <tr>
-<td>Amber early history</td>
-<td>Residents used as a clearly labelled proxy for physical presence in
-2000–2006. It is not an observed presence series.</td>
+<td><strong>Labor</strong> — purple</td>
+<td>245,000 net migrants in 2027 and 225,000 in 2028; 225,000 thereafter
+is an explicit continuation assumption.</td>
 </tr>
 <tr>
-<td>Thick solid black future</td>
-<td>Historical BAU: the model continues a historical net-migration rate.
-It is conditional, not a guaranteed prediction.</td>
+<td><strong>Coalition</strong> — blue</td>
+<td>The Liberal–National proposal released on 6 October 2026: 100,000 in
+2028–29, 100,000 in 2029–30, 130,000 in 2030–31 and 160,000 in
+2031–32.</td>
 </tr>
 <tr>
-<td>Dashed purple</td>
-<td>Labor-labelled pathway plus explicit model assumptions.</td>
+<td><strong>One Nation</strong> — orange</td>
+<td>Three initially negative years, modelled as 2027–2029 at an
+illustrative −100,000 a year, followed by 130,000 a year. The negative
+annual amount and model start timing are assumptions.</td>
 </tr>
 <tr>
-<td>Dashed ochre</td>
-<td>One Nation-labelled pathway plus explicit model assumptions.</td>
-</tr>
-<tr>
-<td>Solid teal</td>
-<td>Your personal variation, shown after you change an assumption or
-choose another starting scenario.</td>
+<td><strong>Your scenario</strong> — dashed teal</td>
+<td>Your selected base plus your edits. The fixed party lines remain
+unchanged.</td>
 </tr>
 </tbody>
 </table>
-<p>Only the Labor and One Nation <strong>future curves</strong> are
-dashed. The two dotted vertical boundaries mark the source/model gap;
-they are not pathways. The chart key directly below the chart lets you
-show or hide the fixed references. A solid vertical marker identifies
-the inspected future year. If two scenarios coincide, their curves
-overlap; the numbers and comparison selector make the difference
-explicit.</p>
-<p>The Coalition is marked <strong>Not quantified</strong> because the
-pinned evidence does not define a numerical pathway. This does not mean
-zero migration or that the party has no policy. Select it to read the
-explanation.</p>
-<h2 id="explore-a-possible-future">Explore a possible future</h2>
-<ol type="1">
-<li>Use <strong>Start from</strong> to choose migration categories,
-historical BAU, Labor or One Nation. Starting again replaces your
-editable assumptions after confirmation.</li>
-<li>Select the years to which an edit applies. The default is 2027–2045.
-Sliders and exact-value boxes show the first selected year; a label
-identifies differing annual values.</li>
-<li>Change a main slider and watch the chart and outcome cards respond.
-Use <strong>Details</strong> or <strong>All inputs &amp; annual
-detail</strong> for departures, other categories, age assumptions,
-delayed departures, travel and mortality.</li>
-<li>Use <strong>Compare with</strong> to choose a fixed reference for
-the numerical differences. It does not replace your scenario. Changing
-your assumptions never changes a fixed reference.</li>
-<li>Use the future-year slider, or the 2035/2045 buttons, to inspect
-outcomes. <strong>View the numbers</strong> opens annual results and the
-category-flow breakdown beside the chart.</li>
-</ol>
-<p>Policy-total modes supply net migration directly. They do not invent
-arrivals, departures or category allocations. Their migration controls
-change the specifically labelled assumption years, independently of the
-general year range. Choose migration categories when you want to model
-those individual flows.</p>
-<p><strong>Undo</strong> restores the previous valid assumptions.
-<strong>Reset Chart</strong> confirms before clearing your personal
-changes and returning the actual calculation and comparison to
-<strong>Historical BAU</strong>. The starting and reset views are
-identical: observed history, the thick black <strong>BAU · projected
-future</strong> line, and the dashed Labor and One Nation pathways.
-History and projected BAU have separate keys. The measure returns to
-People physically here, the inspected year to 2045, and the edit
-interval to 2027–2045. Both party comparisons are checked; category
-starting settings are not a chart pathway.</p>
-<p>The green personal curve is hidden while the calculation is
-unmodified BAU. It reappears when you change an assumption or choose
-another starting scenario. To vary migration categories after resetting,
-choose Migration categories under Start from; BAU itself uses a fixed
-historical migration rate. Undo recovers previous assumptions after a
-reset; it does not rewind chart-view choices. Saving and loading an
-unmodified BAU scenario also keeps the redundant green curve hidden.
-First opening the app uses exactly the same BAU inputs and chart view as
-Reset Chart. Older saved files remain loadable; a previously saved
-category-start chart line is omitted, while its numerical comparison and
-model inputs remain supported.</p>
-<h2 id="understand-what-changed">Understand what changed</h2>
-<p>Outcome cards distinguish residents, older residents, physical
-presence and annual net migration. The comparison explanation reports
-the selected measure. A separate line attributes the resident-population
-effect of your edits against the unedited starting mode. A difference
-from BAU alone does not prove that you edited anything: category
-starting settings and historical BAU are different scenarios.</p>
-<p><strong>Review changes</strong> lists changed assumptions.
-<strong>Sources &amp; interpretation</strong>, immediately after it,
-explains the reference pathways, evidence and measurement definitions.
-<strong>Method &amp; limitations</strong> is in the footer.</p>
-<p>In detailed annual results, 2026 is an initial modelled snapshot:
-annual flows are shown as unavailable, not zero observations. Age groups
-are 0–19, 20–64 and 65+. Onshore protection grants change the status of
-people already here and are not counted as new arrivals. Visitors and
-residents abroad are stocks at June, not annual flow totals.</p>
-<h2 id="explore-the-history">Explore the history</h2>
-<p>Choose <strong>Explore the history</strong>. Select a June year with
-the menu, or click/drag within the historical chart while the history
-panel is open. The menu provides the same selection without a pointer.
-Choose a government period to total overlapping financial years, or Show
-all periods to return to the full history.</p>
-<p>The panel includes population-change components, annual net migration
-and changes from the preceding year, migration categories, and
-refugee/humanitarian grants. Expand the sections you need. Historical
-selection does not alter your future assumptions.</p>
-<p>Government changes can occur within a financial year. Mixed years are
-labelled and can appear in both adjacent period totals: <strong>do not
-add those totals together</strong>. Timing alone does not establish that
-a government caused a result. COVID-related changes have specific
-explanations where ordinary percentage comparisons would mislead.</p>
-<p>Category history begins in 2004–05. Earlier category data is
-unavailable. A dash in the grants table means source N/A, not zero. Visa
-grants, border movements, population stocks and unique people are
-different measures. The category balance divided by arrivals is not an
-individual retention rate. Selected history and grants can be saved as
-CSV.</p>
-<h2 id="read-political-proposals-in-context">Read political proposals in
-context</h2>
-<p><strong>Policy detail</strong> includes fixed scenario results,
-annual net-migration assumptions, and written category proposals with
-their source links. The source-policy review date is 21 September 2026;
-the dataset is a pinned snapshot and is not automatically updated.</p>
-<p>Labor’s 2027 and 2028 net-migration inputs are 245,000 and 225,000;
-later years use an explicit model assumption. One Nation’s first three
-negative years use an illustrative magnitude of −100,000 annually,
-followed by 130,000. The negative magnitude, annual ceiling attainment
-and the model’s start timing are assumptions, not a complete
-party-announced schedule.</p>
-<p><strong>Explore this category</strong> starts a fresh category
-experiment after confirmation. It does not turn an unquantified written
-proposal into a numerical party promise. Save your current experiment
-first if you want to keep both.</p>
-<h2 id="save-return-and-explain">Save, return and explain</h2>
-<p>The header has three actions: Undo, Reset Chart and <strong>Save
-&amp; share</strong>. Open Save &amp; share for:</p>
+<p>Coalition financial years map to the year in which they end:
+<strong>2029, 2030, 2031 and 2032</strong>. The model uses the existing
+Labor numbers for 2027–2028 as a bridging assumption and holds 160,000
+from 2033–2045 as a continuation assumption. Neither is an announced
+Coalition annual schedule. No housing-completions feedback is
+modelled.</p>
+<p>Labor and One Nation use the retained research snapshot checked on
+<strong>21 September 2026</strong>. Coalition uses the <strong>6 October
+release</strong>, checked on <strong>18 October 2026</strong>. These are
+dated snapshots, not a feed of the latest announcements. Open
+<strong>Future assumptions &amp; totals</strong> to inspect the evidence
+and adjust the numerical assumptions for your selected base.</p>
+</section>
+<section id="read-the-charts-and-numbers" class="level2">
+<h2>Read the charts and numbers</h2>
+<p>The first chart’s title is a button. Choose residents, people
+physically here, an age group, births, deaths, the share aged 65+, or
+the age ratio. The second chart always shows <strong>Annual net
+migration</strong>: arrivals minus departures. Negative net migration
+means more departures than arrivals.</p>
+<p>The <strong>Inspect</strong> slider selects a year from 2026 to 2045.
+It changes which year you read, not when your edits apply. The 2026
+point is a model anchor, not an observed annual flow. Annual future
+flows begin in 2027; the annual results table shows dashes for the
+anchor’s births, deaths and migration.</p>
+<p>Population charts may use a vertical axis above zero. Read the labels
+and numbers rather than judging the line’s visual steepness alone.
+Overlapping lines can be identical. The teal result card reports the
+resident-population difference from the unedited base in the selected
+year.</p>
+<p><strong>People physically here = residents + non-resident visitors
+here − residents temporarily overseas.</strong> Visitors and residents
+abroad are stocks at June; they are not annual immigration or emigration
+totals.</p>
+<p>The age ratio is people aged 65+ per 100 aged 20–64. It is not an
+employment, fiscal-cost or economic-burden estimate. Age 85+ is a subset
+of 65+.</p>
+</section>
+<section id="use-the-migration-levers" class="level2">
+<h2>Use the migration levers</h2>
+<p>All eleven broad categories have separate <strong>Arrivals</strong>
+and <strong>Departures</strong> sliders and exact-value boxes. The
+percentage is a change relative to that category’s observed
+<strong>2024–25 annual flow</strong>. It is not the share of total
+migration or the percentage change in the final population.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Category</th>
+<th>Important distinction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Students</td>
+<td>Accompanying family is not separately identified in the retained
+historical series.</td>
+</tr>
+<tr>
+<td>Working holidays</td>
+<td>Visa stocks and program eligibility are not annual resident
+arrivals.</td>
+</tr>
+<tr>
+<td>Visitors counted as residents</td>
+<td>These movements differ from short-term visitors physically present
+at June.</td>
+</tr>
+<tr>
+<td>Other temporary · including graduates</td>
+<td>The series combines groups; it does not isolate graduate
+movements.</td>
+</tr>
+<tr>
+<td>Temporary skilled</td>
+<td>Separate from permanent skilled and permanent family reunion.</td>
+</tr>
+<tr>
+<td>Permanent skilled</td>
+<td>Accompanying-family assumptions sit inside this category.</td>
+</tr>
+<tr>
+<td>Permanent family</td>
+<td>Not the same as family accompanying students or skilled
+workers.</td>
+</tr>
+<tr>
+<td>Humanitarian &amp; special eligibility</td>
+<td>A movement category, distinct from humanitarian/protection visa
+grants.</td>
+</tr>
+<tr>
+<td>Australian citizens</td>
+<td>Includes resident arrivals and departures by Australian
+citizens.</td>
+</tr>
+<tr>
+<td>New Zealand citizens</td>
+<td>A separate observed movement category.</td>
+</tr>
+<tr>
+<td>Other permanent</td>
+<td>Remaining permanent movements in the retained category
+definition.</td>
+</tr>
+</tbody>
+</table>
+<p>Policy-discussed categories appear first. Within that group, and then
+among the remaining categories, order follows the larger annual effect
+of a 5% change in observed arrivals or departures. This indicates flow
+size, not political importance or the feasibility of changing it.
+<strong>Visa compliance</strong> is separately labelled because no
+comparable measured party-effect baseline is supplied.</p>
+<p>Your annual net migration is:</p>
+<blockquote>
+<p>Selected future + category arrival changes − category departure
+changes + additional total adjustment − extra compliance departures.</p>
+</blockquote>
+<p>The research does not provide complete party-specific category
+allocations. Category edits are therefore <strong>additional experiments
+on top of your selected future</strong>, not a breakdown of that party’s
+announced total. Do not enter the same reduction both as a category edit
+and as another policy adjustment.</p>
+<p><strong>Policy &amp; controls</strong> (or <strong>Details &amp;
+controls</strong>) opens the category’s sliders and explanation
+together. Related controls include student-family and skilled-family
+arrivals avoided, graduate arrivals avoided and extra resident-visitor
+departures. <strong>Visa compliance</strong> supplies another explicit
+departure assumption. These controls start at zero. Announced visa
+stocks, places or caps are not automatically converted into annual
+migrants.</p>
+<p>A detailed category can be reset with <strong>Reset this
+category</strong>. This restores its arrival/departure/age edits and its
+associated policy reductions; it does not reset every setting. <strong>←
+All migration levers</strong> or Escape returns to the grid.</p>
+</section>
+<section id="set-timing-and-secondary-assumptions" class="level2">
+<h2>Set timing and secondary assumptions</h2>
+<p>Open <strong>Timing: 2027–2045</strong> to change the intervention
+interval. <strong>Start changes in</strong> and <strong>Last year with
+changed settings</strong> are inclusive. <strong>Years to reach full
+change</strong> controls the ramp: zero is immediate; a four-year ramp
+applies 25%, 50%, 75%, then 100%.</p>
+<p>After the edit period, annual input settings return to the selected
+base; people already added can still affect later population. If you
+enable <strong>Model later departures after changed temporary
+arrivals</strong>, those changed arrivals generate a later departure
+response using your chosen duration and share staying longer, including
+after the edit period. This is an illustrative response rule, not an
+estimated visa-holder stock or a measured retention rate.</p>
+<p><strong>Future assumptions &amp; totals</strong> contains an
+additional annual net-migration adjustment and the selected party’s
+editable total assumptions. They apply within the same intervention
+period. Editing a party assumption changes your teal scenario, not its
+fixed reference line.</p>
+<p><strong>Other assumptions</strong> contains:</p>
 <ul>
-<li><strong>Save scenario</strong>: downloads a JSON file with the input
-schedule, model/source identity, comparison reference, measure,
-inspected year and visible reference lines.</li>
-<li><strong>Load saved scenario</strong>: confirms before replacing your
-inputs and restoring that saved view. Compatible input-only files also
-work; select their view separately.</li>
-<li><strong>Copy or save an explanation</strong>: optional editable text
-describing the comparison and its assumptions. Give the recipient the
-scenario file too so they can reproduce it.</li>
+<li><strong>Children per woman:</strong> 1.35–1.65 around a starting
+value of 1.5.</li>
+<li><strong>Age-specific death risks:</strong> 0.90–1.10 times baseline.
+This is an annual risk level, not a compounded improvement rate.</li>
+<li><strong>Migrant age-profile shifts:</strong> sensitivities using
+shared profiles, not calibrated category-specific ages.</li>
+<li><strong>Non-resident visitors physically here</strong> and
+<strong>Residents temporarily overseas:</strong> June stocks affecting
+physical presence.</li>
+<li><strong>Onshore protection grants:</strong> a status count for
+people already here; changing it does not add population or
+migration.</li>
 </ul>
-<p>Nothing is posted automatically. The file is downloaded to your
-browser’s usual download location; it is not a cloud account or a public
-share link. Keep it somewhere you can find again. A retry action in the
-panel can download the most recently prepared file again. The
-application cannot verify that you retained a download. Unsaved edits do
-not persist after closing or reloading the page.</p>
-<p>Invalid input leaves the last valid chart visible and pauses saves,
-exports and printing until you restore valid inputs. An invalid scenario
-file is rejected before replacing the valid experiment. Loading a valid
-file can also recover the experiment. The file includes its model and
-data identity; an incompatible file is rejected rather than silently
-reinterpreted.</p>
-<p>CSV exports contain results or selected evidence tables; they do not
-replace the full scenario file. <strong>Print current view</strong>
-prints the overview and, if open, expands the current detail panel for
-printing. Choose your browser’s PDF destination if you want a PDF.
-Return to Controls first to print only the overview.</p>
-<h2 id="limits-and-access">Limits and access</h2>
-<p>Use the keyboard to reach buttons, menus and exact-value inputs.
-Arrow keys adjust a focused slider. Details open beside the main chart
-on a wide screen and below it on a narrow screen. A bottom summary on
-narrow screens helps you return to the chart. Wide evidence tables
-scroll within their panel; focus their scroll area to navigate with the
-keyboard.</p>
-<p>The model does not estimate housing prices, employment, economic
-benefits or an individual’s visa outcome. Optional delayed departures,
-retention, duration and category age shifts are sensitivity assumptions,
-not measured individual behaviour. Historical fit does not establish
-predictive validity. Read the source notes before drawing or sharing a
-conclusion.</p>
-<p>The application calculates locally after the page is loaded. Internet
-access is needed only when you choose an external source or website
-link. JavaScript is required for calculation. Model 0.4.1 and scenario
-schema 2 identify the calculation inputs; the source fingerprint is
-available under Method &amp; limitations.</p>
+<p>The fertility and mortality bounds are exploration limits, not
+estimates of what government policy can achieve. Changing them does not
+silently recalculate your base migration schedule.</p>
+</section>
+<section id="explore-history" class="level2">
+<h2>Explore History</h2>
+<p>The second tab is <strong>History</strong>. Its year slider spans
+2000–2025. The cards show values for the selected year; the charts
+retain their available historical series.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Data</th>
+<th>Available years ending June</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resident population in the population-component series</td>
+<td>2000–2024</td>
+</tr>
+<tr>
+<td>Births, deaths and net migration in that series</td>
+<td>2001–2024; 2000 is a starting snapshot</td>
+</tr>
+<tr>
+<td>Eleven migration categories, plus unknown visas/rounding</td>
+<td>2005–2025, meaning financial years 2004–05 to 2024–25</td>
+</tr>
+<tr>
+<td>Physical presence, visitors here and residents abroad</td>
+<td>2007–2025</td>
+</tr>
+<tr>
+<td>Humanitarian and protection grants</td>
+<td>1978–2025; some fields are not applicable</td>
+</tr>
+</tbody>
+</table>
+<p>Choose a category card to see its annual arrivals, departures and net
+balance. Their order matches Projections. <strong>Unknown visas /
+rounding</strong> is an extra historical reconciliation category, not an
+additional projection lever.</p>
+<p>Expand <strong>Population numbers &amp; download</strong>,
+<strong>Category numbers &amp; download</strong>, <strong>Presence
+numbers &amp; download</strong> or <strong>All grant numbers &amp;
+download</strong> for tables and CSVs. <strong>Download all category
+history</strong> exports every available category-year row.</p>
+<p>A dash means unavailable or not applicable, never zero. Before 2005
+there is no category history here. The population-component series stops
+in 2024; a separate presence series includes 2025 residents. The
+explorer does not silently splice the two or substitute residents for
+missing physical presence.</p>
+<p><strong>Data coverage &amp; gaps</strong> explains which finer policy
+effects cannot be measured from these sources. Student and skilled
+dependants, graduate-only movements, compliance effects, duration and
+retention lack separate histories in the retained dataset. Birth/death
+totals do not supply annual fertility or age-specific mortality rates.
+Missing here does not mean that no such statistics exist elsewhere.</p>
+<p>Arrival and departure categories describe visa status at movement,
+not matched individuals: their ratio is not a retention rate. Grants are
+not additional arrivals. Historical changes do not establish what a
+particular government caused.</p>
+<p>History selection is browsing state. It does not change your future
+inputs and is not included in saved projection files. Reset restores the
+projection experiment; it does not reset the separate History
+selection.</p>
+</section>
+<section id="save-load-export-and-recover" class="level2">
+<h2>Save, load, export and recover</h2>
+<ul>
+<li><strong>Save scenario ↓</strong> downloads
+<code>australia-population-v4-scenario.json</code>: your base, all
+projection settings, timing, inspected future year, chart measure and
+model/data identity.</li>
+<li><strong>Load</strong> replaces the current projection settings with
+a compatible saved file. Undo can restore the preceding scenario.</li>
+<li><strong>Numbers &amp; changes</strong> lists annual accounting and
+changed settings. It exports all five paths, or annual category changes.
+The footer’s <strong>Download results</strong> also exports all five
+paths.</li>
+<li><strong>Download policy comparison</strong> exports the
+source-labelled written policy evidence. History has its own data
+exports.</li>
+<li>Use the browser’s print command to print the active view or save a
+PDF. Scenario JSON is the reproducible settings file; a PDF or CSV does
+not replace it.</li>
+</ul>
+<p>Calculations and downloads run locally after the page loads. There is
+no account, automatic upload or cloud save. Keep your downloaded file:
+<strong>unsaved edits are lost on reload or closing the page</strong>.
+Undo/Redo history is not included in a saved scenario.</p>
+<p>Blank, out-of-range or incompatible entries do not replace the last
+valid scenario. A numerical field can show invalid text until corrected;
+the charts and saved/exported results still use the last valid committed
+values. Impossible combined reductions are rejected with an explanation.
+Reduce overlapping reductions or change the delayed-departure
+assumption. Invalid files leave the current experiment intact.</p>
+<section id="earlier-saved-files" class="level3">
+<h3>Earlier saved files</h3>
+<p>V4.2 accepts compatible V4 scenario files, including original V4
+schema-1 files. Those retain their existing settings and results;
+inactive Coalition defaults are added. New saves use V4 schema 2.</p>
+<p><strong>V3 and earlier scenario files are not imported or converted
+by V4.2.</strong> Their schema numbers have different meanings. Use the
+original simulator for those files. The <a
+href="https://github.com/OurResilientWorld/AI-Assisted-Research/blob/4a0242562cb0dccc639eb4281426160a0bd85329/simulations/australia-population-explorer/index.html">earlier
+public V3 file is retained on GitHub</a>: download its raw
+<code>index.html</code>, open the downloaded file locally, and use that
+version’s load action. Do not rename a saved file’s version fields to
+force an import.</p>
+</section>
+</section>
+<section id="keyboard-access-and-limitations" class="level2">
+<h2>Keyboard access and limitations</h2>
+<p>Use Tab to reach buttons, links, sliders and number boxes. Arrow keys
+adjust a focused slider. Enter commits a number-box edit. On the
+Projections/History tabs, Left/Right changes tab; Home selects
+Projections and End selects History. Escape closes a projection detail
+view. History table regions can receive keyboard focus for scrolling. On
+smaller screens, cards and charts stack vertically; wide tables scroll
+within their region.</p>
+<p>JavaScript is required. Charts, controls and embedded historical data
+need no external runtime download once the HTML has loaded. Source links
+require internet access.</p>
+<p>The retained cohort model has common age profiles and simplified
+response assumptions. It does not estimate housing prices, employment,
+fiscal effects, regional settlement or an individual’s visa outcome.
+Independent demographic calibration, hindcasting, category dynamics and
+representative citizen validation remain outstanding. Passing
+implementation tests is not proof of predictive validity.</p>
+<p>The interaction design draws on <a
+href="https://en-roads.climateinteractive.org/scenario.html?v=26.10.0">En-ROADS</a>;
+this explorer is separate and does not claim affiliation or equivalent
+scientific validation.</p>
+</section>
+<section id="sources-and-terms" class="level2">
+<h2>Sources and terms</h2>
+<p>Historical data are retained research extracts, not automatically
+refreshed series. The explorer links original sources beside the
+relevant evidence, including:</p>
+<ul>
+<li><a
+href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population">ABS
+national population</a>.</li>
+<li><a
+href="https://www.abs.gov.au/statistics/people/population/overseas-migration/2024-25">ABS
+Overseas Migration 2024–25</a>.</li>
+<li><a
+href="https://www.abs.gov.au/articles/population-physically-present-australia">ABS
+population physically present</a>.</li>
+<li><a
+href="https://www.homeaffairs.gov.au/research-and-statistics/statistics/visa-statistics/live/historical-migration">Home
+Affairs historical migration statistics</a>.</li>
+<li><a
+href="https://www.liberal.org.au/2026/10/06/liberals-and-nationals-australia-first-migration-plan-cut-the-numbers-raise-the-standards">Coalition
+announcement, 6 October 2026</a>.</li>
+</ul>
 <p>Original content: <a
 href="https://creativecommons.org/licenses/by/4.0/legalcode.en">CC BY
-4.0</a>. Linked sources and datasets retain their own attribution and
-terms. <a href="https://www.ourresilient.world/">Our Resilient World</a>
-· <a
-href="https://research.ourresilient.world/simulations/index.html">All
-simulations</a>.</p>
-</body></html>
+4.0</a>. Linked sources, datasets and bundled software retain their own
+attribution and terms. <a href="https://www.ourresilient.world/">Our
+Resilient World</a>.</p>
+</section>
+</section>
+</main></body>
+</html>
