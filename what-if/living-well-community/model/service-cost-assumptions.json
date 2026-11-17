@@ -1,0 +1,22 @@
+{
+  "price_year": 2026,
+  "watch_life_years": 3,
+  "reserve": 0.1,
+  "costs": {
+    "lower": {
+      "clinical_and_community_per_active": 750,
+      "ai_per_active": 90,
+      "data_per_active": 60,
+      "onboarding_per_new": 750,
+      "watch_unit": 300
+    },
+    "upper": {
+      "clinical_and_community_per_active": 1250,
+      "ai_per_active": 240,
+      "data_per_active": 160,
+      "onboarding_per_new": 1250,
+      "watch_unit": 600
+    }
+  },
+  "status": "Planning allowances; obtain complete safe-service quotes before contracting."
+}

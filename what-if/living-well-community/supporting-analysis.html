@@ -1,0 +1,1333 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Living Well community business case: why, implementation, management and outcomes."><title>Living Well — supporting analysis</title><style>:root{--ink:#253c33;--muted:#53655c;--paper:#faf8f2;--line:#cbd4c9;--soft:#edf0e7;--accent:#315f50;--gold:#91602d;--serif:Georgia,'Times New Roman',serif;--sans:'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 var(--sans)}a{color:var(--accent);text-underline-offset:.2em}a:hover{color:#6d4321}:focus-visible{outline:3px solid var(--gold);outline-offset:5px}.skip{position:absolute;top:0;left:1rem;transform:translateY(-180%);background:var(--ink);color:white;padding:1rem;z-index:9}.skip:focus{transform:none}.shell{width:min(1180px,calc(100% - 80px));margin:auto}.masthead{border-top:5px solid var(--ink);border-bottom:1px solid var(--line)}.masthead .shell{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px}.brand{font:700 26px var(--serif);letter-spacing:-.02em}.edition{color:var(--muted);font-size:12px}.hero{padding:52px 0 34px;display:grid;grid-template-columns:1fr 220px;gap:45px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;margin:0 0 12px}h1{font:400 clamp(43px,5.7vw,68px)/1.08 var(--serif);letter-spacing:-.04em;margin:0;max-width:850px}.deck{font-size:21px;max-width:680px;color:var(--muted);margin:20px 0 0}.hero-aside{align-self:end;border-left:1px solid var(--line);padding-left:25px;color:var(--muted);font-size:14px}.hero-aside strong{font-size:25px;display:block;color:var(--ink)}.tabs{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:7px;overflow:hidden;gap:0;background:#fffdf8}.tabs a{display:block;padding:17px 18px;text-decoration:none;border-right:1px solid var(--line);font-size:15px;line-height:1.4;color:var(--ink)}.tabs a:last-child{border-right:0}.tabs .num{display:block;font-size:11px;letter-spacing:.1em;margin-bottom:5px;color:var(--muted)}.tabs a[aria-selected=true]{background:var(--ink);color:#fffdf8}.tabs a[aria-selected=true] .num{color:#d8e3d4}.tabs a:focus-visible{outline-offset:-5px;outline-color:#b9874d}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:18px 0 12px;font-size:13px;color:var(--muted)}button{font:inherit;color:var(--accent);background:transparent;border:1px solid var(--line);padding:7px 14px;border-radius:5px;cursor:pointer}.case-panel{padding:28px 0 40px}.case-panel[hidden]{display:none}h2{font:400 38px/1.18 var(--serif);letter-spacing:-.02em;margin:0 0 26px}h3{font:600 25px/1.25 var(--serif);margin:34px 0 14px}p,li{max-width:88ch}p{margin:0 0 18px}li{padding-left:.2rem;margin-bottom:.6rem}blockquote{border-left:4px solid var(--accent);background:var(--soft);margin:0 0 28px;padding:20px 24px;font-size:20px}blockquote p{margin:0}.table-wrap{max-width:100%;overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}th{background:var(--soft);font-weight:600}td,th{padding:13px 15px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{font-weight:500}figure{margin:25px 0 14px;background:#fffdf8;border:1px solid var(--line);border-radius:7px;padding:18px}.diagram-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;color:var(--muted)}svg{width:100%;height:auto;display:block}.diagram-copy{font-size:14px;color:var(--muted)}.diagram-copy ol{margin:8px 0 0;padding-left:22px}.diagram-copy li{margin-bottom:5px}.case-panel>p:has(em:only-child){font-size:14px;color:var(--muted)}details{border:1px solid var(--line);border-radius:6px;padding:14px 18px;margin:22px 0;background:#fffdf8;font-size:15px}summary{font-weight:600;cursor:pointer}details p,details ul{margin-top:14px}.panel-end{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:20px;font-size:14px}.footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:12px}.support section{padding:28px 0;border-top:1px solid var(--line)}.support nav ul{columns:2;column-gap:40px}.support pre{white-space:pre-wrap;font-size:13px}.only-screen{display:block}
+@media(max-width:760px){.shell{width:calc(100% - 34px)}body{font-size:17px}.hero{display:block;padding:30px 0}.hero-aside{margin-top:24px;display:flex;gap:20px;padding:0;border:0}.hero-aside strong{font-size:19px}.tabs{grid-template-columns:1fr 1fr}.tabs a{font-size:14px;border-bottom:1px solid var(--line)}.tabs a:nth-child(2){border-right:0}.tabs a:nth-child(n+3){border-bottom:0}.toolbar{align-items:flex-start}.case-panel{padding-top:25px}h2{font-size:31px}h3{font-size:23px}blockquote{font-size:18px;padding:16px}.support nav ul{columns:1}td,th{padding:10px;font-size:14px}.diagram svg{display:none}.diagram-copy{font-size:16px}.masthead .edition{max-width:150px;text-align:right}}
+@media print{body{font-size:10pt;background:white;color:#182820}.shell{width:100%;max-width:none}.masthead,.tabs,.toolbar,.panel-end,.skip,.only-screen{display:none!important}.hero{padding:0 0 18px;display:block}.hero-aside{display:none}h1{font-size:28pt}h2{font-size:22pt}h3{font-size:15pt}.case-panel,.case-panel[hidden]{display:block!important;break-before:page;padding:0}#understand{break-before:auto}table{font-size:9pt}td,th{padding:7px}figure,blockquote,tr{break-inside:avoid}figure{padding:10px}svg{display:block!important}.diagram-copy{font-size:9pt}details{display:block;padding:10px}details> :not(summary){display:block!important}summary{list-style:none}a{color:inherit;text-decoration:underline}p{orphans:3;widows:3}.footer{font-size:8pt}.support section{break-before:page}}
+</style></head><body><a class="skip" href="#main">Skip to the business case</a><header class="masthead"><div class="shell"><span class="brand">Living Well</span><span class="edition">Community business case<br>Research proposal · 17 November 2026</span></div></header><nav class="shell" aria-label="Breadcrumb" style="padding-top:1rem"><a href="../../index.html" target="_blank" rel="noopener">AI-Assisted Research</a> / <a href="../index.html" target="_blank" rel="noopener">What If Research</a> / Living Well community business case</nav><main id="main" class="shell support"><div class="hero"><div><p class="eyebrow">Evidence and detailed analysis</p><h1>Behind the business case</h1><p class="deck">Cost assumptions, organisational alternatives and evidence tests. <a href="index.html" target="_blank" rel="noopener">Return to the concise four-part proposal.</a></p></div></div><nav id="support-contents"><h2>Supporting sections</h2><ul><li><a href="#executive-summary">Living Well — proposal at a glance</a></li><li><a href="#delivery-options">Living Well governance and delivery choices</a></li><li><a href="#university-research-partnership">University research partnership and future commercialisation</a></li><li><a href="#funding-options-matrix">Funding choices after startup</a></li><li><a href="#crowdfunding-option">Essential startup crowdfunding</a></li><li><a href="#cashflow-and-social-value">Costs, cash flow and value</a></li><li><a href="#pilot-and-falsification-plan">Startup, pilot and evidence-led expansion</a></li><li><a href="#resilience-theory-of-change">How the service could support resilience</a></li><li><a href="#resilience-matrix-assessment">Resilience governance and outcome matrix</a></li><li><a href="#resilience-hypotheses-and-measures">Five resilience hypotheses and decision rules</a></li><li><a href="#resilience-stress-tests">Disruption tests and continuity arrangements</a></li><li><a href="#intergenerational-and-external-effects">Twenty-year sensitivity, future families and external dependencies</a></li><li><a href="#assumptions-and-sources">Assumptions, evidence and method</a></li><li><a href="#viability-evaluation">Evaluation of business-case viability</a></li></ul></nav><section id="executive-summary"><h2>Living Well — proposal at a glance</h2>
+<p>Living Well would help volunteers aged 65–79 remain mobile, independent and connected by coordinating personal exercise/nutrition support, periodic professional review, a smartwatch and individual artificial intelligence (AI) coaching.</p>
+<p>The proposed organisation is <strong>Living Well Inc., a new New South Wales (NSW) not-for-profit incorporated association</strong>. Members set strategic priorities and the budget framework, elect and scrutinise the management committee, and decide material expansion and commercialisation proposals. The committee remains legally accountable; paid management negotiates every partner arrangement.</p>
+<p>A university partnership would cover initial research, pilot evaluation and separately funded long-term outcomes. A suitable university would be selected after feasibility work, considering relevant courses, research expertise, local reach, capacity, costs and acceptable partnership terms. No institution is nominated. Proposed terms protect research independence, participant data, continued community use of project outputs and fair benefit-sharing if research is later commercialised.</p>
+<p>Startup crowdfunding is mandatory. The illustrative 100-person first year needs about $892,000 gross in 2026 dollars, or $932,000 at assumed 2027–28 prices, including formation/preparation, evaluation, reserves and a cash buffer. Private seed is required before paid work and included once in that target. No funds or partners are committed.</p>
+<p>The most grounded expected benefit is improved or maintained everyday function for some participants; connection and confidence are plausible further benefits. Net family time, public savings and financial sustainability need separate evidence. Expansion follows comparative outcomes and funded capacity.</p>
+<p>Read the concise four-part <a href="index.html" target="_blank" rel="noopener">business case</a>: Understand the Business Case; Implementing the Business Case; Managing the Program; The Outcomes. Detailed calculations and resilience tests remain in the supporting analysis. Viability is evaluated at the end, without changing the participant service to make the budget balance.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="delivery-options"><h2>Living Well governance and delivery choices</h2>
+<h2>A community-governed New South Wales (NSW) association</h2>
+<p>Recommend a new <strong>Living Well Inc.</strong>, incorporated under the <strong>Associations Incorporation Act 2009 (NSW)</strong> with a custom not-for-profit constitution. The association owns the program, contracts with every partner, employs or contracts management and retains surplus for its purposes. Its proposed objects are older people's mobility, independence, connection and public-benefit learning. On winding up, remaining assets would go to an eligible similar-purpose not-for-profit, subject to applicable law and donor restrictions. No distribution to members is proposed.</p>
+<p>This choice puts a local community purpose within a NSW legal structure. The participatory constitution, transparent practice and members' enforceable rights carry the philosophy; the legal label alone does not guarantee it. <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/about-incorporated-associations">NSW guidance</a>.</p>
+<h2>Proposed constitutional design</h2>
+<p>These are design recommendations for member consultation and legal drafting, not provisions already adopted or claims that every detail is required by law.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Decision right</th>
+<th>Proposed Living Well rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Join and leave</td>
+<td>Adult participants, carers and local supporters may apply under clear purpose-based criteria; accessible fee waivers; written reasons and appeal for refusal. Service and research participation remain separate. Illness or inability to volunteer never removes membership automatically.</td>
+</tr>
+<tr>
+<td>Equal voice</td>
+<td>One natural-person member, one vote. Donor organisations and commercial partners cannot buy votes or reserved seats. Supporters can help a person participate without taking over their decision.</td>
+</tr>
+<tr>
+<td>Set the agenda</td>
+<td>Any member may submit a proposal with an accessible explanation. A published register shows response and reasons. Five members or 5% of membership, whichever is fewer, may request a special meeting under the proposed constitution.</td>
+</tr>
+<tr>
+<td>Deliberate and decide</td>
+<td>Give members plain-language options, costs, uncertainties and conflicts before a vote. Members approve strategic priorities, the annual budget framework and material expansion. Routine procurement remains delegated.</td>
+</tr>
+<tr>
+<td>Protect the purpose</td>
+<td>Constitutional changes follow statutory special-resolution rules. Material exclusive IP licences, transfer of core program assets or changes to access principles require a member decision before commitment, subject to lawful committee duties.</td>
+</tr>
+<tr>
+<td>Elect and remove</td>
+<td>Propose a seven-person elected committee, two-year staggered terms and maximum three consecutive terms; aim for at least three people with participant/carer lived experience. Lawful removal and fair replacement procedures are written into the constitution. Skills gaps may be filled by paid advisers without buying decision rights.</td>
+</tr>
+<tr>
+<td>Review and challenge</td>
+<td>Members inspect non-confidential reasons, financial reports, conflicts and performance; request independent review; use fair complaints and appeal processes. Report how review changes a decision.</td>
+</tr>
+<tr>
+<td>Act urgently</td>
+<td>Clinicians stop unsafe care immediately. Management acts within emergency delegations. The committee reviews urgent action within 30 days and reports appropriately to members. No vote can require unlawful, insolvent or unsafe conduct.</td>
+</tr>
+</tbody>
+</table></div>
+<p>A proposed general-meeting quorum is 20% of eligible members, rounded up, with a minimum of five; consult members and legally settle notice, remote voting, adjournment and election rules before incorporation. Ordinary decisions use a simple majority of valid votes. Statutory special resolutions require at least three-quarters of votes cast and proper notice/procedure; constitution changes also require the applicable lodgement/registration process. <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/running-an-incorporated-association/resolutions">NSW resolutions guidance</a>.</p>
+<p>The committee remains responsible for managing the association lawfully and maintaining financial viability. If a member decision cannot be implemented lawfully or safely, record the reason, obtain independent advice and return a compliant alternative for decision; it is not an unrestricted committee veto over member policy. <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/running-an-incorporated-association/management-committee-obligations">Committee responsibilities</a>.</p>
+<h2>One World principles in ordinary operations</h2>
+<p>The One World Mandate and story emphasise voluntary cooperation, transparency, members setting priorities and testing proposals with open models. The contemporary concept brief adds structured deliberation and AI assisting reasoning. The supplied resilience taxonomy separates agenda, decision, veto and review powers. These inform the rules above; the exact thresholds and terms are Living Well design proposals. The story is a vision, not measured evidence. Historical AI decision-making and token mechanisms are not adopted.</p>
+<p>Publish accessible proposal briefs, aggregate evidence, model assumptions, decision reasons, remuneration principles and declared conflicts. Keep personal records, confidential complaints and legitimate IP protection controlled. Offer telephone, paper and supported meetings; budget accessibility and participation work. Measure who actually contributes and whether one group dominates. Community control is a testable governance claim, not an assumption satisfied by an annual election.</p>
+<h2>Form and manage the association</h2>
+<p>Secure seed underwriting before paid work. Founders document who bears pre-incorporation liabilities. Prepare the purpose, custom constitution, proposed name and management arrangements with prospective members. NSW registration requires at least five members; an adult public officer resident in NSW; and a committee of at least three adults, with at least three residing in Australia. These are minimum legal arrangements; the proposed committee above has seven members. <a href="https://www.service.nsw.gov.au/transaction/apply-to-register-an-incorporated-association">Service NSW registration</a>.</p>
+<p>After registration, members approve the initial direction and budget framework. The committee appoints paid management, a qualified clinical lead and a finance function, sets spending and dual-authorisation controls, obtains insurance and confirms fundraising compliance. It approves safe, solvent execution of the community-approved campaign. Living Well negotiates and manages participant, provider, community, technology, funder and university contracts. Clinical decisions remain with qualified professionals; research findings remain with researchers. Separate complaints and independent assurance are retained.</p>
+<h2>Three delivery arrangements within the association</h2>
+<p>All arrangements retain the same participant service and university partnership. These are delivery choices, not alternative owners.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Arrangement</th>
+<th>Benefit</th>
+<th>Main cost/risk</th>
+<th>Pilot judgement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contracted local provider network</td>
+<td>Draws on existing qualified capacity and venues</td>
+<td>Coordination, travel, continuity, contract oversight</td>
+<td>Preferred starting option, subject to full-cost quotes and capacity</td>
+</tr>
+<tr>
+<td>Employed multidisciplinary team</td>
+<td>Direct scheduling and supervision</td>
+<td>Salaries, leave, recruitment, underused capacity</td>
+<td>Compare if local contracted capacity is inadequate</td>
+</tr>
+<tr>
+<td>Employed coordination/clinical core with contracted local teams</td>
+<td>Common standards with local reach</td>
+<td>Duplicate management and unclear handoffs</td>
+<td>Test for later multi-site delivery; allocate each duty once</td>
+</tr>
+</tbody>
+</table></div>
+<p>Compare these with current services and spending an equivalent private budget on improving access to existing support. Those comparators are not reduced Living Well offers. Obtain at least two complete proposals against one service specification.</p>
+<h2>Cost and suitability gates</h2>
+<p>D1 now denotes the NSW association base overhead allowance: $120,000/$180,000/$410,000 annually at 100/250/1,000 places, before reserve. D2 retains $100,000/$150,000/$350,000 solely as a lower-overhead sensitivity for the same association. Neither prices the three delivery arrangements or proves one is cheaper. Formation/setup remains $90,000 before reserve, including $15,000 advanced through seed. Participation support, lawful governance and university contracting must be explicitly allocated in quotations.</p>
+<p>Before filing, obtain advice on eligibility for the proposed service and fees: NSW guidance positions associations for small-scale not-for-profit activities. Before interstate expansion or commercial licensing, review structure suitability, registration, fundraising, tax and reporting obligations. If unsuitable, return options to members; no automatic conversion or dilution of community control is authorised. Charity registration and deductible-gift endorsement are separate. No name availability, incorporation or legal clearance is claimed.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="university-research-partnership"><h2>University research partnership and future commercialisation</h2>
+<h2>Selecting a suitable university partner</h2>
+<p>Living Well would seek a university offering suitable courses and research capability in exercise, nutrition, healthy ageing and evaluation. <strong>No university is nominated at this stage.</strong> The appropriate partner will depend on the pilot location, community needs, available staff and facilities, research interests, costs and agreement on responsibilities and rights.</p>
+<p>After local feasibility work, Living Well would prepare a common partnership brief and assess interested universities against:</p>
+<ul>
+<li>relevant teaching and research expertise, with a named research lead and access to trial design, health economics and longitudinal research skills;</li>
+<li>practical local reach, accessible participant involvement and capacity to support initial research and longer follow-up;</li>
+<li>scientific independence, ethics and data safeguards, and willingness to report all findings;</li>
+<li>full costs, available resources, timing and a sustainable funding arrangement;</li>
+<li>acceptable intellectual-property, community-use, publication and future commercialisation terms.</li>
+</ul>
+<p>The management committee would assess proposals within the member-approved direction and budget framework before authorising an agreement. If no suitable arrangement is available, revise the research plan or timing before making commitments. No university or academic has been contacted for this proposal.</p>
+<p>University partnership covers research from design to long-term outcomes. Clinical assessment, professional review, safety decisions and referrals remain with qualified service providers. Students may contribute through separately approved, supervised placements or research projects. Consent, competence, supervision and educational obligations must be agreed; student participation is neither free core staffing nor a reason to add universal dietitian appointments.</p>
+<h2>Research program and funding gates</h2>
+<p>Living Well's members help choose meaningful questions and interpret practical implications. The university controls scientific methods and analysis within the agreed protocol, with independent methods review where its team also designed the intervention. A research steering group includes participant representatives, Living Well, university investigators and an independent methods/ethics adviser. Donors, suppliers and prospective licensees cannot suppress findings or determine clinical care.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Work and outputs</th>
+<th>Decision and funding boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial research before enrolment</td>
+<td>Co-design; evidence review; local need/access study; comparator and outcome choices; feasibility, data plan, ethics review and analysis plan</td>
+<td>Cost and approve the work package before it starts; use the $25,000 discovery and $120,000 initial/pilot research allowances without double charging</td>
+</tr>
+<tr>
+<td>Pilot: baseline, 6 and 12 months</td>
+<td>Recruitment/consent, function, personal goals, wellbeing, falls/harms, access, burden and full resource use; publish feasibility and uncertainty</td>
+<td>Pilot research must be funded and approved before enrolment; a 100-person pilot is not proof of rare-event safety or long-term effectiveness</td>
+</tr>
+<tr>
+<td>Comparative study and 24-month follow-up</td>
+<td>Use pilot data to design/power a fair comparison and estimate added benefit and cost-effectiveness</td>
+<td>Separate approved protocol and secured research budget; not claimed to fit automatically inside the pilot allowance</td>
+</tr>
+<tr>
+<td>Years 3–5</td>
+<td>Durable function, participation, family effects, role-specific care capacity and actual renewal; follow consenting people after service exit or age 79</td>
+<td>Separate funded schedule and recontact/withdrawal arrangements; track attrition and selection bias</td>
+</tr>
+<tr>
+<td>Years 6–10, conditional</td>
+<td>Persistence, equity, later care and performance across locations</td>
+<td>Renew funding, ethics and data agreements before extending; 20-year model scenarios remain projections, not promised funded observations</td>
+</tr>
+</tbody>
+</table></div>
+<p>The existing comparative plan tests full Living Well against current services and equivalent professional support without watch/AI. All Living Well service participants still receive the agreed watch/AI; comparator arms are distinct research offers. Preregister outcomes and analysis, agree meaningful thresholds with participants/clinicians, report null or adverse findings and missing data, and use independent outcome assessment where feasible. Research consent is optional and separate from receiving care; declining or withdrawing cannot reduce the service.</p>
+<p>Obtain the appropriate university ethics review and approvals before human research starts, using the then-applicable <a href="https://www.nhmrc.gov.au/research-policy/ethics/national-statement-ethical-conduct-human-research">NHMRC National Statement</a>. Plan consent and accessibility for participants with differing capacity, language and digital needs. A research problem must have a named route to the clinical lead where safety is affected, without giving researchers unrestricted clinical-record access.</p>
+<h2>Heads of agreement before research starts</h2>
+<p>This is a negotiation specification, not an executed contract or a statement of university policy. Living Well and the university must agree terms acceptable to both institutions and obtain legal, privacy and ethics advice.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Proposed terms to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parties and work</td>
+<td>Living Well Inc. and the university, named accountable leads, phased deliverables, sites, milestones, permitted subcontractors and supervision</td>
+</tr>
+<tr>
+<td>Full cost and resources</td>
+<td>Staff time, overhead, participant expenses, travel, accessible participation, data systems, ethics, analysis, publication and retention; cash and any confirmed in-kind contributions separately valued; no double billing with clinical contracts</td>
+</tr>
+<tr>
+<td>Independence</td>
+<td>Registered methods, access for agreed analysis, independent assessment, publication of favourable, null and harmful findings; funder and supplier conflicts disclosed; scientific conclusions cannot be changed by a member vote</td>
+</tr>
+<tr>
+<td>Publication</td>
+<td>Plain-language reports to participants and members; open methods/results where lawful; proposed 30-day confidentiality/IP review and a single justified patent-filing extension up to 60 additional days; no indefinite veto, including over theses; negotiate before signing</td>
+</tr>
+<tr>
+<td>Data stewardship</td>
+<td>Identify each custodian and permitted access; separate care/research records, minimisation, security, retention, breach response, linkage approvals, withdrawal limits and end-of-project custody. Use participant information only within valid consent, ethics and law. No sale of personal data or supplier AI training by default</td>
+</tr>
+<tr>
+<td>Existing intellectual property</td>
+<td>List each party's background IP, third-party software/data licences and restrictions; ownership remains with its owner. Grant only the access needed for the agreed research</td>
+</tr>
+<tr>
+<td>New intellectual property</td>
+<td>Agree ownership by type and contribution before work starts, including inventions, software, protocols and databases. Do not assume all university work belongs to Living Well, or all collaborative outputs to the university. Resolve employee, student and third-party rights explicitly; avoid undefined joint ownership</td>
+</tr>
+<tr>
+<td>Community use</td>
+<td>Seek a continuing, non-exclusive, royalty-free licence for Living Well's agreed not-for-profit service, evaluation and accessible training use of project outputs, with required background rights. Scope, maintenance and sublicensing to delivery partners must be negotiated. Existing third-party restrictions must be disclosed</td>
+</tr>
+<tr>
+<td>Exit and disputes</td>
+<td>Staged negotiation/mediation, suspension for safety or breach, care continuity, completion/publication of existing analyses, data custody and survival of agreed use rights after termination; fund these duties</td>
+</tr>
+</tbody>
+</table></div>
+<p>Once a prospective partner is identified, check its current research, intellectual-property and commercialisation policies and negotiate the agreement through its authorised office. Published university agreement examples can inform the discussion but do not establish the selected partner's terms or any rights for Living Well.</p>
+<h2>Separate agreement before any commercialisation</h2>
+<p>Agree the process at research inception; approve a transaction only once the actual opportunity, rights and risks are known. The agreement must apply to commercial use by the university, Living Well or a third party of <strong>joint project outputs and Living Well background contributions</strong>. It does not give Living Well control of unrelated university research.</p>
+<ol>
+<li>Identify the invention/software/service, owners, third-party rights and contributors. Obtain a written public-benefit and financial appraisal, with independent advice where an investigator, committee member or supplier could benefit.</li>
+<li>Members deliberate and decide Living Well's material commercialisation proposal; the committee verifies legality and solvency; authorised officers of both institutions execute the licence. Student/inventor rights and any other owners' permissions must be resolved.</li>
+<li>Prefer non-exclusive licensing where practical. Any exclusivity needs a justified field, territory and term, access commitments, development milestones and termination/reversion for non-performance. Protect Living Well's continuing community-use licence and research/teaching rights.</li>
+<li>Define patent, development and licensing costs; which deductions are allowed; contributions; revenue-sharing formula; payment timing; audit rights and dispute handling. Negotiate a fair share rather than inventing a percentage now. Living Well reinvests its net proceeds in its not-for-profit purposes; private distributions to its members are excluded.</li>
+<li>Set affordable-access commitments and public-interest safeguards. Retain publication rights and time-limited IP review. Commercial use of personal or linked data is not granted merely by licensing an algorithm: separately check consent, ethics, privacy and necessary approvals or renewed consent.</li>
+<li>Review association eligibility, tax, charity/fundraising restrictions and conflicts before execution. Any new entity or change of structure requires a separate member decision and legal advice; no automatic spin-out is proposed.</li>
+</ol>
+<h2>Financial reconciliation and outstanding decisions</h2>
+<p>Initial/pilot research retains the <strong>$120,000 allowance before the 10% reserve</strong>. This is not a university quote and does not fund an assumed decade of research. Discovery remains $25,000 and formation/setup $90,000, including the $15,000 pre-appeal formation allocation. Allocate university feasibility work between these existing lines once, using a signed scope and cost schedule.</p>
+<p>Keep the gross pilot crowdfunding baseline at $891,508 in 2026 dollars (about $932,000 at assumed 2027–28 prices) only as a comparison reference. If a full-cost university proposal exceeds the relevant allowance, raise the verified campaign target or explicitly redesign the research scope before recruitment; do not divert necessary clinical support. Required outcome follow-up commitments must have finance secured before they are promised. A signed framework may describe later phases conditionally, but it cannot make unfunded obligations disappear.</p>
+<p>No royalties, government research grants, unconfirmed university subsidy or free students are included in the non-government funding model. Future commercialisation is a contingent possibility, not a reason to claim financial viability. Record any university contribution and its ultimate funding source before accepting it within the agreed non-government boundary. Costs and rights remain unresolved until the parties agree them.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="funding-options-matrix"><h2>Funding choices after startup</h2>
+<h2>Two different funding decisions</h2>
+<p>Startup crowdfunding is required for D1 and D2 and funds the defined pilot before enrolment. The next decision is how the service pays its bills after that period. A delivery organisation can use more than one lawful private payer, while member control and clinical independence remain intact.</p>
+<p>All recurring terms below are <strong>hypotheses in 2026 dollars</strong>, beginning after the fully donation-funded first year. The 20% concession/equity share is a test allocation, not a measure of local need. Participants must receive clear notice of later pricing and a supported exit/transition if they do not renew.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Recurring funding test</th>
+<th>Proposed payers and reason to pay</th>
+<th>Annual mechanism</th>
+<th>Decision authority / main risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Members plus sponsors — central illustration</td>
+<td>Participants value coordinated support; private sponsors support defined aggregate community outcomes</td>
+<td>80% pay $200/month, 20% pay $60; sponsor pays $1,000 per place/year</td>
+<td>The committee sets affordable access with member input; sponsor signs contract with no individual data/control. Renewal and affordability untested</td>
+</tr>
+<tr>
+<td>Members only</td>
+<td>Participants purchase the service directly, with cross-subsidy</td>
+<td>80% pay $300/month, 20% pay $60</td>
+<td>Requires sufficient affordable demand; fees cannot be justified by model arithmetic alone</td>
+</tr>
+<tr>
+<td>Insurer plus equity donors</td>
+<td>Authorised insurer may purchase an eligible service; private donors fund uninsured access</td>
+<td>$3,600 per place/year: insurer 80%, private equity-access donors 20%; no participant fee</td>
+<td>Full-bundle eligibility and purchasing power require written advice/contracts; buyer concentration and equitable selection matter</td>
+</tr>
+<tr>
+<td>Members plus recurring supporters</td>
+<td>Members contribute and many donors support access/continuity</td>
+<td>$200/$60 member split plus $1,000 gross gifts/place/year, assumed 92% net</td>
+<td>Repeat gifts, collection cost and acquisition effort untested; no extra votes or participant storytelling conditions</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sponsors, insurers and donors are purchasers/supporters, not automatically owners. Investment or debt finances a cash need and may require repayment; neither is recurring operating income. Public grants, hidden public programme labour, routine billing of core programme support to Medicare and personal-data sales are excluded from the financing plan. Existing ordinary medical entitlements remain available and any attributable public fiscal effects are recorded separately.</p>
+<h2>Comparable recurring price tests</h2>
+<p>The table compares all funding routes using the <strong>same D1 association base cost for 250 new entrants, midpoint 2026-dollar allowances, including 10% reserve</strong>. This is an annual pricing stress for a new cohort after startup, not actual pilot-year receipts. Negative balance means assumed receipts fall short of operating cost; it excludes one-time startup costs already shown elsewhere.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Funding test</th>
+<th>Participant receipts</th>
+<th>Contract receipts</th>
+<th>Net donor receipts</th>
+<th>Operating cost</th>
+<th>Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participants and sponsors</td>
+<td>$516,000</td>
+<td>$250,000</td>
+<td>$0</td>
+<td>$947,375</td>
+<td>−$181,375</td>
+</tr>
+<tr>
+<td>Participants only</td>
+<td>$756,000</td>
+<td>$0</td>
+<td>$0</td>
+<td>$947,375</td>
+<td>−$191,375</td>
+</tr>
+<tr>
+<td>Insurer and access donors</td>
+<td>$0</td>
+<td>$720,000</td>
+<td>$180,000</td>
+<td>$947,375</td>
+<td>−$47,375</td>
+</tr>
+<tr>
+<td>Participants and supporters</td>
+<td>$516,000</td>
+<td>$0</td>
+<td>$230,000</td>
+<td>$947,375</td>
+<td>−$201,375</td>
+</tr>
+</tbody>
+</table></div>
+<p>The full CSV repeats these tests for every delivery option, three scales and three cost assumptions. Ownership is held separate from revenue: changing who pays does not prove that service cost, access or outcomes improve. An organisation’s actual legal status may restrict a particular funding route; advice and contract terms must resolve this before reliance.</p>
+<h2>Evidence needed to select recurring funding</h2>
+<p>Test actual full-cost renewal, not favourable survey responses. For insurers, establish lawful eligible populations and complete-bundle purchasing authority. For sponsors, define deliverables without selling health data. For donors, test net acquisition/retention and restricted-fund suitability. For households, examine affordability and time burden alongside satisfaction. Count funder concentration, cancellation rights and settlement timing.</p>
+<p>Collect enough evidence before pilot renewal to avoid a sudden funding gap. If recurring funding fails, do not assume another emergency appeal will rescue commitments. Use the funded transition/exit arrangements and return the service proposition to the committee and members. The <a href="#viability-evaluation">viability evaluation</a> assesses these uncertainties with the delivery evidence.</p>
+<p>The insurer/equity-access illustration assumes direct contracted equity-access gifts with no platform or collection deduction; the full $180,000 at 250 places is usable cash. Supporter gifts instead pass through the assumed 8% deduction, yielding $230,000 net from $250,000 gross. These are different proposed receipt channels, not verified charges. Apply actual collection costs to either route before contracting.</p>
+<p>D1 means the New South Wales (NSW) association base overhead; D2 is a lower-overhead sensitivity for the same association, not another legal form or a quoted delivery alternative. University initial/pilot work must be quoted before the campaign; longer research phases need separate secured funding. No royalty or unconfirmed university contribution balances this model.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="crowdfunding-option"><h2>Essential startup crowdfunding</h2>
+<h2>Purpose and position in startup</h2>
+<p><strong>All delivery arrangements must complete a successful startup crowdfunding stage before the pilot begins.</strong> The campaign gives the community a concrete proposition to support: a defined participant service, an accountable organisation, a funded period, equitable access and independent evaluation. Raising money is a funding milestone; participant outcomes and resilience are assessed separately.</p>
+<p>The proposed base is a fully donation-funded 100-person, 12-month pilot. No compulsory participant fee, insurer payment or corporate service-purchase receipt is counted again for that pilot year. Before joining, people are told that later participation depends on a separately funded renewal model; continuing fees, subsidies and handover arrangements must be agreed transparently. No new clinical services are added by this funding choice.</p>
+<h2>Campaign sequence and responsibilities</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Responsible party</th>
+<th>Required result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prepare the proposition</td>
+<td>Community convening group with clinical/finance input</td>
+<td>Agreed problem, outcomes, service, delivery shortlist and preliminary budget</td>
+</tr>
+<tr>
+<td>Secure seed underwriting</td>
+<td>Accountable entity and private underwriter</td>
+<td>Paid feasibility/campaign preparation, documented loss allocation and any reimbursement terms</td>
+</tr>
+<tr>
+<td>Establish fundraising authority</td>
+<td>Committee, independent advisers and platform</td>
+<td>Lawful appeal, truthful claims, privacy, restricted-fund rules, payout and refund terms</td>
+</tr>
+<tr>
+<td>Community deliberation and campaign decision</td>
+<td>Members and accountable Living Well management committee</td>
+<td>Members approve scope, priorities and the budget framework; the committee confirms lawful and solvent fundraising</td>
+</tr>
+<tr>
+<td>Run campaign</td>
+<td>Paid fundraising lead reporting to committee and members</td>
+<td>Net cleared cash at or above the verified minimum; donor concentration and restrictions reported</td>
+</tr>
+<tr>
+<td>Release pilot funding</td>
+<td>Committee and independent finance/clinical assurance</td>
+<td>Funds usable for every obligation, contracts safe, evaluation/exit provision funded</td>
+</tr>
+<tr>
+<td>Report and renew</td>
+<td>Finance lead, university research team and members</td>
+<td>Use of money, participation/outcomes and next-period funding decision published to members/donors</td>
+</tr>
+</tbody>
+</table></div>
+<p>The committee cannot substitute expressions of interest or platform pledges for cleared funds. Delayed payout delays service commitments. If the campaign misses its threshold, do not start; follow agreed refund or donor-approved alternative-use terms. A later smaller proposal requires fresh service costing, community decision and donor terms, not an improvised reduction of promised care.</p>
+<h2>Budget before the appeal</h2>
+<p>Illustrative pre-appeal needs are $25,000 feasibility, $20,000 campaign preparation/management and $15,000 for early formation drawn from the $90,000 setup allowance. Together they require $66,000 seed including a 10% reserve, in 2026 dollars. The $15,000 allocation is an unquoted planning assumption, not an additional cost. The seed underwriter must finance this before paid feasibility and formation. Founders document pre-incorporation liabilities and spending limits; after registration the Living Well management committee accepts only approved obligations before any reimbursement. Living Well itself runs the appeal and negotiates the delivery contracts. In the base, the campaign reimburses that seed after success; if it fails, the underwriter bears the agreed loss. No underwriter is committed. If seed is instead an irrevocable gift, revise the appeal target and records so it is counted once. People are not asked to work unpaid to make the campaign viable.</p>
+<p>Total setup remains $90,000, of which $15,000 is financed before the appeal; initial/pilot university research is provisionally $120,000. After seed reimbursement of $66,000, remaining setup of $75,000 and evaluation of $120,000 require $214,500 including reserve. Total preparation/setup/evaluation stays $280,500, with no duplicated formation charge. Setup covers entity/contracts, process design, training and technology integration; participant assessment/onboarding is separately included in service costs. Any overlapping quotation must be corrected before final budget approval. Campaign costs are paid expenses, not participant services.</p>
+<h2>Minimum appeal target</h2>
+<p>The base uses a 5% platform/payment allowance and 3% collection-loss/refund allowance, both of gross donations. Thus 92% is usable before paid campaign work already included above. These are test assumptions, not a selected platform tariff. Verify settlement, taxation, chargeback and restricted-gift conditions before setting a live target.</p>
+<p><strong>Net funding needed = first-year service cost + $280,500 preparation/setup/evaluation + a three-month first-year service-cost buffer. Gross appeal target = net funding needed ÷0.92.</strong> The buffer is held cash, not another expense. Because the base appeal fully funds the pilot, year-one member/sponsor/insurer receipts are zero in the cash model. Actual later receipts cannot be promised or counted twice against that already funded period.</p>
+<p>This table is a <strong>100-person pilot at midpoint cost allowances</strong>. Constant-dollar columns use 2026 Australian dollars; the final column is nominal 2027–28 dollars using 3% annual inflation at the financial-year midpoint. Negative outcomes and funding-readiness conclusions are assessed in the final viability section.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Delivery</th>
+<th>Service cost</th>
+<th>Preparation/setup/evaluation</th>
+<th>Buffer</th>
+<th>Net need, 2026 dollars</th>
+<th>Gross target, 2026 dollars</th>
+<th>Gross target, 2027–28 dollars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>$431,750</td>
+<td>$280,500</td>
+<td>$107,938</td>
+<td>$820,188</td>
+<td>$891,508</td>
+<td>$931,925</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>$409,750</td>
+<td>$280,500</td>
+<td>$102,438</td>
+<td>$792,688</td>
+<td>$861,617</td>
+<td>$900,679</td>
+</tr>
+</tbody>
+</table></div>
+<p>For the D1 association base, the gross target is about $891,508 in 2026 dollars or $931,925 in 2027–28 dollars. At a hypothetical $100 gift, the constant-price target needs 8,916 transactions; neither this average nor donor availability is evidenced. Founding donations, signed matching gifts and smaller gifts can contribute, but matches count only when payable and only once. Wealth or gift size buys no extra member votes or clinical priority.</p>
+<p>The model includes 100/250/1,000-place targets at lower/midpoint/upper service allowances. Those larger scales show funding exposure, not an invitation to begin with 1,000 people. Any future smaller pilot must preserve safe service and independent evaluation; it cannot reduce arbitrary costs merely to produce an appealing fundraising target.</p>
+<h2>Failure and settlement tests</h2>
+<p>The following fixes the <strong>D1 midpoint 100-place target in 2026 dollars</strong> and changes what is collected or retained. Shortfall means missing usable cash against the same promised programme. The 15% deduction case requires a higher gross target; collecting 100% of the old target is then insufficient.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Net collected</th>
+<th>Shortfall</th>
+<th>Funding gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100% collected, 8% deductions</td>
+<td>$820,188</td>
+<td>$0</td>
+<td>Funding amount only passes</td>
+</tr>
+<tr>
+<td>50% collected, 8% deductions</td>
+<td>$410,094</td>
+<td>$410,094</td>
+<td>Delay / do not start</td>
+</tr>
+<tr>
+<td>No gifts</td>
+<td>$0</td>
+<td>$820,188</td>
+<td>Delay / do not start</td>
+</tr>
+<tr>
+<td>100% collected, 15% deductions</td>
+<td>$757,782</td>
+<td>$62,406</td>
+<td>Delay / do not start</td>
+</tr>
+</tbody>
+</table></div>
+<p>A three-month settlement delay means a three-month delay to the launch unless separately authorised bridge finance and its cost are fully secured. The base finances no post-start payout delay because the release gate requires usable cash first. Registration, clinical readiness and evaluation checks remain required even after the amount is raised.</p>
+<h2>Fairness, oversight and continuity</h2>
+<p>The campaign funds the programme as a whole. Access must not depend on a participant telling a public personal story, attracting their own donors or promising unpaid work. Give supporters clear information on beneficiary selection, costs, evaluation, restrictions and unused funds. Respect withdrawal from fundraising communications. Health records are kept separate from donor records and are not sold.</p>
+<p>An accountable committee retains responsibility even when a platform administers donations. Check platform charges, payout and donor-data arrangements, and ensure funds reach the intended organisation. Charity registration alone does not establish deductible-gift status. <a href="https://www.acnc.gov.au/tools/guides/crowdfunding-and-charities">ACNC crowdfunding guidance</a>. Applicable state/territory fundraising rules, tax treatment and truthful claims require advice before an appeal; this proposal does not itself authorise fundraising.</p>
+<p>Recurring supporter donations after the pilot are an optional continuing funding route, separately tested against member contributions, sponsors and insurer purchases. <strong>They do not replace or make optional the essential startup campaign.</strong> Donor renewal and annual paid campaign/supporter administration must cover their own costs. Restricted startup gifts cannot silently become unrestricted long-term operating funds.</p>
+<p>D1 means the New South Wales (NSW) association base overhead; D2 is a lower-overhead sensitivity for the same association, not another legal form or a quoted delivery alternative. University initial/pilot work must be quoted before the campaign; longer research phases need separate secured funding. No royalty or unconfirmed university contribution balances this model.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="cashflow-and-social-value"><h2>Costs, cash flow and value</h2>
+<h2>Account 1 — programme cash</h2>
+<p>The service has five direct cost categories. The following <strong>2026 Australian-dollar planning allowances</strong> are not supplier quotes. Midpoints provide a deterministic illustration; lower/upper amounts are sensitivity bounds rather than statistical intervals. They preserve a needs-based service specification without imposing universal extra professional appointments.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Category and timing</th>
+<th style="text-align: right;">Lower</th>
+<th style="text-align: right;">Midpoint</th>
+<th style="text-align: right;">Upper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clinical/community support per active year</td>
+<td style="text-align: right;">$750</td>
+<td style="text-align: right;">$1,000</td>
+<td style="text-align: right;">$1,250</td>
+</tr>
+<tr>
+<td>Individual AI per active year</td>
+<td style="text-align: right;">$90</td>
+<td style="text-align: right;">$165</td>
+<td style="text-align: right;">$240</td>
+</tr>
+<tr>
+<td>Secure data per active year</td>
+<td style="text-align: right;">$60</td>
+<td style="text-align: right;">$110</td>
+<td style="text-align: right;">$160</td>
+</tr>
+<tr>
+<td>Assessment/onboarding per new entrant</td>
+<td style="text-align: right;">$750</td>
+<td style="text-align: right;">$1,000</td>
+<td style="text-align: right;">$1,250</td>
+</tr>
+<tr>
+<td>Watch per new/replacement device</td>
+<td style="text-align: right;">$300</td>
+<td style="text-align: right;">$450</td>
+<td style="text-align: right;">$600</td>
+</tr>
+<tr>
+<td>New entrant direct first year</td>
+<td style="text-align: right;">$1,950</td>
+<td style="text-align: right;">$2,725</td>
+<td style="text-align: right;">$3,500</td>
+</tr>
+<tr>
+<td>Continuing year, before any replacement due</td>
+<td style="text-align: right;">$900</td>
+<td style="text-align: right;">$1,275</td>
+<td style="text-align: right;">$1,650</td>
+</tr>
+</tbody>
+</table></div>
+<p>Watches are replaced at three-year intervals for continuing cohorts. Assessment/onboarding is paid only on entry. The direct support allowance covers professional review and nutrition/community support; initial assessment is in onboarding. Full quotations must allocate access, coordination, escalation and digital help without omissions or duplicate charges. Shared costs cover governance, supervision, insurance, finance, privacy, administration and routine supporter relations, not a second charge for the same participant contact.</p>
+<p>Annual shared assumptions at 100/250/1,000 places are D1 $120 k/$180 k/$410 k; D2 $100 k/$150 k/$350 k. D1 is the New South Wales (NSW) association base; D2 is a lower-overhead sensitivity for that same association. Neither is a quotation for the three delivery arrangements; no organisational efficiency has been measured. In all cases operating budget is 1.10×(direct service costs+shared costs). Procurement must quote complete safe delivery before commitments.</p>
+<p>Startup includes $90,000 setup, $120,000 pilot evaluation, $25,000 discovery and $20,000 campaign preparation/management. Applying 10% once gives <strong>$280,500</strong>, including <strong>$66,000 seed preparation</strong>. The seed includes $15,000 of the existing $90,000 setup allowance for pre-appeal formation, plus discovery/campaign work and their reserve. This allocation is an assumption to quote, not an added expense. After seed reimbursement, remaining setup/evaluation uses $214,500 including reserve; together they equal $280,500. The seed is spent before the appeal; the model assumes a successful appeal repays a private reimbursable seed advance without interest. An agreed interest charge would be added. Failure leaves that agreed loss with the underwriter, not participants. The continuing cash ledger charges the underlying seed expense once, when repaid from cleared campaign funds, rather than adding both seed spending and repayment as two programme costs.</p>
+<h3 id="support-first-pilot-cash">First pilot cash</h3>
+<p>The startup campaign fully finances the first service year and a buffer equal to three months of first-year service cost. There are <strong>zero ordinary participant, sponsor or insurer receipts in that pilot year</strong>. This is a proposed funded-pilot design, not evidence of free ongoing services. The cash buffer is retained, not a further expense. The budget assumes reserves are spent conservatively; unused amounts require an agreed community/donor allocation or refund rule.</p>
+<p><code>monthly-cash.csv</code> starts at cleared campaign funding: month 0 repays seed and pays the remaining setup/evaluation; month 1 pays entrant onboarding/watches; recurring support and overhead are paid monthly. D1 and D2 each end the base first year with the buffer. The seed advance and pre-appeal expense net to zero before this ledger; the failure case still exposes the underwriter to $66,000 at 2026 prices. There is no hidden funding source.</p>
+<p>All cash is stated either in 2026 dollars or explicitly nominal financial-year dollars. The model uses 3% annual inflation and the financial-year midpoint: 2027–28 amounts multiply by 1.03^1.5, and later years by 1.03^(year-end−2026−0.5). This is a planning convention, not a forecast. Costs and recurring prices both index in decade illustrations, requiring real contract evidence later.</p>
+<h3 id="support-delivery-cost-comparison-at-three-scales">Delivery cost comparison at three scales</h3>
+<p>The table uses <strong>new entrants, midpoint 2026-dollar service costs with 10% reserve</strong>. Recurring receipt/balance columns test the common member-plus-sponsor funding hypothesis for a new cohort after the pilot; they are not added to the fully crowdfunded first year. Negative balance is an operating shortfall. One-time preparation/setup/evaluation and cash buffer are excluded here and included in the campaign target.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Delivery / people</th>
+<th>Annual service cost</th>
+<th>Cost per person</th>
+<th>Test recurring receipts</th>
+<th>Test balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 / 100</td>
+<td>$431,750</td>
+<td>$4,318</td>
+<td>$306,400</td>
+<td>−$125,350</td>
+</tr>
+<tr>
+<td>D1 / 250</td>
+<td>$947,375</td>
+<td>$3,790</td>
+<td>$766,000</td>
+<td>−$181,375</td>
+</tr>
+<tr>
+<td>D1 / 1000</td>
+<td>$3,448,500</td>
+<td>$3,449</td>
+<td>$3,064,000</td>
+<td>−$384,500</td>
+</tr>
+<tr>
+<td>D2 / 100</td>
+<td>$409,750</td>
+<td>$4,098</td>
+<td>$306,400</td>
+<td>−$103,350</td>
+</tr>
+<tr>
+<td>D2 / 250</td>
+<td>$914,375</td>
+<td>$3,658</td>
+<td>$766,000</td>
+<td>−$148,375</td>
+</tr>
+<tr>
+<td>D2 / 1000</td>
+<td>$3,382,500</td>
+<td>$3,383</td>
+<td>$3,064,000</td>
+<td>−$318,500</td>
+</tr>
+</tbody>
+</table></div>
+<p>The following <strong>250-place operating balances in 2026 dollars</strong> vary service-cost allowances while holding shared costs and test member/sponsor receipts fixed. Negative means shortfall. They are cost sensitivities, not probabilities or validated bids.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Delivery</th>
+<th>Lower</th>
+<th>Midpoint</th>
+<th>Upper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>$31,750</td>
+<td>−$181,375</td>
+<td>−$394,500</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>$64,750</td>
+<td>−$148,375</td>
+<td>−$361,500</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="support-continuing-years-and-cash-discipline">Continuing years and cash discipline</h3>
+<p>The illustrative path is 100→250→500→750→1,000, then 1,000 annually. 80% continue each year, with recruited replacements; 60% is also tested. Continuation combines all exit causes, including handover at 80, and is not a survival forecast. Retained people do not incur onboarding again and receive watches only when replacement is due. Cohort counts can be fractional because this is expectation arithmetic, not an enrolment list.</p>
+<p>The table covers ten years, 2027–28 to 2036–37, in <strong>2026 dollars</strong>. Service/startup spending includes all costs described above. Ordinary receipts are zero during the donation-funded pilot and use the member/sponsor hypothesis afterwards. The balance before startup donation shows receipts less costs without hiding financing; startup donation appears separately. The final cash balance includes that net donation once. It includes the retained buffer and is not distributable profit or evidence of affordability.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Delivery</th>
+<th>Ten-year spending</th>
+<th>Ordinary receipts after pilot</th>
+<th>Balance before startup donation</th>
+<th>Net startup donation</th>
+<th>End cash, 2026 dollars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>$18,886,841</td>
+<td>$22,980,000</td>
+<td>$4,093,159</td>
+<td>$820,188</td>
+<td>$4,913,347</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>$18,336,841</td>
+<td>$22,980,000</td>
+<td>$4,643,159</td>
+<td>$792,688</td>
+<td>$5,435,847</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table’s “End cash, 2026 dollars” is the constant-price balance before startup donation plus that net donation. The CSV field <code>closing_cash_nominal</code> instead accumulates each year’s inflation-adjusted cash flows. For example, D1 is $4,913,347 at constant 2026 prices versus about $6,192,453 nominal; these are different price bases for the same scenario.</p>
+<p>Hypothetical later surpluses cannot finance an earlier shortage. The decade assumes places are filled, prices renewed/indexed and the planning service safely deliverable. Renewal fees do not automatically fall with continuing costs; members should consider fairness, access subsidies and actual costs before adopting prices. The CSV also tests lower/upper costs, 60% continuation and every recurring funding route, with supporter donations halved or stopped after the pilot. Later comparative trials, debt interest and unpriced new obligations require additional budgets, not assumed coverage from a surplus.</p>
+<p>For illustration, the following <strong>ten-year D1 balances before startup donation in 2026 dollars</strong> vary recurring supporter donations after the pilot. They are scenarios, not observed renewal rates.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Share of test gifts received</th>
+<th>Balance before startup donation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100%</td>
+<td>$3,493,159</td>
+</tr>
+<tr>
+<td>50%</td>
+<td>$43,159</td>
+</tr>
+<tr>
+<td>0%</td>
+<td>−$3,406,841</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Account 2 — value to a private buyer</h2>
+<p>For participants, measure affordable willingness to renew, function, chosen participation and time burden against alternatives. A signed renewal is stronger evidence than a positive interview. For insurers, compare attributable paid claims and contracted member-service value with the complete purchase price, internal administration and their next-best prevention option. A $3,600 payment requires at least that much defensible purchaser value before overhead/return; no claims saving of that size is estimated here. A sponsor may buy visible aggregate community service, but brand value is unmeasured and does not justify access to personal records. A donor can rationally fund public benefit without receiving a financial return; that does not establish permanent funding.</p>
+<p>Participant payments transfer money to the operator: they are cash receipts, not an additional social benefit on top of service outcomes. An investor contribution changes financing, not operating earnings. Social benefits are not assigned to a private buyer unless separately evidenced and valued without overlap.</p>
+<h2>Account 3 — wider social value</h2>
+<p>Measure function, quality of life, chosen childcare/adult care/volunteering, participant time and carer time against current services and a funded alternative. Use diaries with mutually exclusive primary-activity categories; record simultaneous activity separately. Distinguish new useful time, substitution for existing volunteers, transferred work from another relative and compulsory extra burden. Never treat all healthy time as work or require unpaid contribution as a condition of receiving care.</p>
+<p>For illustration only, 250 people adding one chosen hour a week for 40 weeks would contribute 10,000 gross hours. If half displaces others' activity and participation/support consumes 4,000 additional hours, the broad time balance is only 1,000 hours. At zero additional activity it is −4,000. Such subtraction is an opportunity-cost sensitivity, not a measured utility comparison: an hour of valued social participation and an hour of unwanted burden need not have equal welfare value. Report participant/carer outcomes alongside hours. Multiplying net hours by a transparent replacement-cost rate is a sensitivity, never operator cash or an invoice. National unpaid-care valuations do not prove this programme's incremental output. <a href="https://www.abs.gov.au/statistics/detailed-methodology-information/information-papers/update-measuring-unpaid-care-labour-account">Australian Bureau of Statistics experimental unpaid-care measurement</a>.</p>
+<p>Do not count the same released carer hour as unpaid output, paid earnings and leisure simultaneously. Do not add overlapping wellbeing and monetised time measures without a clear valuation boundary. Measure independent living and participant-reported goals even if monetisation is inappropriate. Full cost-effectiveness or lifetime value cannot be inferred from this concept arithmetic.</p>
+<h2>Account 4 — public effects and usable capacity</h2>
+<p>Private cash receipts do not prove zero public fiscal effects. Record additional consultations, tests, care needs and any lawful tax concessions separately. Do not finance required programme delivery through hidden public payments. Public savings are not estimated or available as operator cash in this case.</p>
+<p>Record clinical and coordination time by profession, location and timing, including programme governance and care induced by detecting needs. Aggregate service budgets do not establish a staffing roster. Usable clinical capacity equals attributable avoided compatible care hours multiplied by the share actually redeployable, less programme hours and induced demand. If programme hours are H and induced hours J for n people, avoided hours per person needed for a positive balance exceed (H+J)/(n×redeployable share), when that share is positive. No numeric gain is claimed before those quantities are measured.</p>
+<p>The full evaluation considers functional outcomes, quality of life, additional chosen contribution, household burden, opportunity costs and adverse effects. A positive operator balance, a donation or a community vote is not itself a health or resilience benefit. Wider value cannot be counted again as programme revenue.</p>
+<h2>NSW governance and research baseline reconciliation</h2>
+<p>D1 uses the base overhead allowance; D2 tests lower overhead for the same NSW association. These are planning sensitivities, not quotations or evidence that the legal form is cheaper.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Cost or funding item</th>
+<th>Retained 2026-dollar baseline</th>
+<th>What must now be verified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup/formation</td>
+<td>$90,000 before reserve, including $15,000 pre-appeal allocation</td>
+<td>Custom participatory constitution, formation, contracts, training and governance support</td>
+</tr>
+<tr>
+<td>Initial/pilot research</td>
+<td>$120,000 before reserve</td>
+<td>University staff, overhead, methods, ethics, analysis, publication and data duties; no confirmed quote</td>
+</tr>
+<tr>
+<td>Discovery / campaign</td>
+<td>$25,000 / $20,000 before reserve</td>
+<td>Allocate university feasibility and community work once; no duplicate charges</td>
+</tr>
+<tr>
+<td>Total startup / seed within it</td>
+<td>$280,500 / $66,000 including reserve</td>
+<td>Same totals; underwriting not committed</td>
+</tr>
+<tr>
+<td>D1 100-person pilot gross target</td>
+<td>$891,508, approximately $932,000 at assumed 2027–28 prices</td>
+<td>Recalculate against actual complete quotations before appeal</td>
+</tr>
+<tr>
+<td>Comparative/long-term research</td>
+<td>Not priced or included in current operating cashflows</td>
+<td>Separate funded work packages before obligations; no claimed ten-year all-in cost</td>
+</tr>
+<tr>
+<td>Commercialisation revenue</td>
+<td>$0</td>
+<td>No dependable amount, rights or transaction exists</td>
+</tr>
+</tbody>
+</table></div>
+<p>The long-term model therefore remains a service-operating sensitivity, not the complete cost of the proposed service-plus-longitudinal-research program. University cost proposals may increase fundraising requirements. Fund required research milestones before promising them, and do not cover a shortfall by reducing necessary clinical support or silently drawing on public services.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="pilot-and-falsification-plan"><h2>Startup, pilot and evidence-led expansion</h2>
+<h2>University partnership throughout</h2>
+<p>The university partner co-designs initial research and leads the independent evaluation and long-term outcomes program under the <a href="#university-research-partnership">partnership agreement</a>. Clinical providers retain care responsibilities. No university is committed. Separate funding is needed for comparative and longitudinal phases; the $120,000 allowance is for initial/pilot research, subject to quotation.</p>
+<h2>Stage 1 — define the local proposition</h2>
+<p>Before paid feasibility begins, secure private seed underwriting with documented founder liability before incorporation and Living Well management committee oversight after registration, with agreed spending limits and loss/reimbursement terms. Then convene prospective participants/carers, community members and qualified providers to specify the problem, accessible service and desired outcomes. Map current services and include people who decline fees or technology. A proposed 8–12 week feasibility phase uses around 30 participant/carer interviews, provider cost proposals and authorised prospective payer discussions. This is a qualitative design input, not a national demand survey.</p>
+<p>Compare current services and improving their accessibility with the delivery arrangements within Living Well. Form Living Well and appoint its committee and management before it signs delivery contracts. Agree member rights, full service specification, cost boundaries, clinical/privacy responsibilities, evaluation design and exit conditions. Test household affordability and recurring prices openly, including what changes after a donation-funded first year. No promise of health improvement or unpaid contribution is used to recruit interest.</p>
+<h2>Stage 2 — required crowdfunding</h2>
+<p>Using the seed underwriting secured before Stage 1, approve a truthful, costed campaign under the accountable entity. Crowdfunding is required under all delivery arrangements. Set the minimum cleared net target to cover the defined first-year service, preparation/setup/evaluation and buffer. The base pilot has no additional participant fees or ordinary sponsor/insurer receipts. Campaign terms must explain future renewal, restrictions, loss of target, delay, refunds, reporting and unused funds.</p>
+<p>The proposed campaign/preparation period is 8–12 weeks after feasibility, but clearance and readiness determine the start date. Failure or settlement delay postpones service; it does not permit spending pledged money or omitting safe care. Members approve priorities and the budget framework; the Living Well management committee confirms lawful, safe and solvent execution. These are separate from this draft’s review.</p>
+<h2>Stage 3 — readiness and a bounded 100-person pilot</h2>
+<p>A first pilot could cover one metropolitan and one nearby regional catchment, with 12 months of delivery and separately planned follow-up. Report ages 65–69, 70–74, 75–79, income, disability, language/digital confidence and rural access. A regional pilot does not establish remote feasibility. Clinical suitability and a supported referral pathway govern inclusion; there is no low-risk selection merely to improve results.</p>
+<p>Before enrolment, verify cleared finance, lawful fundraising/use of funds, contracted paid capacity, insurance, safe escalation, a tested technology/data chain, accessible setup and an exit/handover plan. The service comprises personal assessment, suitable exercise/nutrition support, professional review, a watch and individual AI; research measurement does not create extra standard clinical appointments. Research participation is optional and separately consented.</p>
+<p>Proposed outcome measurements are baseline, 6 and 12 months, with monthly safety/resource recording and a 24-month follow-up if funded. For 100 consenting research participants, aim for at least 80 with 12-month primary outcomes; report actual consented denominators and missing data. Aim for 80% of agreed professional reviews within their clinical window and investigate a 15 percentage-point access/retention gap between priority groups. These are feasibility decision thresholds to agree before enrolment, not demonstrated effects or statistical proof of discrimination.</p>
+<p>An independent clinician reviews serious possibly related events and can pause unsafe care immediately. Critical privacy/technology failures require correction and retesting. Every emergency executive decision receives the agreed automatic committee review and appropriate member reporting, protecting individual confidentiality. Zero observed rare harms in 100 people does not establish zero risk.</p>
+<h2>Stage 4 — comparative effectiveness and value</h2>
+<p>The university statistician and research team should design and register a comparison using pilot variance, recruitment and attrition data. Compare A: full Living Well; B: equivalent professional support without the watch/AI package; C: current local services. B/C are research comparators, not Living Well service offers; all Living Well participants receive watch/AI. Also examine the best alternative use of the same private budget. Equal-contact and equal-budget comparisons answer different questions.</p>
+<p>Where feasible and ethical, randomise individuals or clusters, account for clustering, assess outcomes independently, analyse as assigned and disclose missingness/crossover. The proposed primary function measure is the Short Physical Performance Battery: balance, walking and chair-rise tasks scored 0–12. A proposed useful mean advantage of 0.5 points at 12 months requires clinical/participant agreement and uncertainty excluding no benefit; pre-specify suitable measures for fitter participants with ceiling effects. Monitor independent living, goals, quality of life, falls, harms and household burden. No invented power calculation or effect is supplied.</p>
+<h2>Stage 5 — renew, expand, redesign or stop</h2>
+<p>Separate decisions about participant benefit, recurring finance, inclusion, governance and net system capacity. Real renewal and affordable full-cost contracts are stronger than positive interviews. A successful startup appeal establishes only the funding it actually provides. Assess outcomes over 12–24 months, role-specific capacity over 24–60 months and durable family effects over 3–5 years with follow-up after 79.</p>
+<p>The illustrative decade path 100→250→500→750→1,000 is conditional on gates and remains at 1,000 rather than claiming national demand. Each new location requires workforce, accessible service, member rights and secured finance. If function improves but net capacity is unproved, consider a bounded health proposition with appropriately limited claims. If required technology adds no useful value, return the product scope for a deliberate decision rather than silently removing it.</p>
+<p>Pause expansion for unsafe delivery, material inequity, unfunded obligations, uncorrected data failures or no useful comparative benefit. Use funded handover and refund/unused-fund terms to protect participants and donors. The final viability evaluation consolidates the current readiness judgement.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="resilience-theory-of-change"><h2>How the service could support resilience</h2>
+<h2>Proposed mechanism</h2>
+<pre><code class="language-text">People identify needs; Living Well members elect and scrutinise the committee
+    → new Living Well organisation, paid management and fully funded startup campaign
+    → accessible professional support + tailored exercise/nutrition + watch/AI
+    → sustained engagement and functional ability [LW-R01]
+    → chosen additional family/community participation [LW-R02]
+    → less compatible care demand, minus programme and induced care [LW-R03]
+    → essential household support and local care maintained during disruption
+
+Technology must add useful value above equivalent human support [LW-R04].
+Family benefits must persist without transferring unwanted burdens [LW-R05].
+</code></pre>
+<p>Each arrow requires evidence. Exercise component research supports a plausible starting point, while local governance and funding must demonstrate their own contribution. Benefits cannot be inferred from device use, a fundraising target or a meeting attendance count.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Link</th>
+<th>Evidence to collect</th>
+<th>Competing explanation or harm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Community authority → priorities</td>
+<td>Which proposals changed budgets/access; whose views were absent</td>
+<td>Vocal or wealthy members dominate; consultation is mistaken for control</td>
+</tr>
+<tr>
+<td>Crowdfunding → dependable service</td>
+<td>Net usable funds, restrictions, obligations and continuity</td>
+<td>A popular campaign overpromises; funds arrive late or cannot pay core bills</td>
+</tr>
+<tr>
+<td>Support → functional gain</td>
+<td>Comparative function and participant goals including withdrawals</td>
+<td>Volunteers would improve anyway; extra contact explains gains</td>
+</tr>
+<tr>
+<td>Function → chosen contribution</td>
+<td>Additional mutually exclusive time diaries and wellbeing</td>
+<td>Activity displaces another volunteer or becomes unwanted work</td>
+</tr>
+<tr>
+<td>Function → care capacity</td>
+<td>Compatible avoided hours minus programme/induced demand</td>
+<td>New diagnoses add care; saved time cannot be redeployed</td>
+</tr>
+<tr>
+<td>Capacity → shock performance</td>
+<td>Contact, essential support, recovery and loss distribution</td>
+<td>Programme fails alongside the services it depends on</td>
+</tr>
+<tr>
+<td>Short-term benefit → family gain</td>
+<td>Follow-up, carer choice, costs and outcomes beyond 79</td>
+<td>Benefits decay or younger relatives inherit greater later burden</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Delivery arrangements and risk</h2>
+<p>Living Well is proposed as a New South Wales (NSW) not-for-profit incorporated association. Members set priorities and the budget framework, elect/remove the committee and decide material expansion and commercialisation after deliberation. The committee manages lawfully through paid staff. Test whether accessible participation actually distributes influence and whether legal/clinical safeguards work. D1/D2 are base/lower overhead scenarios for this same association, not different governance forms. University researchers lead initial and longitudinal evaluation independently; university involvement does not itself establish resilience.</p>
+<p>Crowdfunding can broaden support or bias resources toward visible stories and prosperous areas. A committee must allocate care by agreed needs/access criteria, not individual popularity. No donor can purchase treatment priority, personal data or extra votes. Document opportunity costs: the same private resources could fund existing exercise, nutrition or practical support services.</p>
+<p>Compare those alternatives on outcomes and total resources. An improvement in health may justify a health-service decision even if net care capacity or national resilience is not demonstrated; claims and expansion criteria must then be narrowed explicitly.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="resilience-matrix-assessment"><h2>Resilience governance and outcome matrix</h2>
+<h2>How the programme connects community decisions to outcomes</h2>
+<p>This programme-specific matrix connects service mechanisms, community decisions and outcomes during disruption. It applies the supplied resilience taxonomy’s governance direction: community agenda setting, decisions, veto and review, with deliberation and automatic review of emergency decisions. The domain labels below organise this proposal’s assessment; no unpublished taxonomy identifiers are assigned.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Programme domain</th>
+<th>Critical community decision</th>
+<th>Proposed resilience mechanism</th>
+<th>Outcome independent of who governs</th>
+<th>Evidence and owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health and independent function</td>
+<td>Which functional goals and inclusive service priorities should the budget support?</td>
+<td>Suitable activity and continuing support help preserve daily capability</td>
+<td>Independent living, functional tasks, harms and unmet need compared with alternatives</td>
+<td>LW-R01; university outcomes lead</td>
+</tr>
+<tr>
+<td>Family and community relationships</td>
+<td>How will the service support freely chosen involvement without demanding unpaid work?</td>
+<td>Better function may sustain family contact, care and volunteering</td>
+<td>Additional chosen participation, wellbeing and burden after displacement</td>
+<td>LW-R02/LW-R05; social/family research leads</td>
+</tr>
+<tr>
+<td>Care workforce and essential services</td>
+<td>Does expansion improve local access after subtracting programme staffing and induced care?</td>
+<td>Less compatible care demand may release usable capacity</td>
+<td>Role/place/time-specific net capacity, waiting times and essential care maintained under stress</td>
+<td>LW-R03; university health-services researcher</td>
+</tr>
+<tr>
+<td>Household and programme finance</td>
+<td>What access policy, crowdfunding target, reserve and renewal terms are acceptable?</td>
+<td>Diverse private support and protected cash may maintain service during payer failure</td>
+<td>Care continuity, affordable renewal, cash shortfalls and distribution of losses</td>
+<td>Finance lead and committee audit oversight and member scrutiny</td>
+</tr>
+<tr>
+<td>Food, transport and accessible places</td>
+<td>Which practical access barriers should contracts and contingency plans address?</td>
+<td>Accessible support and local connections may maintain participation during heat/disruption</td>
+<td>Missed support, food/transport barriers and recovery time</td>
+<td>Access lead; participant/carer reporting</td>
+</tr>
+<tr>
+<td>Digital, AI, energy and supply</td>
+<td>What data use, supplier dependence and offline fallback will members permit?</td>
+<td>Technology supports plans, with human continuity if systems fail</td>
+<td>Marginal functional value, safe contact, outage recovery and data incidents</td>
+<td>LW-R04; technology/privacy leads</td>
+</tr>
+<tr>
+<td>Governance and emergency action</td>
+<td>Who can decide, veto, act urgently and review what happened?</td>
+<td>Meaningful member control may improve priorities, trust and accountability</td>
+<td>Essential needs met, speed of recovery, total cost and who carried harm</td>
+<td>Members, committee and independent governance review</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Decision rights and emergency practice</h2>
+<p>Living Well members propose and decide strategic priorities and the budget framework, elect/remove the committee, and decide material expansion and commercialisation after deliberation. The committee checks lawfulness, safety and solvency and oversees execution; paid management handles routine contracts and daily work. This applies the taxonomy’s governance principles without requiring a member vote on each operation. Individual treatment remains confidential and clinically governed. During an incident, managers use delegated continuity powers and the clinical lead can stop unsafe activity. A proposed committee review within 30 days records reasons, outcomes and corrective action, followed by an appropriate member report.</p>
+<p>Governance assistance from AI is advisory: explain evidence and uncertainty, show alternative interpretations and help deliberation. Decisions remain with accountable people. Access to the evidence cannot depend on technical skill or willingness to share personal health information.</p>
+<h2>Testing the governance hypothesis</h2>
+<p>Compare participation breadth, whose proposals reach the agenda, whether member input changes decisions, use of constitutional protections/review, responsiveness and outcomes. Record refusal, domination, conflict and burdens as well as participation. A meeting, vote or successful appeal is an output, not proof of resilience. Community control could improve responsiveness or could favour vocal/wealthy members and slow necessary action. Test those competing explanations against service continuity, outcomes, costs and the distribution of loss.</p>
+<h2>Source boundary</h2>
+<p>The supplied <em>Who Decides? A Map of the Decisions That Will Make or Break Resilience</em>, v 0.3.1 dated 16November 2026, describes 58 decisions across 13 systems and the four governance powers. The linked full taxonomy returned 404 during retrieval; the supplied overview does not contain all 58 definitions, so full taxonomy coverage and exact row identifiers cannot be verified. This matrix is the programme’s application of the governance ideas, not a reconstruction or adoption of missing rows. The overall evidence judgement is in the final viability evaluation.</p>
+<p>The university research partnership is responsible for the agreed evaluation work across these measures; qualified service providers retain individual clinical responsibility. Research phases, independence and long-term funding follow the <a href="#university-research-partnership">partnership proposal</a>.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="resilience-hypotheses-and-measures"><h2>Five resilience hypotheses and decision rules</h2>
+<p>Artificial intelligence (AI) coaching is included in the service and assessed against equivalent human support.</p>
+<p>The evaluation tests five linked mechanisms for the Living Well service. The thresholds below are proposed Product Owner/clinical/evaluation decisions, not measured effects or universally accepted minimums. Establish and register them before the relevant study. A pilot of 100 tests feasibility; its size does not establish efficacy, rare-event safety or subgroup effects. Independent statisticians must set the comparative trial size using variability, clustering, attrition and plausible effect bounds. Do not search outcomes after seeing results.</p>
+<p>The common baseline is a pre-enrolment functional assessment, four-week time/use diary, current services/costs and consented carer assessment. Assess at 6, 12 and 24 months after enrolment; collect safety and resource use monthly; repeat annually where funded. For a July 2027 start, these are January/July 2028 and July 2029, with longer capacity/family work extending to 2030–32 and beyond. Dates move if recruitment is delayed. Report rurality, income, sex, disability, age band and digital confidence; small subgroups need intervals and qualitative evidence, not unsupported subgroup success claims.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>ID / owner</th>
+<th>Hypothesis and principal units</th>
+<th>Comparator and proposed useful threshold</th>
+<th>Falsifier and decision consequence</th>
+<th>Horizon and limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LW-R01 / university outcomes lead</td>
+<td>More healthy independent function: Short Physical Performance Battery (SPPB, 0–12 balance/walk/chair-rise score); independent living days, falls and participant goals</td>
+<td>Current services plus equally supported non-AI comparator; proposed ≥0.5 mean SPPB point advantage at 12 months, uncertainty interval excluding zero, no clinically unacceptable harm. Pre-specify an alternative for ceiling effects</td>
+<td>No useful incremental function, or harm outweighs gain: no health-effect claim or expansion; redesign/stop</td>
+<td>12–24 months function; 3–5+ years for sustained independent years. A score change does not prove added healthy life years</td>
+</tr>
+<tr>
+<td>LW-R02 / social researcher with participant representatives</td>
+<td>Additional chosen childcare, adult care, volunteering and family participation, in non-overlapping hours/person/week; wellbeing and burden separately</td>
+<td>Diaries against current services; proposed ≥0.5 additional chosen hour/week at 12 months after displacement and activity overlap; no deterioration in voluntary choice/wellbeing</td>
+<td>Null/negative additional contribution or coerced/unwanted burden: reject contribution claim; redesign expectations; no required unpaid work</td>
+<td>6/12/24 months; recall/selection bias, seasonal activity and diary burden limit inference</td>
+</tr>
+<tr>
+<td>LW-R03 / independent health-services economist</td>
+<td>Net redeployable clinical hours by occupation/place/time, coordination separately; unmet need and waiting time</td>
+<td>Comparable local service use; avoided hours × redeployable share minus measured programme clinical hours by role/place/time and induced demand; original aggregate budgets do not establish hours. Proposed net &gt;0 with uncertainty excluding zero; no increased unmet need</td>
+<td>Programme/new demand consumes all avoided compatible capacity, or unmet need rises: reject capacity-based scale justification</td>
+<td>24–60 months; access to consented records and provider rostering evidence needed; finance alone cannot establish capacity</td>
+</tr>
+<tr>
+<td>LW-R04 / university technology evaluation lead with independent clinical oversight</td>
+<td>Incremental watch+AI function, total cash/resource cost, error/escalation and access versus equivalent human contact</td>
+<td>Full package vs equally supported non-AI arm. Either useful incremental function at an agreed affordable cost, or ≥10% lower complete cost with functional non-inferiority; proposed non-inferiority margin 0.5 SPPB points requires clinical validation; no unacceptable safety/access/privacy failure</td>
+<td>No marginal value, higher cost without useful improvement, unsafe advice or containment failure: no scale of required package; seek explicit brief change or stop</td>
+<td>12–24 months and adversarial/outage tests before launch; vendor updates require retesting. Non-inferiority needs adequate power, not a nonsignificant difference</td>
+</tr>
+<tr>
+<td>LW-R05 / family/carer researcher</td>
+<td>Durable family benefit: freely available carer time, wellbeing, paid work/education participation and household costs; follow-up after 79</td>
+<td>Consenting families against comparator; proposed ≥0.5 freely available hour/week or pre-specified meaningful wellbeing gain, sustained at 24 months, with no worsening financial strain or involuntary burden</td>
+<td>Gains disappear after support, care shifts unfairly to younger people, or later-life burden outweighs earlier relief: reject durable intergenerational claim</td>
+<td>24 months then 3–5+ years; mortality, ageing and loss to follow-up complicate inference. Twenty-year scenario cannot verify this</td>
+</tr>
+</tbody>
+</table></div>
+<p>For every threshold report the effect estimate and uncertainty interval, raw denominators, missingness, adverse outcomes and alternative explanations. A point estimate above a target is not a pass when uncertainty includes material harm/no benefit. No arbitrary aggregate resilience score combines failed and successful hypotheses. Different outcomes can justify different decisions: useful function with no net capacity benefit may support a revised health proposition but not the national capacity claim.</p>
+<h2>Attribution and measurement safeguards</h2>
+<p>A1 is the full package versus existing services; A2 is the package versus equivalent professional support without technology; A3 compares resource-equivalent alternatives. Randomised allocation is preferred where feasible and ethical; otherwise state residual confounding and do not label associations causal. For unpaid activity, distinguish participant enjoyment from useful output to others, count simultaneous tasks once and subtract displaced activity. Record caregiver support time even when the caregiver likes helping. Respect a participant's choice to use better health for leisure.</p>
+<p>For capacity, retain role-specific ledgers and the added care caused by detecting needs. Report actual paid budget effects separately. Do not count the same hour as hospital savings and additional independent-living output without an explicit boundary. University research teams should have access to incident and dropout records and freedom to report null findings. No payer may suppress adverse results.</p>
+<p>No baseline participant measurements or whole-programme effects have yet been established. Community governance is additionally assessed through the decision-rights and outcome matrix; a vote or campaign success does not prove these five hypotheses.</p>
+<p>The university research partnership is responsible for the agreed evaluation work across these measures; qualified service providers retain individual clinical responsibility. Research phases, independence and long-term funding follow the <a href="#university-research-partnership">partnership proposal</a>.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="resilience-stress-tests"><h2>Disruption tests and continuity arrangements</h2>
+<h2>Financial and service stress tests</h2>
+<p>The table tests <strong>250 new places with common hypothetical recurring member/sponsor receipts, in 2026 dollars</strong>, under each delivery structure. It is an after-pilot pricing stress, not an account of pilot donations. Costs include 10% reserve; setup is excluded. Negative balance means annual receipts fall short. These deterministic scenarios have no assigned probabilities and do not demonstrate service performance.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>D1: association base</th>
+<th>D2: lower-overhead sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base</td>
+<td>−$181,375</td>
+<td>−$148,375</td>
+</tr>
+<tr>
+<td>lower_allowances</td>
+<td>$31,750</td>
+<td>$64,750</td>
+</tr>
+<tr>
+<td>upper_allowances</td>
+<td>−$394,500</td>
+<td>−$361,500</td>
+</tr>
+<tr>
+<td>workforce_30pct_support_onboarding</td>
+<td>−$346,375</td>
+<td>−$313,375</td>
+</tr>
+<tr>
+<td>rural_access</td>
+<td>−$346,375</td>
+<td>−$313,375</td>
+</tr>
+<tr>
+<td>heat_fire</td>
+<td>−$239,125</td>
+<td>−$206,125</td>
+</tr>
+<tr>
+<td>higher_support_needs</td>
+<td>−$263,875</td>
+<td>−$230,875</td>
+</tr>
+<tr>
+<td>technology_outage</td>
+<td>−$274,875</td>
+<td>−$241,875</td>
+</tr>
+<tr>
+<td>adverse_ai</td>
+<td>−$318,875</td>
+<td>−$285,875</td>
+</tr>
+<tr>
+<td>recession_25pct_receipts_lost</td>
+<td>−$372,875</td>
+<td>−$339,875</td>
+</tr>
+<tr>
+<td>sponsor_exit</td>
+<td>−$431,375</td>
+<td>−$398,375</td>
+</tr>
+<tr>
+<td>no_health_gain</td>
+<td>−$181,375</td>
+<td>−$148,375</td>
+</tr>
+<tr>
+<td>no_payer</td>
+<td>−$947,375</td>
+<td>−$914,375</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Five disruptions tested in every option</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Disruption</th>
+<th>Cost/receipt assumption</th>
+<th>Practical response and community decision</th>
+<th>Failure criterion / owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workforce shortage</td>
+<td>30% rise in support/onboarding allowances: $600/person before reserve; broad cost proxy, not measured wages/hours</td>
+<td>Secure paid professional cover; reduce proposed intake if needed; members set priorities within lawful and safe clinical capacity; committee manages execution and urgent protective action</td>
+<td>Cannot roster safe care, or nearby unmet need rises due to staff diversion; clinical lead</td>
+</tr>
+<tr>
+<td>Heatwave/bushfire</td>
+<td>$150/person alternative access plus $15,000 response coordination before reserve</td>
+<td>Suspend unsafe activity, contact high-need people, use suitable accessible alternatives; executive action under agreed plan and automatic committee review and member reporting</td>
+<td>High-need people unreachable, unsafe resumption or essential support lost; continuity lead</td>
+</tr>
+<tr>
+<td>Higher support needs/ageing</td>
+<td>Additional 20% need $1,500 more support: $300 averaged across places before reserve</td>
+<td>Reassess needs and costs, fund safe transition beyond 79; committee revisits access/budget with member input, not individual treatment</td>
+<td>Necessary support rationed or burden shifted involuntarily to families; clinical/access leads</td>
+</tr>
+<tr>
+<td>Recession/payer exit</td>
+<td>25% recurring receipts lost at unchanged committed costs; separate removal of sponsor receipts</td>
+<td>Monitor cash and cancellations; committee revises plans while protecting current obligations; freeze new intake before commitments exceed funding</td>
+<td>Cash below funded continuity requirement with no enforceable replenishment; finance lead</td>
+</tr>
+<tr>
+<td>Technology/power/supplier disruption</td>
+<td>$300/person response plus $10,000 shared response before reserve</td>
+<td>Printed plans, paid telephone/human contact and safe pause; restore and verify controlled data systems</td>
+<td>Lost safe contact, unverified data containment or unavailable fallback staff; privacy/clinical leads</td>
+</tr>
+</tbody>
+</table></div>
+<p>Living Well’s committee must secure paid capacity and reserves under either legal form. Management has delegated emergency authority; it does not wait for a membership vote to protect people. Independent clinical stop authority, automatic committee review and appropriate member reporting apply. A nonprofit label does not itself supply staff or money.</p>
+<h2>Startup versus renewal shocks</h2>
+<p>Before startup, campaign shortfall or delayed clearance prevents launch. The fully funded pilot therefore has no assumed member/sponsor receipt exposure during its first year. It still faces cost shocks. The monthly pilot CSV tests workforce and outage costs against the cash buffer, showing whether that cushion would be consumed. A positive closing balance does not excuse a breached reserve policy or prove professionals exist.</p>
+<p>After the pilot, affordability, sponsor/insurer termination and donor fatigue affect renewal. No ordinary government rescue or emergency appeal is assumed. Startup donors’ restrictions may prohibit using residual money for expansion; obtain consent or return funds under agreed terms. Reject unsafe service reductions made only to balance a forecast.</p>
+<h2>Other sensitivities and compound failures</h2>
+<p>Rural delivery adds $600/person; adverse AI response adds $300/person and $50,000 shared incident cost before reserve. No-health-gain leaves contract receipts unchanged initially, demonstrating that a financial result can coexist with failed benefits. Lower/upper cost allowances, no payer and donor renewal cessation are separate tests. Joint workforce, heat and funding loss could be worse than any single row; commission a combined continuity budget before committing to expansion rather than inventing a joint probability.</p>
+<p>Outcome tests record essential support maintained, missed contacts, recovery time, cost, carer burden and who carried losses. Neither a funded drill nor an annual surplus establishes national resilience.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="intergenerational-and-external-effects"><h2>Twenty-year sensitivity, future families and external dependencies</h2>
+<p>Artificial intelligence (AI) coaching is part of the full Living Well service assessed here.</p>
+<h2>A long horizon must include later needs</h2>
+<p>For someone joining at 65–79 in 2027, a twenty-year view reaches ages 85–99. Better function may delay disability without eliminating it. Longer life may add valued years and later care costs. Neither mortality reduction nor cost reduction is established for this package. Quality of life remains the purpose; extra care in a longer valued life is not itself a failure. The cash model cannot estimate survival, disability transition or lifetime cost from a one-year pilot.</p>
+<p>The sensitivity follows one hypothetical 250-person cohort over 2027–2046. Assume two family hours/month are freely released while benefit persists; compare no benefit, benefits through year five or twenty, and a three-year delay before benefits start. For sensitivity only, assume 12 participant and four family hours of extra annual programme burden for the first five years. These arbitrary time inputs are unmeasured; they are not a service entitlement or a claim that all support consumes only these hours. Test unchanged exposure and exposure falling 5% annually. This decline is <strong>not a survival forecast</strong> and should not be presented as observed attrition.</p>
+<p>Separately test zero extra longevity against 0.02 additional person-years per original participant in each of years 11–20. Across 250 people that is 50 additional person-years over the decade. At an assumed 100 later-care hours per added person-year and $80/hour, the extra care is 5,000 hours/$400,000. These are arbitrary stress inputs to reveal a possible trade-off, not an estimated effect. No payer or public/private split is assumed for this care. Post-79 ordinary care needs would exist in both arms; the calculation is <strong>incremental</strong> hypothetical additional care, not all later-life costs.</p>
+<p>The table uses constant exposure for 250 people. Hours are cumulative over twenty years; costs are undiscounted 2026 Australian dollars. The broad time balance subtracts participant and family programme time from family time released. It is not a quality-of-life measure and does not net off professional later-care hours, which remain a separate account. Negative means assumed time burden exceeds assumed released family time.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Benefit starts / lasts through year</th>
+<th style="text-align: right;">Gross family hours</th>
+<th style="text-align: right;">Participant + family burden hours</th>
+<th style="text-align: right;">Broad net time balance</th>
+<th style="text-align: right;">Additional later care hours</th>
+<th style="text-align: right;">Later care cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>After 0 / 0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">-20,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">$400,000</td>
+</tr>
+<tr>
+<td>After 0 / 5</td>
+<td style="text-align: right;">30,000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">$400,000</td>
+</tr>
+<tr>
+<td>After 3 / 5</td>
+<td style="text-align: right;">12,000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">-8,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">$400,000</td>
+</tr>
+<tr>
+<td>After 0 / 20</td>
+<td style="text-align: right;">120,000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">100,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">$400,000</td>
+</tr>
+<tr>
+<td>After 3 / 20</td>
+<td style="text-align: right;">102,000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">82,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">$400,000</td>
+</tr>
+</tbody>
+</table></div>
+<p>The delayed five-year case gives only two years of benefit (years four and five), illustrating how a promising mechanism can fail to repay early household burden. The original-cohort later-care calculation deliberately does <strong>not</strong> decline with the exposure factor used for family benefits. This is a conservative asymmetric stress, not a coherent survival model: later care remains based on all 250 original participants while family benefit exposure falls. A second <code>exposure_scaled</code> variant applies the same annual exposure factor to later care. At 5% annual decline it gives about 2,403 additional later-care hours and $192,201, compared with 5,000 hours/$400,000 on the fixed-original-cohort basis. With unchanged exposure both methods coincide. Both bases, zero-longevity variants and benefit-delay cases are in <code>Model/twenty-year-sensitivity.csv</code>; neither estimates actual longevity. Discounting later care at 0%, 3% and 5% real rates is shown separately; it changes today's valuation, not the number of hours or cash due in future. Do not add discounted amounts to undiscounted cost totals. No programme expenditure for twenty years is inferred from five years of assumed support.</p>
+<p>A complete lifetime model would need age/sex/baseline-function transitions, survival, disability, care intensity, family composition, quality of life and service cost data with an explicit comparator. They are absent. The sensitivity therefore cannot establish net lifetime social value, prove LW-R05 or support a national benefit estimate. Observe families after support ends and participants pass 79; do not select only survivors with complete records.</p>
+<h2>Who may gain or lose across generations</h2>
+<p>Older people may gain independent choice and social participation; adult children may gain time for work, education, rest or their own families. Grandchildren may receive additional care or simply more enjoyable contact. These are different outcomes and not automatic productive labour. Women already providing substantial unpaid care could receive more duties instead of relief. Younger families might pay fees, provide transport, troubleshoot devices or inherit later care work. Measure household bills and time by person, including those not enrolled.</p>
+<p>Private donor and insurer funds have alternatives: disability support, younger-family prevention, accessible existing exercise or direct home assistance. A $1 million programme cannot also buy the alternative service. Make the comparator budget and workforce explicit; do not assume private spending has no social opportunity cost. Foregone tax receipts from any deductible gifts or premium arrangements belong in the public ledger, not an invisible subsidy. No lifetime net benefit is booked now.</p>
+<h2>Other countries, technology and supply chains</h2>
+<p>At pilot scale, direct international benefit is likely limited and is not valued. Reproducible methods and honest negative findings could eventually inform other countries, subject to separate sharing/publication approval; Australian cost or clinical results would require local revalidation. Migrant families may have cross-border caring obligations, so diaries should capture them voluntarily without assuming national benefit from all hours.</p>
+<p>Imported watches/batteries, software updates, cloud regions, AI inference, support staff, undersea connectivity and vendor solvency create foreign dependencies. Supplier nationality does not establish processing location or legal access. Require auditable contracts, complete data-flow testing, exportable plans, local encrypted backup, a replacement-device reserve, support exit clauses and staffed offline continuity. Local manufacture or Australian ownership is not assumed. Device energy use and electronic waste are plausible external costs; request lifecycle/recycling evidence rather than inventing emissions savings.</p>
+<p>The international dependencies above require local evidence; this case asserts no national self-sufficiency or international resilience improvement.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="assumptions-and-sources"><h2>Assumptions, evidence and method</h2>
+<h2>Planning assumptions</h2>
+<p>The model is deterministic. Input bounds and scenarios test consequences, not probabilities of success. Dollar amounts use 2026 prices unless labelled nominal. Source and calculation files are maintained with the proposal so a reviewer can reproduce every table.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Use and uncertainty</th>
+<th>Owner to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New-person direct cost $1,950–$3,500; continuing support $900–$1,650 excluding due watch replacement</td>
+<td>Needs-based service budget; no universal appointment quantities inferred</td>
+<td>Clinical/procurement leads</td>
+</tr>
+<tr>
+<td>Three-year watch replacement, onboarding only on entry</td>
+<td>Cohort cash timing; actual hardware life/support may vary</td>
+<td>Procurement/technical leads</td>
+</tr>
+<tr>
+<td>Shared costs differ across D1 and D2</td>
+<td>Base/lower overhead sensitivity for the same New South Wales (NSW) association; not quotes or legal-form savings</td>
+<td>Finance and independent option appraisal</td>
+</tr>
+<tr>
+<td>10% reserve applied once to operating and one-time budgets</td>
+<td>Contingency allocation, not guaranteed cover of all shocks</td>
+<td>Finance/clinical committee</td>
+</tr>
+<tr>
+<td>$66,000 reimbursable seed; $280,500 total preparation/setup/evaluation</td>
+<td>Paid startup and campaign work; underwriter bears failed-campaign loss as agreed</td>
+<td>Committee and seed underwriter</td>
+</tr>
+<tr>
+<td>5% platform/payment and 3% loss/refund allowance</td>
+<td>Gross-to-net campaign conversion; no selected platform or fee quote</td>
+<td>Fundraising/finance leads</td>
+</tr>
+<tr>
+<td>Fully crowdfunded 100-person pilot; no ordinary pilot-year receipts</td>
+<td>Protects finite service commitments; subsequent-year funding is separately tested</td>
+<td>Living Well management committee</td>
+</tr>
+<tr>
+<td>20% concessions/equity places and recurring fees/contracts</td>
+<td>Price tests only; actual need and willingness to renew unknown</td>
+<td>Access lead and independent researcher</td>
+</tr>
+<tr>
+<td>3% inflation; 80% continuation; recruited replacements</td>
+<td>Constant/nominal cash and cohort scenarios; not forecasts</td>
+<td>Finance/university research team</td>
+</tr>
+<tr>
+<td>Benefits and clinical hours</td>
+<td>Require measurement; no programme-specific effect or roster estimated from budgets</td>
+<td>University research team</td>
+</tr>
+<tr>
+<td>Family-time/longer-life sensitivities</td>
+<td>Arbitrary stress inputs, not survival or lifetime benefit estimates</td>
+<td>Family/health-services researchers</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Research and guidance used</h2>
+<p>Clinical evidence and source-access dates carried forward from research checked on 14November 2026 remain identified here; new governance/business-case sources were checked on 17November 2026. No inaccessible source is treated as a verified legal or clinical conclusion.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Used for</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.cochrane.org/evidence/CD012424_exercise-preventing-falls-older-people-living-community">Cochrane exercise/falls review</a></td>
+<td>Component rationale for suitable activity</td>
+<td>Does not validate complete Living Well, AI or private demand</td>
+</tr>
+<tr>
+<td><a href="https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-older-adults-65-years-and-over">Australian older-adult movement guidance</a></td>
+<td>Professional tailoring context</td>
+<td>Not a uniform prescription</td>
+</tr>
+<tr>
+<td><a href="https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/ageing-and-health/integrated-care-for-older-people-icope">WHO integrated care for older people</a></td>
+<td>Person-centred functioning and coordination</td>
+<td>Framework, not programme effect estimate</td>
+</tr>
+<tr>
+<td><a href="https://www.dtf.vic.gov.au/business-case">Victorian DTF Business case guidance</a> and linked full guide</td>
+<td>Investment/delivery case, real options, costs, benefits, accountability, exit and review</td>
+<td>Adapted proportionately; no state-funding eligibility, endorsement or compulsory government process imported</td>
+</tr>
+<tr>
+<td><a href="https://www.dtf.vic.gov.au/investment-management-standard">Victorian Investment Management Standard</a></td>
+<td>Clear problem-to-benefit reasoning and benefit ownership/measurement</td>
+<td>No accredited workshop or formal compliance claimed</td>
+</tr>
+<tr>
+<td>Supplied <em>Who Decides? A Map of the Decisions That Will Make or Break Resilience</em>, v 0.3.1,16November 2026</td>
+<td>Community agenda, decision, veto, review, deliberation and automatic emergency review</td>
+<td>Draft governance hypothesis; full 58-decision link returned 404; no invented row mapping</td>
+</tr>
+<tr>
+<td><a href="https://www.consumer.vic.gov.au/clubs-and-fundraising/incorporated-associations/what-is-an-incorporated-association">Consumer Affairs Victoria incorporated associations</a></td>
+<td>Community nonprofit legal route</td>
+<td>Actual rules, entity suitability and duties require advice</td>
+</tr>
+<tr>
+<td><a href="https://www.acnc.gov.au/tools/guides/crowdfunding-and-charities">ACNC crowdfunding guide</a></td>
+<td>Living Well management committee responsibility, platform/settlement/donor controls</td>
+<td>No campaign, fees or donor demand validated</td>
+</tr>
+<tr>
+<td><a href="https://www.acnc.gov.au/tools/factsheets/small-charities-library-fundraising">ACNC fundraising guidance</a></td>
+<td>Jurisdictional rules and protection from pressure</td>
+<td>Obtain current legal advice before appeal</td>
+</tr>
+<tr>
+<td><a href="https://privatehealth.gov.au/health_insurance/what_is_covered/privatehealth.htm">Private health overview</a> and <a href="https://www.legislation.gov.au/F2018L00718/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html">insurance rules</a></td>
+<td>Possible lawful purchaser route to investigate</td>
+<td>No whole-package eligibility or contract established</td>
+</tr>
+<tr>
+<td><a href="https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products">OAIC commercial AI guidance</a></td>
+<td>Privacy responsibilities and data minimisation</td>
+<td>No actual processing-chain test completed</td>
+</tr>
+<tr>
+<td><a href="https://www.tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices">TGA software guidance</a></td>
+<td>Intended purpose and regulatory assessment</td>
+<td>No vendor/device certification claimed</td>
+</tr>
+<tr>
+<td><a href="https://www.abs.gov.au/statistics/detailed-methodology-information/information-papers/update-measuring-unpaid-care-labour-account">ABS unpaid-care measurement</a></td>
+<td>Non-overlapping time/value accounting</td>
+<td>National unpaid care does not prove programme-attributable hours</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Method adaptation</h2>
+<p>Credit: State of Victoria, Department of Treasury and Finance, <em>Investment Lifecycle and High Value High Risk Guidelines — Business Case</em>, copyright 2023, downloadable 2024 file, accessed 17November 2026; licensedCCBY3.0Australia except specified branding/images. The proposal uses independently written text, not government branding or a reproduced template.</p>
+<p>The practical adaptation is to state the problem and outcomes first; compare current services and three feasible delivery arrangements; explain governance, procurement, budget and schedule; allocate benefit owners and measurement; and finish with a viability/decision assessment. A short community-led pilot warrants proportionate analysis rather than state infrastructure submission machinery. National government funding gates, ministerial sign-off and public financing examples are not requirements for this proposal. No state endorsement or completed facilitated workshop is implied.</p>
+<p>The taxonomy overview informs the proposed governance approach. Its four powers are proposed for this organisation within lawful duties, not claimed as new statutory powers over public services. The proposed 30-day emergency review is a programme design choice. </p>
+<h2>Four-tab presentation and new Living Well organisation</h2>
+<p>The presentation adapts the editorial hierarchy, tabs, optional detail and read-all/print pattern of the <a href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html" target="_blank" rel="noopener">Product Owners AI Guide</a>.</p>
+<p>Current governance recommendation: a NSW incorporated association, inferred from the community purpose and One World principles, subject to legal eligibility advice. Official <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/about-incorporated-associations">NSW association guidance</a>, <a href="https://www.service.nsw.gov.au/transaction/apply-to-register-an-incorporated-association">registration requirements</a>, <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/running-an-incorporated-association/management-committee-obligations">committee duties</a> and <a href="https://www.nsw.gov.au/business-and-economy/incorporated-associations/running-an-incorporated-association/resolutions">resolutions</a> were checked on 17 November 2026. Current legislation endpoint returned 403; no claim of full statutory review. D1/D2 now represent base/lower overhead for the same association, with numeric inputs unchanged and no legal-form saving inferred.</p>
+<p>Living Well's full device/app/cloud/AI/support chain requires privacy, accessibility, clinical and continuity checks, including the retained non-Chinese model-provider requirement. Association formation, charity registration, deductible gifts, fundraising compliance and name availability are separate questions. No supplier or partner commitment is claimed.</p>
+<h2>One World interpretation and university evidence</h2>
+<p>Rick Molony’s <em>2030 One World</em>, July 2022 v1.0, and <em>One World Mandate</em> v0.9.3 supply the voluntary-cooperation, transparency, collective-priority and open-model principles. Story pages 5–6, 20, 28, 36 and 79 are relevant; fictional events and dialogue are not measured governance results. The April 2026 OWS concept brief is a working synthesis, not a final constitution. Living Well’s voting thresholds, committee terms, access support and reserved decisions are proposed applications, not quotations or imported operating authority. The supplied taxonomy v0.3.1 remains the reference for agenda/decision/veto/review and emergency accountability. </p>
+<p>The <a href="#university-research-partnership">university partnership proposal</a> now specifies capability and selection criteria without nominating an institution. The <a href="https://www.unsw.edu.au/content/dam/pdfs/research-and-enterprise/partner-with-us/2025-02-sample-contracts/Collaborative%20Research%20Agreement%20%28no%20grant%20funding%29%20-%20single%20party%20template.pdf">UNSW sample collaborative-research agreement</a> remains a contract-topic reference only, not a proposed partner or adopted contract. No institution's policy is assumed to govern a future partnership. Living Well's suggested publication-review period and community-use licence remain negotiation positions.</p>
+<p>The $120,000 initial/pilot research allowance, $25,000 discovery and $90,000 setup remain unquoted. The separately funded long-term program is not included in the decade operating cashflow. No government grant, royalty or unconfirmed university subsidy is counted. Requote before committing; results cannot be promised from unfunded research.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section><section id="viability-evaluation"><h2>Evaluation of business-case viability</h2>
+<h2>Current judgement</h2>
+<p>Develop a properly costed feasibility proposition for Living Well Inc., a new New South Wales (NSW) not-for-profit incorporated association with substantive member decision rights. The association is not established. The proposed university partnership remains unnegotiated. Living Well must itself negotiate and manage every provider, participant, community, technology, funding and evaluation agreement through its committee and paid management.</p>
+<p>The case is <strong>not yet demonstrated viable</strong>. No Living Well outcomes, committed underwriting or donations, complete safe-service quotations or legal/privacy clearance exist. Component exercise evidence supports a plausible functional benefit; it does not validate the complete program, AI's added value or wider savings. Confidence in expected benefits is qualitative, not a numerical probability forecast.</p>
+<h2>Finance and organisational choice</h2>
+<p>D1 needs approximately $891,508 gross for the 100-person pilot in 2026 dollars, or $931,925 at assumed 2027–28 prices. D2's corresponding targets are $861,617 and $900,679. Both include $280,500 startup/preparation/evaluation, the full first year and a three-month cash buffer, with assumed 8% gross deductions. D1 is the association base overhead; D2 is a lower-overhead sensitivity for the same association, not a second legal form. The three delivery arrangements have not been separately priced. Recost participatory governance, formation, professional management and university work before any appeal. The $120,000 research allowance is initial/pilot only; comparative and long-term phases require separately secured finance. No commercialisation income is assumed.</p>
+<p>Private seed of $66,000 is needed before paid formation/feasibility. Record founders' pre-incorporation obligations and underwriting loss allocation. A successful campaign reimburses approved seed once; failure leaves the agreed risk with the underwriter. No seed is committed. A successful appeal only funds its defined period, not future obligations.</p>
+<p>At 250 newly recruited places, the central continuing member/sponsor scenario has annual shortfalls of $181,375 for D1 and $148,375 for D2 in 2026 dollars, including operating reserve but excluding one-time startup. All four recurring funding tests are negative at the D1 midpoint. Continuing-cohort costs can be lower, but later hypothetical surpluses cannot cover earlier shortages or prove affordable demand. Public savings and unpaid contribution are not operator revenue.</p>
+<p>NSW guidance positions associations for small-scale non-commercial purposes. Obtain eligibility advice on this fee-based service before incorporation and revisit suitability, registrations and member rights before interstate growth or commercial licensing. A decade expansion scenario is not legal clearance. No automatic change of structure is authorised.</p>
+<p>The proposed university agreement must settle funded deliverables, independent publication, ethics/data responsibilities, IP ownership and community use. Failure to agree sustainable terms requires another suitable partner or a revised feasibility decision, not an unsupported promise of research.</p>
+<h2>Evidence needed for each decision</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table"><table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Evidence before proceeding</th>
+<th>If absent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form and prepare</td>
+<td>Confirm purpose, member/committee rules, name/legal advice, seed liability and funded paid work</td>
+<td>Do not incur uncontrolled formation obligations</td>
+</tr>
+<tr>
+<td>Run crowdfunding</td>
+<td>Lawful appeal, realistic donor reach, full quoted budget, truthful claims and refund/unused-fund terms</td>
+<td>Redesign the proposition before seeking donations</td>
+</tr>
+<tr>
+<td>Enrol participants</td>
+<td>Cleared usable funds, signed safe delivery/technology contracts, inclusive access, evaluation and exit plan</td>
+<td>Delay; never rely on uncollected pledges</td>
+</tr>
+<tr>
+<td>Renew</td>
+<td>Actual needs, costs, affordable payments/contracts and funded continuity</td>
+<td>Support handover; do not assume emergency fundraising</td>
+</tr>
+<tr>
+<td>Commercialise research</td>
+<td>Member decision, university/rights-owner agreement, defined contribution and revenue terms, lawful data use and protected community access</td>
+<td>No licence or spin-out commitment</td>
+</tr>
+<tr>
+<td>Expand</td>
+<td>Useful comparative outcomes, acceptable harms/equity, paid capacity, real recurring finance and continuity under stress</td>
+<td>Narrow claims, redesign or stop expansion</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Uncertainty and source limits</h2>
+<p>Measure participant and carer burden, adverse effects, displaced resources and induced medical demand, not just attendance. No robust forecast exists for national savings, longevity or workforce release. Care after 79 and intergenerational effects need funded long follow-up. Governance rights and meetings do not themselves establish resilience.</p>
+<p>The supplied taxonomy overview supports governance principles; its linked full 58-decision page returned 404, so no complete row mapping is claimed. The ATO crowdfunding page was not fully retrieved in the preceding check; older clinical/regulator pages were not all refreshed. Current NSW regulator guidance, university course/research pages, NHMRC guidance and a UNSW sample collaboration agreement were checked for this revision. The current NSW legislation endpoint returned 403 and Sydney’s older research-code link returned 404; neither is represented as fully read. Specific legal, clinical, regulatory and tax advice remains required. Charity and deductible-gift status are not automatic consequences of forming a not-for-profit.</p>
+<p>The next decision is whether the proposed benefits and management model justify an authorised feasibility phase. This document does not register Living Well, solicit funds, recruit participants or commit resources. The committee must protect current care, privacy and donor restrictions before considering growth.</p><p><a href="#support-contents">Back to supporting contents</a> · <a href="index.html" target="_blank" rel="noopener">Four-part business case</a></p></section></main><footer class="footer shell">Presentation pattern adapted from the <a href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html" target="_blank" rel="noopener">Product Owners AI Guide</a>. Source evidence and assumptions remain distinct from proposed decisions. <a href="source/business-case.md">Canonical Markdown</a>.<p>Research by Rick Molony, developed with AI assistance. Version 1.0.0 · 17 November 2026. <a href="model/README.md">Calculation notes and data</a>.</p><p>First-party text and calculations: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Linked third-party sources retain their own terms. This is a research proposal, not an operating service or fundraising appeal.</p></footer></body></html>
