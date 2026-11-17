@@ -1,6 +1,6 @@
 # What if communities funded Living Well?
 
-A community-run, non-government-funded business case for a 100-person local pilot, led by a new NSW not-for-profit association and launched through crowdfunding. It retains professional support, smartwatches and AI coaching, with a university research partnership to be selected. The earlier Living Well Australia study examines government-funded national pathways.
+A community-run, non-government-funded business case for a 100-person local pilot, led by a proposed New South Wales not-for-profit association and launched through crowdfunding. It retains professional support, smartwatches and AI coaching, with a university research partnership to be selected. The earlier Living Well Australia study examines government-funded national pathways.
 
 [Read the four-part business case](index.html) · [Supporting analysis](supporting-analysis.html) · [Canonical release Markdown](source/business-case.md) · [Calculation notes](model/README.md).
 
