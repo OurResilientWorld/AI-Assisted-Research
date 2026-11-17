@@ -1,0 +1,80 @@
+{
+  "price_year": 2026,
+  "inflation": 0.03,
+  "reserve": 0.1,
+  "watch_life_years": 3,
+  "service_units": {
+    "lower": {
+      "clinical_and_community_per_active": 750,
+      "ai_per_active": 90,
+      "data_per_active": 60,
+      "onboarding_per_new": 750,
+      "watch_unit": 300
+    },
+    "midpoint": {
+      "clinical_and_community_per_active": 1000.0,
+      "ai_per_active": 165.0,
+      "data_per_active": 110.0,
+      "onboarding_per_new": 1000.0,
+      "watch_unit": 450.0
+    },
+    "upper": {
+      "clinical_and_community_per_active": 1250,
+      "ai_per_active": 240,
+      "data_per_active": 160,
+      "onboarding_per_new": 1250,
+      "watch_unit": 600
+    }
+  },
+  "source_cost_file": "Model/service-cost-assumptions.json",
+  "options": {
+    "D1": "NSW Living Well incorporated association \u2014 base overhead",
+    "D2": "Same NSW association \u2014 lower-overhead sensitivity"
+  },
+  "fixed": {
+    "D1": [
+      120000,
+      180000,
+      410000
+    ],
+    "D2": [
+      100000,
+      150000,
+      350000
+    ]
+  },
+  "scales": [
+    100,
+    250,
+    1000
+  ],
+  "setup": 90000,
+  "pilot_evaluation": 120000,
+  "discovery": 25000,
+  "campaign_preparation": 20000,
+  "preappeal_formation_from_setup": 15000,
+  "crowd_fee_fraction": 0.05,
+  "crowd_loss_fraction": 0.03,
+  "concession_share": 0.2,
+  "concession_monthly": 60,
+  "full_monthly_fee": 200,
+  "sponsor_per_person": 1000,
+  "annual_retention": 0.8,
+  "ramp": [
+    100,
+    250,
+    500,
+    750,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "startup_crowdfunding_required": true,
+  "pilot_ordinary_receipts": 0,
+  "research_budget_scope": "Initial/pilot university research placeholder only; later phases separately costed and funded. No royalties, grants or unconfirmed university subsidy.",
+  "scenario_scope": "D1 base and D2 lower overhead sensitivity for the same NSW association; not quoted prices for delivery arrangements.",
+  "warning": "All amounts, uptake, timing and outcomes are assumptions. No funding or Living Well entity is established. Pilot funded upfront by donations; recurring payment tests begin after pilot."
+}
