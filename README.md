@@ -66,6 +66,8 @@ International licence](LICENSE). Cite the author, title, repository and licence,
 
 [Explore Resilience Research](https://research.ourresilient.world/resilience-research/index.html). This new stream currently signposts existing related work; dedicated publications will follow research and review.
 
+- [One World Resilience Taxonomy](https://research.ourresilient.world/resilience-research/one-world-resilience-taxonomy/index.html) — A working-draft map of 59 critical decisions and how citizens could hold them by 2035.
+
 ## Publication continuity
 
 This collection continues the published material from [AI-Policy](https://github.com/OurResilientWorld/AI-Policy). Existing paths, report wording, original citations and licences are retained. Collection branding and navigation have changed; research findings and simulation calculations have not. The original repository remains available for earlier links. New feedback belongs in this repository's issue forms.
